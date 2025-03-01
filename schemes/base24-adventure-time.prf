@@ -1,9 +1,39 @@
-# Solarized Dark - MATLAB color scheme
-# Manually created on 2015-07-04 by Scott Lowe, based on the style guide of
-#     http://ethanschoonover.com/solarized
+# Adventure Time color scheme for Matlab by FredHappyface (https://github.com/fredHappyface)
+#
+# Color scheme template based on the work of Scott Lowe.
+# Converted to a mustache template by Francis Thérien
+#
 # To enable this color scheme in MATLAB use schemer_import, available at:
 #     https://github.com/scottclowe/matlab-schemer
 #     https://www.mathworks.com/matlabcentral/fileexchange/53862-matlab-schemer
+#
+# The original license is reproduced below:
+#
+#   Copyright (c) 2013-2016,  Scott C. Lowe <scott.code.lowe@gmail.com>
+#   Copyright (c) 2025 Francis Thérien
+#   All rights reserved.
+#
+#   Redistribution and use in source and binary forms, with or without
+#   modification, are permitted provided that the following conditions are
+#   met:
+#       * Redistributions of source code must retain the above copyright
+#         notice, this list of conditions and the following disclaimer.
+#       * Redistributions in binary form must reproduce the above copyright
+#         notice, this list of conditions and the following disclaimer in
+#         the documentation and/or other materials provided with the distribution
+#
+#   THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+#   AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+#   IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
+#   ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE
+#   LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR
+#   CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF
+#   SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS
+#   INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN
+#   CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)
+#   ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
+#   POSSIBILITY OF SUCH DAMAGE.
+
 ColorsUseSystem=Bfalse
 ColorsUseMLintAutoFixBackground=Btrue
 Editor.VariableHighlighting.Automatic=Btrue
@@ -30,7 +60,7 @@ Editorhighlight-lines=C0x7893bf
 Editorhighlight-caret-row-boolean-color=C0x4e7bbf
 EditorRightTextLimitLineColor=C0x4e7bbf          # matlab cell lines
 # MuPAD
-Editor.Language.MuPAD.Color.operator=C0xe6741d    # orange
+Editor.Language.MuPAD.Color.operator=C0xe6741d   # orange
 Editor.Language.MuPAD.Color.function=C0x0f49c6   # blue
 Editor.Language.MuPAD.Color.constant=C0x49b117   # green
 # TLC
@@ -46,7 +76,7 @@ Editor.Language.VHDL.Color.operator=C0xe6741d    # orange
 Editor.Language.Verilog.Color.operator=C0xe6741d # orange
 # XML
 Editor.Language.XML.Color.tag=C0xbc0013          # red
-Editor.Language.XML.Color.attribute=C0xe6741d     # orange
+Editor.Language.XML.Color.attribute=C0xe6741d    # orange
 Editor.Language.XML.Color.operator=C0x49b117     # green
 Editor.Language.XML.Color.value=C0x6fa497        # cyan
 Editor.Language.XML.Color.doctype=C0x0f49c6      # blue

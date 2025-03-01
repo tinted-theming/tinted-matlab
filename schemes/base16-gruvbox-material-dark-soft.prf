@@ -1,0 +1,55 @@
+# Solarized Dark - MATLAB color scheme
+# Manually created on 2015-07-04 by Scott Lowe, based on the style guide of
+#     http://ethanschoonover.com/solarized
+# To enable this color scheme in MATLAB use schemer_import, available at:
+#     https://github.com/scottclowe/matlab-schemer
+#     https://www.mathworks.com/matlabcentral/fileexchange/53862-matlab-schemer
+ColorsUseSystem=Bfalse
+ColorsUseMLintAutoFixBackground=Btrue
+Editor.VariableHighlighting.Automatic=Btrue
+Editor.NonlocalVariableHighlighting=Btrue
+EditorCodepadHighVisible=Bfalse                          # no cell highlighting
+EditorCodeBlockDividers=Btrue                            # mark cells with line
+Editorhighlight-caret-row-boolean=Btrue
+EditorRightTextLineVisible=Btrue
+EditorRightTextLimitLineWidth=I1
+ColorsText=C0xddc7a1
+ColorsBackground=C0x32302f
+Colors_M_Keywords=C0xd3869b                      # violet
+Colors_M_Comments=C0x7c6f64
+Colors_M_Strings=C0xa9b665                       # green
+Colors_M_UnterminatedStrings=C0xbd6f3e           # dark red
+Colors_M_SystemCommands=C0x89b482                # cyan
+Colors_M_Errors=C0xea6962                        # red
+Colors_HTML_HTMLLinks=C0x7daea3                  # blue
+Colors_M_Warnings=C0xd8a657                      # yellow
+ColorsMLintAutoFixBackground=C0x5a524c
+Editor.VariableHighlighting.Color=C0x5a524c
+Editor.NonlocalVariableHighlighting.TextColor=C0xe78a4e  # orange
+Editorhighlight-lines=C0x7c6f64
+Editorhighlight-caret-row-boolean-color=C0x5a524c
+EditorRightTextLimitLineColor=C0x5a524c          # matlab cell lines
+# MuPAD
+Editor.Language.MuPAD.Color.operator=C0xe78a4e    # orange
+Editor.Language.MuPAD.Color.function=C0x7daea3   # blue
+Editor.Language.MuPAD.Color.constant=C0xa9b665   # green
+# TLC
+Editor.Language.TLC.Color.Colors_M_Keywords=C0xd3869b    # green
+# C/C++
+Editor.Language.C.Color.preprocessor=C0xe78a4e   # orange
+Editor.Language.C.Color.char-literal=C0x89b482   # cyan
+# Java
+Editor.Language.Java.Color.char-literal=C0x89b482# cyan
+# VHDL
+Editor.Language.VHDL.Color.operator=C0xe78a4e    # orange
+# Verilog
+Editor.Language.Verilog.Color.operator=C0xe78a4e # orange
+# XML
+Editor.Language.XML.Color.tag=C0xea6962          # red
+Editor.Language.XML.Color.attribute=C0xe78a4e     # orange
+Editor.Language.XML.Color.operator=C0xa9b665     # green
+Editor.Language.XML.Color.value=C0x89b482        # cyan
+Editor.Language.XML.Color.doctype=C0x7daea3      # blue
+Editor.Language.XML.Color.ref=C0xd3869b          # violet
+Editor.Language.XML.Color.pi-content=C0xd3869b   # violet
+Editor.Language.XML.Color.cdata-section=C0xbd6f3e# dark red

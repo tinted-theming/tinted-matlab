@@ -1,0 +1,26 @@
+name: Update with the latest tinted-theming colorschemes
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - "templates/tinted-matlab.mustache"
+  workflow_dispatch:
+  schedule:
+    - cron: "0 0 * * 0" # https://crontab.guru/every-week
+
+jobs:
+  build-and-commit:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Tinted Builder Rust
+        uses: tinted-theming/tinted-builder-rust@v0.12.1
+
+      - name: Commit the changes, if any
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: Update with the latest colorschemes
+

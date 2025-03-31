@@ -7,20 +7,12 @@ on:
       - "templates/tinted-matlab.mustache"
   workflow_dispatch:
   schedule:
-    - cron: "0 0 * * 0" # https://crontab.guru/every-week
+    - cron: "0 0 * * *" # https://crontab.guru/every-day
 
 jobs:
   build-and-commit:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-
-      - name: Tinted Builder Rust
-        uses: tinted-theming/tinted-builder-rust@v0.12.1
-
-      - name: Commit the changes, if any
-        uses: stefanzweifel/git-auto-commit-action@v5
-        with:
-          commit_message: Update with the latest colorschemes
-
+    uses: "tinted-theming/home/.github/workflows/shared-build-template-and-commit-themes.yml@main"
+    secrets:
+      token: ${{ secrets.BOT_ACCESS_TOKEN }}
+    with:
+      ref: ${{ github.head_ref }}

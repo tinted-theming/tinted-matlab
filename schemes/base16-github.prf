@@ -1,4 +1,4 @@
-# Github color scheme for Matlab by Defman21
+# Github color scheme for Matlab by Tinted Theming (https://github.com/tinted-theming)
 #
 # Color scheme template based on the work of Scott Lowe.
 # Converted to a mustache template by Francis Thérien
@@ -43,43 +43,43 @@ EditorCodeBlockDividers=Btrue                            # mark cells with line
 Editorhighlight-caret-row-boolean=Btrue
 EditorRightTextLineVisible=Btrue
 EditorRightTextLimitLineWidth=I1
-ColorsText=C0x333333
-ColorsBackground=C0xffffff
-Colors_M_Keywords=C0xa71d5d                      # violet
-Colors_M_Comments=C0x969896
-Colors_M_Strings=C0x183691                       # green
-Colors_M_UnterminatedStrings=C0x333333           # dark red
-Colors_M_SystemCommands=C0x183691                # cyan
-Colors_M_Errors=C0xed6a43                        # red
-Colors_HTML_HTMLLinks=C0x795da3                  # blue
-Colors_M_Warnings=C0x795da3                      # yellow
-ColorsMLintAutoFixBackground=C0xc8c8fa
-Editor.VariableHighlighting.Color=C0xc8c8fa
-Editor.NonlocalVariableHighlighting.TextColor=C0x0086b3  # orange
-Editorhighlight-lines=C0x969896
-Editorhighlight-caret-row-boolean-color=C0xc8c8fa
-EditorRightTextLimitLineColor=C0xc8c8fa          # matlab cell lines
+ColorsText=C0x424a53
+ColorsBackground=C0xeaeef2
+Colors_M_Keywords=C0xa475f9                      # violet
+Colors_M_Comments=C0x8c959f
+Colors_M_Strings=C0x2da44e                       # green
+Colors_M_UnterminatedStrings=C0x4d2d00           # dark red
+Colors_M_SystemCommands=C0x339d9b                # cyan
+Colors_M_Errors=C0xfa4549                        # red
+Colors_HTML_HTMLLinks=C0x218bff                  # blue
+Colors_M_Warnings=C0xbf8700                      # yellow
+ColorsMLintAutoFixBackground=C0xafb8c1
+Editor.VariableHighlighting.Color=C0xafb8c1
+Editor.NonlocalVariableHighlighting.TextColor=C0xe16f24  # orange
+Editorhighlight-lines=C0x8c959f
+Editorhighlight-caret-row-boolean-color=C0xafb8c1
+EditorRightTextLimitLineColor=C0xafb8c1          # matlab cell lines
 # MuPAD
-Editor.Language.MuPAD.Color.operator=C0x0086b3   # orange
-Editor.Language.MuPAD.Color.function=C0x795da3   # blue
-Editor.Language.MuPAD.Color.constant=C0x183691   # green
+Editor.Language.MuPAD.Color.operator=C0xe16f24   # orange
+Editor.Language.MuPAD.Color.function=C0x218bff   # blue
+Editor.Language.MuPAD.Color.constant=C0x2da44e   # green
 # TLC
-Editor.Language.TLC.Color.Colors_M_Keywords=C0xa71d5d    # green
+Editor.Language.TLC.Color.Colors_M_Keywords=C0xa475f9    # green
 # C/C++
-Editor.Language.C.Color.preprocessor=C0x0086b3   # orange
-Editor.Language.C.Color.char-literal=C0x183691   # cyan
+Editor.Language.C.Color.preprocessor=C0xe16f24   # orange
+Editor.Language.C.Color.char-literal=C0x339d9b   # cyan
 # Java
-Editor.Language.Java.Color.char-literal=C0x183691# cyan
+Editor.Language.Java.Color.char-literal=C0x339d9b# cyan
 # VHDL
-Editor.Language.VHDL.Color.operator=C0x0086b3    # orange
+Editor.Language.VHDL.Color.operator=C0xe16f24    # orange
 # Verilog
-Editor.Language.Verilog.Color.operator=C0x0086b3 # orange
+Editor.Language.Verilog.Color.operator=C0xe16f24 # orange
 # XML
-Editor.Language.XML.Color.tag=C0xed6a43          # red
-Editor.Language.XML.Color.attribute=C0x0086b3    # orange
-Editor.Language.XML.Color.operator=C0x183691     # green
-Editor.Language.XML.Color.value=C0x183691        # cyan
-Editor.Language.XML.Color.doctype=C0x795da3      # blue
-Editor.Language.XML.Color.ref=C0xa71d5d          # violet
-Editor.Language.XML.Color.pi-content=C0xa71d5d   # violet
-Editor.Language.XML.Color.cdata-section=C0x333333# dark red
+Editor.Language.XML.Color.tag=C0xfa4549          # red
+Editor.Language.XML.Color.attribute=C0xe16f24    # orange
+Editor.Language.XML.Color.operator=C0x2da44e     # green
+Editor.Language.XML.Color.value=C0x339d9b        # cyan
+Editor.Language.XML.Color.doctype=C0x218bff      # blue
+Editor.Language.XML.Color.ref=C0xa475f9          # violet
+Editor.Language.XML.Color.pi-content=C0xa475f9   # violet
+Editor.Language.XML.Color.cdata-section=C0x4d2d00# dark red

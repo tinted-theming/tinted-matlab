@@ -1,4 +1,4 @@
-# Gruvbox dark, medium color scheme for Matlab by Tinted Theming (https://github.com/tinted-theming), morhetz (https://github.com/morhetz/gruvbox)
+# Gruvbox Light color scheme for Matlab by Tinted Theming (https://github.com/tinted-theming), morhetz (https://github.com/morhetz/gruvbox)
 #
 # Color scheme template based on the work of Scott Lowe.
 # Converted to a mustache template by Francis Thérien
@@ -43,22 +43,22 @@ EditorCodeBlockDividers=Btrue                            # mark cells with line
 Editorhighlight-caret-row-boolean=Btrue
 EditorRightTextLineVisible=Btrue
 EditorRightTextLimitLineWidth=I1
-ColorsText=C0xebdbb2
-ColorsBackground=C0x282828
+ColorsText=C0x3c3836
+ColorsBackground=C0xfbf1c7
 Colors_M_Keywords=C0xb16286                      # violet
-Colors_M_Comments=C0x665c54
+Colors_M_Comments=C0xbdae93
 Colors_M_Strings=C0x98971a                       # green
 Colors_M_UnterminatedStrings=C0x9d0006           # dark red
 Colors_M_SystemCommands=C0x689d6a                # cyan
 Colors_M_Errors=C0xcc241d                        # red
 Colors_HTML_HTMLLinks=C0x458588                  # blue
 Colors_M_Warnings=C0xd79921                      # yellow
-ColorsMLintAutoFixBackground=C0x504945
-Editor.VariableHighlighting.Color=C0x504945
+ColorsMLintAutoFixBackground=C0xd5c4a1
+Editor.VariableHighlighting.Color=C0xd5c4a1
 Editor.NonlocalVariableHighlighting.TextColor=C0xd65d0e  # orange
-Editorhighlight-lines=C0x665c54
-Editorhighlight-caret-row-boolean-color=C0x504945
-EditorRightTextLimitLineColor=C0x504945          # matlab cell lines
+Editorhighlight-lines=C0xbdae93
+Editorhighlight-caret-row-boolean-color=C0xd5c4a1
+EditorRightTextLimitLineColor=C0xd5c4a1          # matlab cell lines
 # MuPAD
 Editor.Language.MuPAD.Color.operator=C0xd65d0e   # orange
 Editor.Language.MuPAD.Color.function=C0x458588   # blue

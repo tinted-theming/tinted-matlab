@@ -1,4 +1,4 @@
-# Gruvbox dark, medium color scheme for Matlab by Tinted Theming (https://github.com/tinted-theming), morhetz (https://github.com/morhetz/gruvbox)
+# Mission Brogue color scheme for Matlab by Thomas Leon Highbaugh
 #
 # Color scheme template based on the work of Scott Lowe.
 # Converted to a mustache template by Francis Thérien
@@ -43,43 +43,43 @@ EditorCodeBlockDividers=Btrue                            # mark cells with line
 Editorhighlight-caret-row-boolean=Btrue
 EditorRightTextLineVisible=Btrue
 EditorRightTextLimitLineWidth=I1
-ColorsText=C0xebdbb2
-ColorsBackground=C0x282828
-Colors_M_Keywords=C0xb16286                      # violet
-Colors_M_Comments=C0x665c54
-Colors_M_Strings=C0x98971a                       # green
-Colors_M_UnterminatedStrings=C0x9d0006           # dark red
-Colors_M_SystemCommands=C0x689d6a                # cyan
-Colors_M_Errors=C0xcc241d                        # red
-Colors_HTML_HTMLLinks=C0x458588                  # blue
-Colors_M_Warnings=C0xd79921                      # yellow
-ColorsMLintAutoFixBackground=C0x504945
-Editor.VariableHighlighting.Color=C0x504945
-Editor.NonlocalVariableHighlighting.TextColor=C0xd65d0e  # orange
-Editorhighlight-lines=C0x665c54
-Editorhighlight-caret-row-boolean-color=C0x504945
-EditorRightTextLimitLineColor=C0x504945          # matlab cell lines
+ColorsText=C0x93a5b4
+ColorsBackground=C0x283139
+Colors_M_Keywords=C0xccb7db                      # violet
+Colors_M_Comments=C0x60778a
+Colors_M_Strings=C0x8cd4b0                       # green
+Colors_M_UnterminatedStrings=C0x8e9ecb           # dark red
+Colors_M_SystemCommands=C0x93dfec                # cyan
+Colors_M_Errors=C0xefa9a9                        # red
+Colors_HTML_HTMLLinks=C0xa2c5fd                  # blue
+Colors_M_Warnings=C0xe0b88a                      # yellow
+ColorsMLintAutoFixBackground=C0x4d606f
+Editor.VariableHighlighting.Color=C0x4d606f
+Editor.NonlocalVariableHighlighting.TextColor=C0xf2db78  # orange
+Editorhighlight-lines=C0x60778a
+Editorhighlight-caret-row-boolean-color=C0x4d606f
+EditorRightTextLimitLineColor=C0x4d606f          # matlab cell lines
 # MuPAD
-Editor.Language.MuPAD.Color.operator=C0xd65d0e   # orange
-Editor.Language.MuPAD.Color.function=C0x458588   # blue
-Editor.Language.MuPAD.Color.constant=C0x98971a   # green
+Editor.Language.MuPAD.Color.operator=C0xf2db78   # orange
+Editor.Language.MuPAD.Color.function=C0xa2c5fd   # blue
+Editor.Language.MuPAD.Color.constant=C0x8cd4b0   # green
 # TLC
-Editor.Language.TLC.Color.Colors_M_Keywords=C0xb16286    # green
+Editor.Language.TLC.Color.Colors_M_Keywords=C0xccb7db    # green
 # C/C++
-Editor.Language.C.Color.preprocessor=C0xd65d0e   # orange
-Editor.Language.C.Color.char-literal=C0x689d6a   # cyan
+Editor.Language.C.Color.preprocessor=C0xf2db78   # orange
+Editor.Language.C.Color.char-literal=C0x93dfec   # cyan
 # Java
-Editor.Language.Java.Color.char-literal=C0x689d6a# cyan
+Editor.Language.Java.Color.char-literal=C0x93dfec# cyan
 # VHDL
-Editor.Language.VHDL.Color.operator=C0xd65d0e    # orange
+Editor.Language.VHDL.Color.operator=C0xf2db78    # orange
 # Verilog
-Editor.Language.Verilog.Color.operator=C0xd65d0e # orange
+Editor.Language.Verilog.Color.operator=C0xf2db78 # orange
 # XML
-Editor.Language.XML.Color.tag=C0xcc241d          # red
-Editor.Language.XML.Color.attribute=C0xd65d0e    # orange
-Editor.Language.XML.Color.operator=C0x98971a     # green
-Editor.Language.XML.Color.value=C0x689d6a        # cyan
-Editor.Language.XML.Color.doctype=C0x458588      # blue
-Editor.Language.XML.Color.ref=C0xb16286          # violet
-Editor.Language.XML.Color.pi-content=C0xb16286   # violet
-Editor.Language.XML.Color.cdata-section=C0x9d0006# dark red
+Editor.Language.XML.Color.tag=C0xefa9a9          # red
+Editor.Language.XML.Color.attribute=C0xf2db78    # orange
+Editor.Language.XML.Color.operator=C0x8cd4b0     # green
+Editor.Language.XML.Color.value=C0x93dfec        # cyan
+Editor.Language.XML.Color.doctype=C0xa2c5fd      # blue
+Editor.Language.XML.Color.ref=C0xccb7db          # violet
+Editor.Language.XML.Color.pi-content=C0xccb7db   # violet
+Editor.Language.XML.Color.cdata-section=C0x8e9ecb# dark red

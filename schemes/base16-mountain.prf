@@ -46,7 +46,7 @@ EditorRightTextLimitLineWidth=I1
 ColorsText=C0xcacaca
 ColorsBackground=C0x0f0f0f
 Colors_M_Keywords=C0xac8aac                      # violet
-Colors_M_Comments=C0x4c4c4c
+Colors_M_Comments=C0x393939
 Colors_M_Strings=C0x8aac8b                       # green
 Colors_M_UnterminatedStrings=C0xac8a8c           # dark red
 Colors_M_SystemCommands=C0x8aabac                # cyan
@@ -56,7 +56,7 @@ Colors_M_Warnings=C0xaca98a                      # yellow
 ColorsMLintAutoFixBackground=C0x262626
 Editor.VariableHighlighting.Color=C0x262626
 Editor.NonlocalVariableHighlighting.TextColor=C0xceb188  # orange
-Editorhighlight-lines=C0x4c4c4c
+Editorhighlight-lines=C0x393939
 Editorhighlight-caret-row-boolean-color=C0x262626
 EditorRightTextLimitLineColor=C0x262626          # matlab cell lines
 # MuPAD

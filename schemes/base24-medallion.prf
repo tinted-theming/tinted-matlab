@@ -1,0 +1,85 @@
+# Medallion color scheme for Matlab by FredHappyface (https://github.com/fredHappyface)
+#
+# Color scheme template based on the work of Scott Lowe.
+# Converted to a mustache template by Francis Thérien
+#
+# To enable this color scheme in MATLAB use schemer_import, available at:
+#     https://github.com/scottclowe/matlab-schemer
+#     https://www.mathworks.com/matlabcentral/fileexchange/53862-matlab-schemer
+#
+# The original license is reproduced below:
+#
+#   Copyright (c) 2013-2016,  Scott C. Lowe <scott.code.lowe@gmail.com>
+#   Copyright (c) 2025 Francis Thérien
+#   All rights reserved.
+#
+#   Redistribution and use in source and binary forms, with or without
+#   modification, are permitted provided that the following conditions are
+#   met:
+#       * Redistributions of source code must retain the above copyright
+#         notice, this list of conditions and the following disclaimer.
+#       * Redistributions in binary form must reproduce the above copyright
+#         notice, this list of conditions and the following disclaimer in
+#         the documentation and/or other materials provided with the distribution
+#
+#   THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+#   AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+#   IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
+#   ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE
+#   LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR
+#   CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF
+#   SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS
+#   INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN
+#   CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)
+#   ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
+#   POSSIBILITY OF SUCH DAMAGE.
+
+ColorsUseSystem=Bfalse
+ColorsUseMLintAutoFixBackground=Btrue
+Editor.VariableHighlighting.Automatic=Btrue
+Editor.NonlocalVariableHighlighting=Btrue
+EditorCodepadHighVisible=Bfalse                          # no cell highlighting
+EditorCodeBlockDividers=Btrue                            # mark cells with line
+Editorhighlight-caret-row-boolean=Btrue
+EditorRightTextLineVisible=Btrue
+EditorRightTextLimitLineWidth=I1
+ColorsText=C0xaea578
+ColorsBackground=C0x1d1808
+Colors_M_Keywords=C0x8b5990                      # violet
+Colors_M_Comments=C0x786d38
+Colors_M_Strings=C0x7c8a16                       # green
+Colors_M_UnterminatedStrings=C0x5a2600           # dark red
+Colors_M_SystemCommands=C0x906b25                # cyan
+Colors_M_Errors=C0xb54c00                        # red
+Colors_HTML_HTMLLinks=C0x606baf                  # blue
+Colors_M_Warnings=C0xabb8ff                      # yellow
+ColorsMLintAutoFixBackground=C0x5e5118
+Editor.VariableHighlighting.Color=C0x5e5118
+Editor.NonlocalVariableHighlighting.TextColor=C0xd2bd25  # orange
+Editorhighlight-lines=C0x786d38
+Editorhighlight-caret-row-boolean-color=C0x5e5118
+EditorRightTextLimitLineColor=C0x5e5118          # matlab cell lines
+# MuPAD
+Editor.Language.MuPAD.Color.operator=C0xd2bd25   # orange
+Editor.Language.MuPAD.Color.function=C0x606baf   # blue
+Editor.Language.MuPAD.Color.constant=C0x7c8a16   # green
+# TLC
+Editor.Language.TLC.Color.Colors_M_Keywords=C0x8b5990    # green
+# C/C++
+Editor.Language.C.Color.preprocessor=C0xd2bd25   # orange
+Editor.Language.C.Color.char-literal=C0x906b25   # cyan
+# Java
+Editor.Language.Java.Color.char-literal=C0x906b25# cyan
+# VHDL
+Editor.Language.VHDL.Color.operator=C0xd2bd25    # orange
+# Verilog
+Editor.Language.Verilog.Color.operator=C0xd2bd25 # orange
+# XML
+Editor.Language.XML.Color.tag=C0xb54c00          # red
+Editor.Language.XML.Color.attribute=C0xd2bd25    # orange
+Editor.Language.XML.Color.operator=C0x7c8a16     # green
+Editor.Language.XML.Color.value=C0x906b25        # cyan
+Editor.Language.XML.Color.doctype=C0x606baf      # blue
+Editor.Language.XML.Color.ref=C0x8b5990          # violet
+Editor.Language.XML.Color.pi-content=C0x8b5990   # violet
+Editor.Language.XML.Color.cdata-section=C0x5a2600# dark red

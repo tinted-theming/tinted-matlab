@@ -1,0 +1,77 @@
+# Shapeshifter color scheme for Matlab by Tyler Benziger (http://tybenz.com)
+#
+# Color scheme template based on the work of Scott Lowe.
+# Converted to a mustache template by Francis Thérien
+#
+# To enable this color scheme in MATLAB use schemer_import, available at:
+#     https://github.com/scottclowe/matlab-schemer
+#     https://www.mathworks.com/matlabcentral/fileexchange/53862-matlab-schemer
+#
+# The original license is reproduced below:
+#
+#   Copyright (c) 2013-2016,  Scott C. Lowe <scott.code.lowe@gmail.com>
+#   Copyright (c) 2025 Francis Thérien
+#   All rights reserved.
+#
+#   Redistribution and use in source and binary forms, with or without
+#   modification, are permitted provided that the following conditions are
+#   met:
+#       * Redistributions of source code must retain the above copyright
+#         notice, this list of conditions and the following disclaimer.
+#       * Redistributions in binary form must reproduce the above copyright
+#         notice, this list of conditions and the following disclaimer in
+#         the documentation and/or other materials provided with the distribution
+#
+#   THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+#   AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+#   IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
+#   ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE
+#   LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR
+#   CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF
+#   SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS
+#   INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN
+#   CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)
+#   ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
+#   POSSIBILITY OF SUCH DAMAGE.
+
+ColorsText, 0x102015
+ColorsBackground, 0xf9f9f9
+Colors_M_Keywords, 0xf996e2
+Colors_M_Comments, 0x555555
+Colors_M_Strings, 0x0ed839
+Colors_M_UnterminatedStrings, 0x69542d
+Colors_M_SystemCommands, 0x23edda
+Colors_M_Errors, 0xe92f2f
+Colors_HTML_HTMLLinks, 0x3b48e3
+Colors_M_Warnings, 0xdddd13
+ColorsMLintAutoFixBackground, 0xababab
+Editor.VariableHighlighting.Color, 0xababab
+Editor.NonlocalVariableHighlighting.TextColor, 0xe09448
+Editorhighlight-lines, 0x555555
+Editorhighlight-caret-row-boolean-color, 0xababab
+EditorRightTextLimitLineColor, 0xababab
+# MuPAD
+Editor.Language.MuPAD.Color.operator, 0xe09448
+Editor.Language.MuPAD.Color.function, 0x3b48e3
+Editor.Language.MuPAD.Color.constant, 0x0ed839
+# TLC
+Editor.Language.TLC.Color.Colors_M_Keywords, 0xf996e2
+# C/C++
+Editor.Language.C.Color.preprocessor, 0xe09448
+Editor.Language.C.Color.char-literal, 0x23edda
+# Java
+Editor.Language.Java.Color.char-literal, 0x23edda
+# VHDL
+Editor.Language.VHDL.Color.operator, 0xe09448
+# Verilog
+Editor.Language.Verilog.Color.operator, 0xe09448
+# XML
+Editor.Language.XML.Color.tag, 0xe92f2f
+Editor.Language.XML.Color.attribute, 0xe09448
+Editor.Language.XML.Color.operator, 0x0ed839
+Editor.Language.XML.Color.value, 0x23edda
+Editor.Language.XML.Color.doctype, 0x3b48e3
+Editor.Language.XML.Color.ref, 0xf996e2
+Editor.Language.XML.Color.pi-content, 0xf996e2
+Editor.Language.XML.Color.cdata-section, 0x69542d
+

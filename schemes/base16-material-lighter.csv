@@ -1,0 +1,77 @@
+# Material Lighter color scheme for Matlab by Nate Peterson
+#
+# Color scheme template based on the work of Scott Lowe.
+# Converted to a mustache template by Francis Thérien
+#
+# To enable this color scheme in MATLAB use schemer_import, available at:
+#     https://github.com/scottclowe/matlab-schemer
+#     https://www.mathworks.com/matlabcentral/fileexchange/53862-matlab-schemer
+#
+# The original license is reproduced below:
+#
+#   Copyright (c) 2013-2016,  Scott C. Lowe <scott.code.lowe@gmail.com>
+#   Copyright (c) 2025 Francis Thérien
+#   All rights reserved.
+#
+#   Redistribution and use in source and binary forms, with or without
+#   modification, are permitted provided that the following conditions are
+#   met:
+#       * Redistributions of source code must retain the above copyright
+#         notice, this list of conditions and the following disclaimer.
+#       * Redistributions in binary form must reproduce the above copyright
+#         notice, this list of conditions and the following disclaimer in
+#         the documentation and/or other materials provided with the distribution
+#
+#   THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+#   AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+#   IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
+#   ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE
+#   LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR
+#   CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF
+#   SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS
+#   INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN
+#   CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)
+#   ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
+#   POSSIBILITY OF SUCH DAMAGE.
+
+ColorsText, 0x80cbc4
+ColorsBackground, 0xfafafa
+Colors_M_Keywords, 0x7c4dff
+Colors_M_Comments, 0xccd7da
+Colors_M_Strings, 0x91b859
+Colors_M_UnterminatedStrings, 0xe53935
+Colors_M_SystemCommands, 0x39adb5
+Colors_M_Errors, 0xff5370
+Colors_HTML_HTMLLinks, 0x6182b8
+Colors_M_Warnings, 0xffb62c
+ColorsMLintAutoFixBackground, 0xcceae7
+Editor.VariableHighlighting.Color, 0xcceae7
+Editor.NonlocalVariableHighlighting.TextColor, 0xf76d47
+Editorhighlight-lines, 0xccd7da
+Editorhighlight-caret-row-boolean-color, 0xcceae7
+EditorRightTextLimitLineColor, 0xcceae7
+# MuPAD
+Editor.Language.MuPAD.Color.operator, 0xf76d47
+Editor.Language.MuPAD.Color.function, 0x6182b8
+Editor.Language.MuPAD.Color.constant, 0x91b859
+# TLC
+Editor.Language.TLC.Color.Colors_M_Keywords, 0x7c4dff
+# C/C++
+Editor.Language.C.Color.preprocessor, 0xf76d47
+Editor.Language.C.Color.char-literal, 0x39adb5
+# Java
+Editor.Language.Java.Color.char-literal, 0x39adb5
+# VHDL
+Editor.Language.VHDL.Color.operator, 0xf76d47
+# Verilog
+Editor.Language.Verilog.Color.operator, 0xf76d47
+# XML
+Editor.Language.XML.Color.tag, 0xff5370
+Editor.Language.XML.Color.attribute, 0xf76d47
+Editor.Language.XML.Color.operator, 0x91b859
+Editor.Language.XML.Color.value, 0x39adb5
+Editor.Language.XML.Color.doctype, 0x6182b8
+Editor.Language.XML.Color.ref, 0x7c4dff
+Editor.Language.XML.Color.pi-content, 0x7c4dff
+Editor.Language.XML.Color.cdata-section, 0xe53935
+

@@ -154,13 +154,13 @@ end
 % catch the exception when it occurs, and then attempt to set all the
 % preferences again.
 try
-    [varargout{1:nargout}] = main(fname, inc_bools);
+    [varargout{1:nargout}] = main(fname);
 catch ME
     if ~strcmp(ME.identifier, 'MATLAB:Java:GenericException')
         rethrow(ME);
     end
     % disp('Threw and ignored a Java exception. Retrying.');
-    [varargout{1:nargout}] = main(fname, inc_bools);
+    [varargout{1:nargout}] = main(fname);
 end
 
 end
@@ -226,9 +226,9 @@ for i_row = 1:size(colors_table, 1)
         rgb = hex2dec(row.value);
     elseif regexp(row.value, "^-?\d+")
         % Parse signed integer color value (legacy matlab-schemer format)
-        rgb = str2double(n.pref(2:end));
+        rgb = str2double(row.value);
     else
-        warning('Bad color value for %s: %s', row.name, row.pref);
+        warning('Bad color value for %s: %s', row.pref, row.value);
         continue;
     end
 
@@ -238,15 +238,15 @@ for i_row = 1:size(colors_table, 1)
 
     % Set the colour to the target value
     jc = java.awt.Color(rgb);
-    com.mathworks.services.Prefs.setColorPref(row.name, jc);
-    com.mathworks.services.ColorPrefs.notifyColorListeners(row.name);
+    com.mathworks.services.Prefs.setColorPref(row.pref, jc);
+    com.mathworks.services.ColorPrefs.notifyColorListeners(row.pref);
 
     % Set flag if any colour has changed
     needs_restart = needs_restart || ~isequal(previousVal, jc);
 end
 
 % ------------------------ Tidy up ----------------------------------------
-fprintf('Imported color scheme WITHOUT boolean options from\n%s\n', fname);
+fprintf('Imported color scheme from\n%s\n', fname);
 if needs_restart
     disp('Some changes require MATLAB to be restarted to be activated.');
 end
@@ -269,7 +269,7 @@ opts.VariableTypes = {'string', 'string'};
 
 % Handle extra columns and empty lines gracefully
 opts.ExtraColumnsRule = 'ignore';
-opts.EmptyLineRule = 'ignore';
+opts.EmptyLineRule = 'skip';
 
 % Trim whitespace
 opts = setvaropts(opts, 'pref', 'WhitespaceRule', 'trim');

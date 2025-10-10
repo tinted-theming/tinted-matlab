@@ -1,0 +1,45 @@
+# Sandcastle color scheme for Matlab by George Essig (https://github.com/gessig)
+# Apply this theme using the tinted_import function, available at 
+# https://github.com/tinted-theming/tinted-matlab 
+
+ColorsText, 0xa89984
+ColorsBackground, 0x282c34
+Colors_M_Keywords, 0xd75f5f
+Colors_M_Comments, 0x665c54
+Colors_M_Strings, 0x528b8b
+Colors_M_UnterminatedStrings, 0xa87322
+Colors_M_SystemCommands, 0x83a598
+Colors_M_Errors, 0x83a598
+Colors_HTML_HTMLLinks, 0x83a598
+Colors_M_Warnings, 0xa07e3b
+ColorsMLintAutoFixBackground, 0x3e4451
+Editor.VariableHighlighting.Color, 0x3e4451
+Editor.NonlocalVariableHighlighting.TextColor, 0xa07e3b
+Editorhighlight-lines, 0x665c54
+Editorhighlight-caret-row-boolean-color, 0x3e4451
+EditorRightTextLimitLineColor, 0x3e4451
+# MuPAD
+Editor.Language.MuPAD.Color.operator, 0xa07e3b
+Editor.Language.MuPAD.Color.function, 0x83a598
+Editor.Language.MuPAD.Color.constant, 0x528b8b
+# TLC
+Editor.Language.TLC.Color.Colors_M_Keywords, 0xd75f5f
+# C/C++
+Editor.Language.C.Color.preprocessor, 0xa07e3b
+Editor.Language.C.Color.char-literal, 0x83a598
+# Java
+Editor.Language.Java.Color.char-literal, 0x83a598
+# VHDL
+Editor.Language.VHDL.Color.operator, 0xa07e3b
+# Verilog
+Editor.Language.Verilog.Color.operator, 0xa07e3b
+# XML
+Editor.Language.XML.Color.tag, 0x83a598
+Editor.Language.XML.Color.attribute, 0xa07e3b
+Editor.Language.XML.Color.operator, 0x528b8b
+Editor.Language.XML.Color.value, 0x83a598
+Editor.Language.XML.Color.doctype, 0x83a598
+Editor.Language.XML.Color.ref, 0xd75f5f
+Editor.Language.XML.Color.pi-content, 0xd75f5f
+Editor.Language.XML.Color.cdata-section, 0xa87322
+

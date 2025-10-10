@@ -1,0 +1,45 @@
+# Humanoid light color scheme for Matlab by Thomas (tasmo) Friese
+# Apply this theme using the tinted_import function, available at 
+# https://github.com/tinted-theming/tinted-matlab 
+
+ColorsText, 0x232629
+ColorsBackground, 0xf8f8f2
+Colors_M_Keywords, 0x700f98
+Colors_M_Comments, 0xc0c0bd
+Colors_M_Strings, 0x388e3c
+Colors_M_UnterminatedStrings, 0xb27701
+Colors_M_SystemCommands, 0x008e8e
+Colors_M_Errors, 0xb0151a
+Colors_HTML_HTMLLinks, 0x0082c9
+Colors_M_Warnings, 0xffb627
+ColorsMLintAutoFixBackground, 0xdeded8
+Editor.VariableHighlighting.Color, 0xdeded8
+Editor.NonlocalVariableHighlighting.TextColor, 0xff3d00
+Editorhighlight-lines, 0xc0c0bd
+Editorhighlight-caret-row-boolean-color, 0xdeded8
+EditorRightTextLimitLineColor, 0xdeded8
+# MuPAD
+Editor.Language.MuPAD.Color.operator, 0xff3d00
+Editor.Language.MuPAD.Color.function, 0x0082c9
+Editor.Language.MuPAD.Color.constant, 0x388e3c
+# TLC
+Editor.Language.TLC.Color.Colors_M_Keywords, 0x700f98
+# C/C++
+Editor.Language.C.Color.preprocessor, 0xff3d00
+Editor.Language.C.Color.char-literal, 0x008e8e
+# Java
+Editor.Language.Java.Color.char-literal, 0x008e8e
+# VHDL
+Editor.Language.VHDL.Color.operator, 0xff3d00
+# Verilog
+Editor.Language.Verilog.Color.operator, 0xff3d00
+# XML
+Editor.Language.XML.Color.tag, 0xb0151a
+Editor.Language.XML.Color.attribute, 0xff3d00
+Editor.Language.XML.Color.operator, 0x388e3c
+Editor.Language.XML.Color.value, 0x008e8e
+Editor.Language.XML.Color.doctype, 0x0082c9
+Editor.Language.XML.Color.ref, 0x700f98
+Editor.Language.XML.Color.pi-content, 0x700f98
+Editor.Language.XML.Color.cdata-section, 0xb27701
+

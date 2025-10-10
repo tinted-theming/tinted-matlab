@@ -1,0 +1,45 @@
+# Wryan color scheme for Matlab by FredHappyface (https://github.com/fredHappyface)
+# Apply this theme using the tinted_import function, available at 
+# https://github.com/tinted-theming/tinted-matlab 
+
+ColorsText, 0x768488
+ColorsBackground, 0x101010
+Colors_M_Keywords, 0x5e468c
+Colors_M_Comments, 0x505456
+Colors_M_Strings, 0x287373
+Colors_M_UnterminatedStrings, 0x462332
+Colors_M_SystemCommands, 0x31658c
+Colors_M_Errors, 0x8c4665
+Colors_HTML_HTMLLinks, 0x395573
+Colors_M_Warnings, 0x477ab3
+ColorsMLintAutoFixBackground, 0x3d3d3d
+Editor.VariableHighlighting.Color, 0x3d3d3d
+Editor.NonlocalVariableHighlighting.TextColor, 0x7c7c99
+Editorhighlight-lines, 0x505456
+Editorhighlight-caret-row-boolean-color, 0x3d3d3d
+EditorRightTextLimitLineColor, 0x3d3d3d
+# MuPAD
+Editor.Language.MuPAD.Color.operator, 0x7c7c99
+Editor.Language.MuPAD.Color.function, 0x395573
+Editor.Language.MuPAD.Color.constant, 0x287373
+# TLC
+Editor.Language.TLC.Color.Colors_M_Keywords, 0x5e468c
+# C/C++
+Editor.Language.C.Color.preprocessor, 0x7c7c99
+Editor.Language.C.Color.char-literal, 0x31658c
+# Java
+Editor.Language.Java.Color.char-literal, 0x31658c
+# VHDL
+Editor.Language.VHDL.Color.operator, 0x7c7c99
+# Verilog
+Editor.Language.Verilog.Color.operator, 0x7c7c99
+# XML
+Editor.Language.XML.Color.tag, 0x8c4665
+Editor.Language.XML.Color.attribute, 0x7c7c99
+Editor.Language.XML.Color.operator, 0x287373
+Editor.Language.XML.Color.value, 0x31658c
+Editor.Language.XML.Color.doctype, 0x395573
+Editor.Language.XML.Color.ref, 0x5e468c
+Editor.Language.XML.Color.pi-content, 0x5e468c
+Editor.Language.XML.Color.cdata-section, 0x462332
+

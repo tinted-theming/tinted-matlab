@@ -1,0 +1,45 @@
+# Challenger Deep color scheme for Matlab by FredHappyface (https://github.com/fredHappyface)
+# Apply this theme using the tinted_import function, available at 
+# https://github.com/tinted-theming/tinted-matlab 
+
+ColorsText, 0x929bb6
+ColorsBackground, 0x1e1c31
+Colors_M_Keywords, 0x906cff
+Colors_M_Comments, 0x6a6c8a
+Colors_M_Strings, 0x62d196
+Colors_M_UnterminatedStrings, 0x7f2a2c
+Colors_M_SystemCommands, 0x63f2f1
+Colors_M_Errors, 0xff5458
+Colors_HTML_HTMLLinks, 0x65b2ff
+Colors_M_Warnings, 0x91ddff
+ColorsMLintAutoFixBackground, 0x565575
+Editor.VariableHighlighting.Color, 0x565575
+Editor.NonlocalVariableHighlighting.TextColor, 0xffb378
+Editorhighlight-lines, 0x6a6c8a
+Editorhighlight-caret-row-boolean-color, 0x565575
+EditorRightTextLimitLineColor, 0x565575
+# MuPAD
+Editor.Language.MuPAD.Color.operator, 0xffb378
+Editor.Language.MuPAD.Color.function, 0x65b2ff
+Editor.Language.MuPAD.Color.constant, 0x62d196
+# TLC
+Editor.Language.TLC.Color.Colors_M_Keywords, 0x906cff
+# C/C++
+Editor.Language.C.Color.preprocessor, 0xffb378
+Editor.Language.C.Color.char-literal, 0x63f2f1
+# Java
+Editor.Language.Java.Color.char-literal, 0x63f2f1
+# VHDL
+Editor.Language.VHDL.Color.operator, 0xffb378
+# Verilog
+Editor.Language.Verilog.Color.operator, 0xffb378
+# XML
+Editor.Language.XML.Color.tag, 0xff5458
+Editor.Language.XML.Color.attribute, 0xffb378
+Editor.Language.XML.Color.operator, 0x62d196
+Editor.Language.XML.Color.value, 0x63f2f1
+Editor.Language.XML.Color.doctype, 0x65b2ff
+Editor.Language.XML.Color.ref, 0x906cff
+Editor.Language.XML.Color.pi-content, 0x906cff
+Editor.Language.XML.Color.cdata-section, 0x7f2a2c
+

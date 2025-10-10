@@ -1,0 +1,45 @@
+# summercamp color scheme for Matlab by zoe firi (zoefiri.github.io)
+# Apply this theme using the tinted_import function, available at 
+# https://github.com/tinted-theming/tinted-matlab 
+
+ColorsText, 0x736e55
+ColorsBackground, 0x1c1810
+Colors_M_Keywords, 0xff8080
+Colors_M_Comments, 0x504b38
+Colors_M_Strings, 0x5ceb5a
+Colors_M_UnterminatedStrings, 0xf69be7
+Colors_M_SystemCommands, 0x5aebbc
+Colors_M_Errors, 0xe35142
+Colors_HTML_HTMLLinks, 0x489bf0
+Colors_M_Warnings, 0xf2ff27
+ColorsMLintAutoFixBackground, 0x3a3527
+Editor.VariableHighlighting.Color, 0x3a3527
+Editor.NonlocalVariableHighlighting.TextColor, 0xfba11b
+Editorhighlight-lines, 0x504b38
+Editorhighlight-caret-row-boolean-color, 0x3a3527
+EditorRightTextLimitLineColor, 0x3a3527
+# MuPAD
+Editor.Language.MuPAD.Color.operator, 0xfba11b
+Editor.Language.MuPAD.Color.function, 0x489bf0
+Editor.Language.MuPAD.Color.constant, 0x5ceb5a
+# TLC
+Editor.Language.TLC.Color.Colors_M_Keywords, 0xff8080
+# C/C++
+Editor.Language.C.Color.preprocessor, 0xfba11b
+Editor.Language.C.Color.char-literal, 0x5aebbc
+# Java
+Editor.Language.Java.Color.char-literal, 0x5aebbc
+# VHDL
+Editor.Language.VHDL.Color.operator, 0xfba11b
+# Verilog
+Editor.Language.Verilog.Color.operator, 0xfba11b
+# XML
+Editor.Language.XML.Color.tag, 0xe35142
+Editor.Language.XML.Color.attribute, 0xfba11b
+Editor.Language.XML.Color.operator, 0x5ceb5a
+Editor.Language.XML.Color.value, 0x5aebbc
+Editor.Language.XML.Color.doctype, 0x489bf0
+Editor.Language.XML.Color.ref, 0xff8080
+Editor.Language.XML.Color.pi-content, 0xff8080
+Editor.Language.XML.Color.cdata-section, 0xf69be7
+

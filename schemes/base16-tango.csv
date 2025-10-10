@@ -1,0 +1,45 @@
+# Tango color scheme for Matlab by @Schnouki, based on the Tango Desktop Project
+# Apply this theme using the tinted_import function, available at 
+# https://github.com/tinted-theming/tinted-matlab 
+
+ColorsText, 0xd3d7cf
+ColorsBackground, 0x2e3436
+Colors_M_Keywords, 0x75507b
+Colors_M_Comments, 0x555753
+Colors_M_Strings, 0x4e9a06
+Colors_M_UnterminatedStrings, 0x34e2e2
+Colors_M_SystemCommands, 0x06989a
+Colors_M_Errors, 0xcc0000
+Colors_HTML_HTMLLinks, 0x3465a4
+Colors_M_Warnings, 0xc4a000
+ColorsMLintAutoFixBackground, 0xfce94f
+Editor.VariableHighlighting.Color, 0xfce94f
+Editor.NonlocalVariableHighlighting.TextColor, 0xef2929
+Editorhighlight-lines, 0x555753
+Editorhighlight-caret-row-boolean-color, 0xfce94f
+EditorRightTextLimitLineColor, 0xfce94f
+# MuPAD
+Editor.Language.MuPAD.Color.operator, 0xef2929
+Editor.Language.MuPAD.Color.function, 0x3465a4
+Editor.Language.MuPAD.Color.constant, 0x4e9a06
+# TLC
+Editor.Language.TLC.Color.Colors_M_Keywords, 0x75507b
+# C/C++
+Editor.Language.C.Color.preprocessor, 0xef2929
+Editor.Language.C.Color.char-literal, 0x06989a
+# Java
+Editor.Language.Java.Color.char-literal, 0x06989a
+# VHDL
+Editor.Language.VHDL.Color.operator, 0xef2929
+# Verilog
+Editor.Language.Verilog.Color.operator, 0xef2929
+# XML
+Editor.Language.XML.Color.tag, 0xcc0000
+Editor.Language.XML.Color.attribute, 0xef2929
+Editor.Language.XML.Color.operator, 0x4e9a06
+Editor.Language.XML.Color.value, 0x06989a
+Editor.Language.XML.Color.doctype, 0x3465a4
+Editor.Language.XML.Color.ref, 0x75507b
+Editor.Language.XML.Color.pi-content, 0x75507b
+Editor.Language.XML.Color.cdata-section, 0x34e2e2
+

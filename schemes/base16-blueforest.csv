@@ -1,0 +1,45 @@
+# Blue Forest color scheme for Matlab by alonsodomin (https://github.com/alonsodomin)
+# Apply this theme using the tinted_import function, available at 
+# https://github.com/tinted-theming/tinted-matlab 
+
+ColorsText, 0xffcc33
+ColorsBackground, 0x141f2e
+Colors_M_Keywords, 0x0099ff
+Colors_M_Comments, 0xa0ffa0
+Colors_M_Strings, 0x80ff80
+Colors_M_UnterminatedStrings, 0xe7e7e7
+Colors_M_SystemCommands, 0x80ff80
+Colors_M_Errors, 0xfffab1
+Colors_HTML_HTMLLinks, 0xa2cff5
+Colors_M_Warnings, 0x91ccff
+ColorsMLintAutoFixBackground, 0x273e5c
+Editor.VariableHighlighting.Color, 0x273e5c
+Editor.NonlocalVariableHighlighting.TextColor, 0xff8080
+Editorhighlight-lines, 0xa0ffa0
+Editorhighlight-caret-row-boolean-color, 0x273e5c
+EditorRightTextLimitLineColor, 0x273e5c
+# MuPAD
+Editor.Language.MuPAD.Color.operator, 0xff8080
+Editor.Language.MuPAD.Color.function, 0xa2cff5
+Editor.Language.MuPAD.Color.constant, 0x80ff80
+# TLC
+Editor.Language.TLC.Color.Colors_M_Keywords, 0x0099ff
+# C/C++
+Editor.Language.C.Color.preprocessor, 0xff8080
+Editor.Language.C.Color.char-literal, 0x80ff80
+# Java
+Editor.Language.Java.Color.char-literal, 0x80ff80
+# VHDL
+Editor.Language.VHDL.Color.operator, 0xff8080
+# Verilog
+Editor.Language.Verilog.Color.operator, 0xff8080
+# XML
+Editor.Language.XML.Color.tag, 0xfffab1
+Editor.Language.XML.Color.attribute, 0xff8080
+Editor.Language.XML.Color.operator, 0x80ff80
+Editor.Language.XML.Color.value, 0x80ff80
+Editor.Language.XML.Color.doctype, 0xa2cff5
+Editor.Language.XML.Color.ref, 0x0099ff
+Editor.Language.XML.Color.pi-content, 0x0099ff
+Editor.Language.XML.Color.cdata-section, 0xe7e7e7
+

@@ -1,0 +1,45 @@
+# Solar Flare color scheme for Matlab by Chuck Harmston (https://chuck.harmston.ch)
+# Apply this theme using the tinted_import function, available at 
+# https://github.com/tinted-theming/tinted-matlab 
+
+ColorsText, 0xa6afb8
+ColorsBackground, 0x18262f
+Colors_M_Keywords, 0xa363d5
+Colors_M_Comments, 0x667581
+Colors_M_Strings, 0x7cc844
+Colors_M_UnterminatedStrings, 0xd73c9a
+Colors_M_SystemCommands, 0x52cbb0
+Colors_M_Errors, 0xef5253
+Colors_HTML_HTMLLinks, 0x33b5e1
+Colors_M_Warnings, 0xe4b51c
+ColorsMLintAutoFixBackground, 0x586875
+Editor.VariableHighlighting.Color, 0x586875
+Editor.NonlocalVariableHighlighting.TextColor, 0xe66b2b
+Editorhighlight-lines, 0x667581
+Editorhighlight-caret-row-boolean-color, 0x586875
+EditorRightTextLimitLineColor, 0x586875
+# MuPAD
+Editor.Language.MuPAD.Color.operator, 0xe66b2b
+Editor.Language.MuPAD.Color.function, 0x33b5e1
+Editor.Language.MuPAD.Color.constant, 0x7cc844
+# TLC
+Editor.Language.TLC.Color.Colors_M_Keywords, 0xa363d5
+# C/C++
+Editor.Language.C.Color.preprocessor, 0xe66b2b
+Editor.Language.C.Color.char-literal, 0x52cbb0
+# Java
+Editor.Language.Java.Color.char-literal, 0x52cbb0
+# VHDL
+Editor.Language.VHDL.Color.operator, 0xe66b2b
+# Verilog
+Editor.Language.Verilog.Color.operator, 0xe66b2b
+# XML
+Editor.Language.XML.Color.tag, 0xef5253
+Editor.Language.XML.Color.attribute, 0xe66b2b
+Editor.Language.XML.Color.operator, 0x7cc844
+Editor.Language.XML.Color.value, 0x52cbb0
+Editor.Language.XML.Color.doctype, 0x33b5e1
+Editor.Language.XML.Color.ref, 0xa363d5
+Editor.Language.XML.Color.pi-content, 0xa363d5
+Editor.Language.XML.Color.cdata-section, 0xd73c9a
+

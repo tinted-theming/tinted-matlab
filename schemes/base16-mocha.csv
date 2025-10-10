@@ -1,0 +1,45 @@
+# Mocha color scheme for Matlab by Chris Kempson (http://chriskempson.com)
+# Apply this theme using the tinted_import function, available at 
+# https://github.com/tinted-theming/tinted-matlab 
+
+ColorsText, 0xd0c8c6
+ColorsBackground, 0x3b3228
+Colors_M_Keywords, 0xa89bb9
+Colors_M_Comments, 0x7e705a
+Colors_M_Strings, 0xbeb55b
+Colors_M_UnterminatedStrings, 0xbb9584
+Colors_M_SystemCommands, 0x7bbda4
+Colors_M_Errors, 0xcb6077
+Colors_HTML_HTMLLinks, 0x8ab3b5
+Colors_M_Warnings, 0xf4bc87
+ColorsMLintAutoFixBackground, 0x645240
+Editor.VariableHighlighting.Color, 0x645240
+Editor.NonlocalVariableHighlighting.TextColor, 0xd28b71
+Editorhighlight-lines, 0x7e705a
+Editorhighlight-caret-row-boolean-color, 0x645240
+EditorRightTextLimitLineColor, 0x645240
+# MuPAD
+Editor.Language.MuPAD.Color.operator, 0xd28b71
+Editor.Language.MuPAD.Color.function, 0x8ab3b5
+Editor.Language.MuPAD.Color.constant, 0xbeb55b
+# TLC
+Editor.Language.TLC.Color.Colors_M_Keywords, 0xa89bb9
+# C/C++
+Editor.Language.C.Color.preprocessor, 0xd28b71
+Editor.Language.C.Color.char-literal, 0x7bbda4
+# Java
+Editor.Language.Java.Color.char-literal, 0x7bbda4
+# VHDL
+Editor.Language.VHDL.Color.operator, 0xd28b71
+# Verilog
+Editor.Language.Verilog.Color.operator, 0xd28b71
+# XML
+Editor.Language.XML.Color.tag, 0xcb6077
+Editor.Language.XML.Color.attribute, 0xd28b71
+Editor.Language.XML.Color.operator, 0xbeb55b
+Editor.Language.XML.Color.value, 0x7bbda4
+Editor.Language.XML.Color.doctype, 0x8ab3b5
+Editor.Language.XML.Color.ref, 0xa89bb9
+Editor.Language.XML.Color.pi-content, 0xa89bb9
+Editor.Language.XML.Color.cdata-section, 0xbb9584
+

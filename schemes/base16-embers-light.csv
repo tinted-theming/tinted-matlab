@@ -1,0 +1,45 @@
+# Embers Light color scheme for Matlab by Jannik Siebert (https://github.com/janniks)
+# Apply this theme using the tinted_import function, available at 
+# https://github.com/tinted-theming/tinted-matlab 
+
+ColorsText, 0x323b43
+ColorsBackground, 0xd1d6db
+Colors_M_Keywords, 0x6d5782
+Colors_M_Comments, 0x75808a
+Colors_M_Strings, 0x6d8257
+Colors_M_UnterminatedStrings, 0x575782
+Colors_M_SystemCommands, 0x826d57
+Colors_M_Errors, 0x576d82
+Colors_HTML_HTMLLinks, 0x82576d
+Colors_M_Warnings, 0x57826d
+ColorsMLintAutoFixBackground, 0x909aa3
+Editor.VariableHighlighting.Color, 0x909aa3
+Editor.NonlocalVariableHighlighting.TextColor, 0x578282
+Editorhighlight-lines, 0x75808a
+Editorhighlight-caret-row-boolean-color, 0x909aa3
+EditorRightTextLimitLineColor, 0x909aa3
+# MuPAD
+Editor.Language.MuPAD.Color.operator, 0x578282
+Editor.Language.MuPAD.Color.function, 0x82576d
+Editor.Language.MuPAD.Color.constant, 0x6d8257
+# TLC
+Editor.Language.TLC.Color.Colors_M_Keywords, 0x6d5782
+# C/C++
+Editor.Language.C.Color.preprocessor, 0x578282
+Editor.Language.C.Color.char-literal, 0x826d57
+# Java
+Editor.Language.Java.Color.char-literal, 0x826d57
+# VHDL
+Editor.Language.VHDL.Color.operator, 0x578282
+# Verilog
+Editor.Language.Verilog.Color.operator, 0x578282
+# XML
+Editor.Language.XML.Color.tag, 0x576d82
+Editor.Language.XML.Color.attribute, 0x578282
+Editor.Language.XML.Color.operator, 0x6d8257
+Editor.Language.XML.Color.value, 0x826d57
+Editor.Language.XML.Color.doctype, 0x82576d
+Editor.Language.XML.Color.ref, 0x6d5782
+Editor.Language.XML.Color.pi-content, 0x6d5782
+Editor.Language.XML.Color.cdata-section, 0x575782
+

@@ -1,0 +1,45 @@
+# Horizon Dark color scheme for Matlab by Michaël Ball (http://github.com/michael-ball/)
+# Apply this theme using the tinted_import function, available at 
+# https://github.com/tinted-theming/tinted-matlab 
+
+ColorsText, 0xcbced0
+ColorsBackground, 0x1c1e26
+Colors_M_Keywords, 0xb072d1
+Colors_M_Comments, 0x6f6f70
+Colors_M_Strings, 0xefaf8e
+Colors_M_UnterminatedStrings, 0xe4a382
+Colors_M_SystemCommands, 0x24a8b4
+Colors_M_Errors, 0xe93c58
+Colors_HTML_HTMLLinks, 0xdf5273
+Colors_M_Warnings, 0xefb993
+ColorsMLintAutoFixBackground, 0x2e303e
+Editor.VariableHighlighting.Color, 0x2e303e
+Editor.NonlocalVariableHighlighting.TextColor, 0xe58d7d
+Editorhighlight-lines, 0x6f6f70
+Editorhighlight-caret-row-boolean-color, 0x2e303e
+EditorRightTextLimitLineColor, 0x2e303e
+# MuPAD
+Editor.Language.MuPAD.Color.operator, 0xe58d7d
+Editor.Language.MuPAD.Color.function, 0xdf5273
+Editor.Language.MuPAD.Color.constant, 0xefaf8e
+# TLC
+Editor.Language.TLC.Color.Colors_M_Keywords, 0xb072d1
+# C/C++
+Editor.Language.C.Color.preprocessor, 0xe58d7d
+Editor.Language.C.Color.char-literal, 0x24a8b4
+# Java
+Editor.Language.Java.Color.char-literal, 0x24a8b4
+# VHDL
+Editor.Language.VHDL.Color.operator, 0xe58d7d
+# Verilog
+Editor.Language.Verilog.Color.operator, 0xe58d7d
+# XML
+Editor.Language.XML.Color.tag, 0xe93c58
+Editor.Language.XML.Color.attribute, 0xe58d7d
+Editor.Language.XML.Color.operator, 0xefaf8e
+Editor.Language.XML.Color.value, 0x24a8b4
+Editor.Language.XML.Color.doctype, 0xdf5273
+Editor.Language.XML.Color.ref, 0xb072d1
+Editor.Language.XML.Color.pi-content, 0xb072d1
+Editor.Language.XML.Color.cdata-section, 0xe4a382
+

@@ -1,0 +1,45 @@
+# Chinoiserie color scheme for Matlab by Di Wang (https://cs.cmu.edu/~diw3)
+# Apply this theme using the tinted_import function, available at 
+# https://github.com/tinted-theming/tinted-matlab 
+
+ColorsText, 0x4a4035
+ColorsBackground, 0xffffff
+Colors_M_Keywords, 0xc08eaf
+Colors_M_Comments, 0x80766e
+Colors_M_Strings, 0x428675
+Colors_M_UnterminatedStrings, 0x945833
+Colors_M_SystemCommands, 0x2b73af
+Colors_M_Errors, 0xc04851
+Colors_HTML_HTMLLinks, 0x815c94
+Colors_M_Warnings, 0xd6a01d
+ColorsMLintAutoFixBackground, 0xd6d6d6
+Editor.VariableHighlighting.Color, 0xd6d6d6
+Editor.NonlocalVariableHighlighting.TextColor, 0xfb8b05
+Editorhighlight-lines, 0x80766e
+Editorhighlight-caret-row-boolean-color, 0xd6d6d6
+EditorRightTextLimitLineColor, 0xd6d6d6
+# MuPAD
+Editor.Language.MuPAD.Color.operator, 0xfb8b05
+Editor.Language.MuPAD.Color.function, 0x815c94
+Editor.Language.MuPAD.Color.constant, 0x428675
+# TLC
+Editor.Language.TLC.Color.Colors_M_Keywords, 0xc08eaf
+# C/C++
+Editor.Language.C.Color.preprocessor, 0xfb8b05
+Editor.Language.C.Color.char-literal, 0x2b73af
+# Java
+Editor.Language.Java.Color.char-literal, 0x2b73af
+# VHDL
+Editor.Language.VHDL.Color.operator, 0xfb8b05
+# Verilog
+Editor.Language.Verilog.Color.operator, 0xfb8b05
+# XML
+Editor.Language.XML.Color.tag, 0xc04851
+Editor.Language.XML.Color.attribute, 0xfb8b05
+Editor.Language.XML.Color.operator, 0x428675
+Editor.Language.XML.Color.value, 0x2b73af
+Editor.Language.XML.Color.doctype, 0x815c94
+Editor.Language.XML.Color.ref, 0xc08eaf
+Editor.Language.XML.Color.pi-content, 0xc08eaf
+Editor.Language.XML.Color.cdata-section, 0x945833
+

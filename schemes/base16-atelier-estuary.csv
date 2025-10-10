@@ -1,0 +1,45 @@
+# Atelier Estuary color scheme for Matlab by Bram de Haan (http://atelierbramdehaan.nl)
+# Apply this theme using the tinted_import function, available at 
+# https://github.com/tinted-theming/tinted-matlab 
+
+ColorsText, 0x929181
+ColorsBackground, 0x22221b
+Colors_M_Keywords, 0x5f9182
+Colors_M_Comments, 0x6c6b5a
+Colors_M_Strings, 0x7d9726
+Colors_M_UnterminatedStrings, 0x9d6c7c
+Colors_M_SystemCommands, 0x5b9d48
+Colors_M_Errors, 0xba6236
+Colors_HTML_HTMLLinks, 0x36a166
+Colors_M_Warnings, 0xa5980d
+ColorsMLintAutoFixBackground, 0x5f5e4e
+Editor.VariableHighlighting.Color, 0x5f5e4e
+Editor.NonlocalVariableHighlighting.TextColor, 0xae7313
+Editorhighlight-lines, 0x6c6b5a
+Editorhighlight-caret-row-boolean-color, 0x5f5e4e
+EditorRightTextLimitLineColor, 0x5f5e4e
+# MuPAD
+Editor.Language.MuPAD.Color.operator, 0xae7313
+Editor.Language.MuPAD.Color.function, 0x36a166
+Editor.Language.MuPAD.Color.constant, 0x7d9726
+# TLC
+Editor.Language.TLC.Color.Colors_M_Keywords, 0x5f9182
+# C/C++
+Editor.Language.C.Color.preprocessor, 0xae7313
+Editor.Language.C.Color.char-literal, 0x5b9d48
+# Java
+Editor.Language.Java.Color.char-literal, 0x5b9d48
+# VHDL
+Editor.Language.VHDL.Color.operator, 0xae7313
+# Verilog
+Editor.Language.Verilog.Color.operator, 0xae7313
+# XML
+Editor.Language.XML.Color.tag, 0xba6236
+Editor.Language.XML.Color.attribute, 0xae7313
+Editor.Language.XML.Color.operator, 0x7d9726
+Editor.Language.XML.Color.value, 0x5b9d48
+Editor.Language.XML.Color.doctype, 0x36a166
+Editor.Language.XML.Color.ref, 0x5f9182
+Editor.Language.XML.Color.pi-content, 0x5f9182
+Editor.Language.XML.Color.cdata-section, 0x9d6c7c
+

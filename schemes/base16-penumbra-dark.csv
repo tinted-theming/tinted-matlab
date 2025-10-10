@@ -1,0 +1,45 @@
+# Penumbra Dark color scheme for Matlab by Zachary Weiss (https://github.com/zacharyweiss)
+# Apply this theme using the tinted_import function, available at 
+# https://github.com/tinted-theming/tinted-matlab 
+
+ColorsText, 0xbebebe
+ColorsBackground, 0x24272b
+Colors_M_Keywords, 0x9481cc
+Colors_M_Comments, 0x636363
+Colors_M_Strings, 0x47a477
+Colors_M_UnterminatedStrings, 0xbc73a4
+Colors_M_SystemCommands, 0x00a2af
+Colors_M_Errors, 0xca736c
+Colors_HTML_HTMLLinks, 0x5794d0
+Colors_M_Warnings, 0x8d9741
+ColorsMLintAutoFixBackground, 0x3e4044
+Editor.VariableHighlighting.Color, 0x3e4044
+Editor.NonlocalVariableHighlighting.TextColor, 0xba823a
+Editorhighlight-lines, 0x636363
+Editorhighlight-caret-row-boolean-color, 0x3e4044
+EditorRightTextLimitLineColor, 0x3e4044
+# MuPAD
+Editor.Language.MuPAD.Color.operator, 0xba823a
+Editor.Language.MuPAD.Color.function, 0x5794d0
+Editor.Language.MuPAD.Color.constant, 0x47a477
+# TLC
+Editor.Language.TLC.Color.Colors_M_Keywords, 0x9481cc
+# C/C++
+Editor.Language.C.Color.preprocessor, 0xba823a
+Editor.Language.C.Color.char-literal, 0x00a2af
+# Java
+Editor.Language.Java.Color.char-literal, 0x00a2af
+# VHDL
+Editor.Language.VHDL.Color.operator, 0xba823a
+# Verilog
+Editor.Language.Verilog.Color.operator, 0xba823a
+# XML
+Editor.Language.XML.Color.tag, 0xca736c
+Editor.Language.XML.Color.attribute, 0xba823a
+Editor.Language.XML.Color.operator, 0x47a477
+Editor.Language.XML.Color.value, 0x00a2af
+Editor.Language.XML.Color.doctype, 0x5794d0
+Editor.Language.XML.Color.ref, 0x9481cc
+Editor.Language.XML.Color.pi-content, 0x9481cc
+Editor.Language.XML.Color.cdata-section, 0xbc73a4
+

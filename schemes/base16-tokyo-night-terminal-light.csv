@@ -1,0 +1,45 @@
+# Tokyo Night Terminal Light color scheme for Matlab by Michaël Ball
+# Apply this theme using the tinted_import function, available at 
+# https://github.com/tinted-theming/tinted-matlab 
+
+ColorsText, 0x4c505e
+ColorsBackground, 0xd5d6db
+Colors_M_Keywords, 0x5a4a78
+Colors_M_Comments, 0x9699a3
+Colors_M_Strings, 0x33635c
+Colors_M_UnterminatedStrings, 0x655259
+Colors_M_SystemCommands, 0x0f4b6e
+Colors_M_Errors, 0x8c4351
+Colors_HTML_HTMLLinks, 0x34548a
+Colors_M_Warnings, 0x8f5e15
+ColorsMLintAutoFixBackground, 0xdfe0e5
+Editor.VariableHighlighting.Color, 0xdfe0e5
+Editor.NonlocalVariableHighlighting.TextColor, 0x965027
+Editorhighlight-lines, 0x9699a3
+Editorhighlight-caret-row-boolean-color, 0xdfe0e5
+EditorRightTextLimitLineColor, 0xdfe0e5
+# MuPAD
+Editor.Language.MuPAD.Color.operator, 0x965027
+Editor.Language.MuPAD.Color.function, 0x34548a
+Editor.Language.MuPAD.Color.constant, 0x33635c
+# TLC
+Editor.Language.TLC.Color.Colors_M_Keywords, 0x5a4a78
+# C/C++
+Editor.Language.C.Color.preprocessor, 0x965027
+Editor.Language.C.Color.char-literal, 0x0f4b6e
+# Java
+Editor.Language.Java.Color.char-literal, 0x0f4b6e
+# VHDL
+Editor.Language.VHDL.Color.operator, 0x965027
+# Verilog
+Editor.Language.Verilog.Color.operator, 0x965027
+# XML
+Editor.Language.XML.Color.tag, 0x8c4351
+Editor.Language.XML.Color.attribute, 0x965027
+Editor.Language.XML.Color.operator, 0x33635c
+Editor.Language.XML.Color.value, 0x0f4b6e
+Editor.Language.XML.Color.doctype, 0x34548a
+Editor.Language.XML.Color.ref, 0x5a4a78
+Editor.Language.XML.Color.pi-content, 0x5a4a78
+Editor.Language.XML.Color.cdata-section, 0x655259
+

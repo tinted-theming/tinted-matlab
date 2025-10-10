@@ -1,0 +1,45 @@
+# Spaceduck color scheme for Matlab by Guillermo Rodriguez (https://github.com/pineapplegiant), packaged by Gabriel Fontes (https://github.com/Misterio77)
+# Apply this theme using the tinted_import function, available at 
+# https://github.com/tinted-theming/tinted-matlab 
+
+ColorsText, 0xecf0c1
+ColorsBackground, 0x16172d
+Colors_M_Keywords, 0xb3a1e6
+Colors_M_Comments, 0x686f9a
+Colors_M_Strings, 0x5ccc96
+Colors_M_UnterminatedStrings, 0xce6f8f
+Colors_M_SystemCommands, 0x00a3cc
+Colors_M_Errors, 0xe33400
+Colors_HTML_HTMLLinks, 0x7a5ccc
+Colors_M_Warnings, 0xf2ce00
+ColorsMLintAutoFixBackground, 0x30365f
+Editor.VariableHighlighting.Color, 0x30365f
+Editor.NonlocalVariableHighlighting.TextColor, 0xe39400
+Editorhighlight-lines, 0x686f9a
+Editorhighlight-caret-row-boolean-color, 0x30365f
+EditorRightTextLimitLineColor, 0x30365f
+# MuPAD
+Editor.Language.MuPAD.Color.operator, 0xe39400
+Editor.Language.MuPAD.Color.function, 0x7a5ccc
+Editor.Language.MuPAD.Color.constant, 0x5ccc96
+# TLC
+Editor.Language.TLC.Color.Colors_M_Keywords, 0xb3a1e6
+# C/C++
+Editor.Language.C.Color.preprocessor, 0xe39400
+Editor.Language.C.Color.char-literal, 0x00a3cc
+# Java
+Editor.Language.Java.Color.char-literal, 0x00a3cc
+# VHDL
+Editor.Language.VHDL.Color.operator, 0xe39400
+# Verilog
+Editor.Language.Verilog.Color.operator, 0xe39400
+# XML
+Editor.Language.XML.Color.tag, 0xe33400
+Editor.Language.XML.Color.attribute, 0xe39400
+Editor.Language.XML.Color.operator, 0x5ccc96
+Editor.Language.XML.Color.value, 0x00a3cc
+Editor.Language.XML.Color.doctype, 0x7a5ccc
+Editor.Language.XML.Color.ref, 0xb3a1e6
+Editor.Language.XML.Color.pi-content, 0xb3a1e6
+Editor.Language.XML.Color.cdata-section, 0xce6f8f
+

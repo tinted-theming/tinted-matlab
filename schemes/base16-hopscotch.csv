@@ -1,0 +1,45 @@
+# Hopscotch color scheme for Matlab by Jan T. Sott
+# Apply this theme using the tinted_import function, available at 
+# https://github.com/tinted-theming/tinted-matlab 
+
+ColorsText, 0xb9b5b8
+ColorsBackground, 0x322931
+Colors_M_Keywords, 0xc85e7c
+Colors_M_Comments, 0x797379
+Colors_M_Strings, 0x8fc13e
+Colors_M_UnterminatedStrings, 0xb33508
+Colors_M_SystemCommands, 0x149b93
+Colors_M_Errors, 0xdd464c
+Colors_HTML_HTMLLinks, 0x1290bf
+Colors_M_Warnings, 0xfdcc59
+ColorsMLintAutoFixBackground, 0x5c545b
+Editor.VariableHighlighting.Color, 0x5c545b
+Editor.NonlocalVariableHighlighting.TextColor, 0xfd8b19
+Editorhighlight-lines, 0x797379
+Editorhighlight-caret-row-boolean-color, 0x5c545b
+EditorRightTextLimitLineColor, 0x5c545b
+# MuPAD
+Editor.Language.MuPAD.Color.operator, 0xfd8b19
+Editor.Language.MuPAD.Color.function, 0x1290bf
+Editor.Language.MuPAD.Color.constant, 0x8fc13e
+# TLC
+Editor.Language.TLC.Color.Colors_M_Keywords, 0xc85e7c
+# C/C++
+Editor.Language.C.Color.preprocessor, 0xfd8b19
+Editor.Language.C.Color.char-literal, 0x149b93
+# Java
+Editor.Language.Java.Color.char-literal, 0x149b93
+# VHDL
+Editor.Language.VHDL.Color.operator, 0xfd8b19
+# Verilog
+Editor.Language.Verilog.Color.operator, 0xfd8b19
+# XML
+Editor.Language.XML.Color.tag, 0xdd464c
+Editor.Language.XML.Color.attribute, 0xfd8b19
+Editor.Language.XML.Color.operator, 0x8fc13e
+Editor.Language.XML.Color.value, 0x149b93
+Editor.Language.XML.Color.doctype, 0x1290bf
+Editor.Language.XML.Color.ref, 0xc85e7c
+Editor.Language.XML.Color.pi-content, 0xc85e7c
+Editor.Language.XML.Color.cdata-section, 0xb33508
+

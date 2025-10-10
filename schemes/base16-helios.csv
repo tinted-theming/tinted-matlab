@@ -1,0 +1,45 @@
+# Helios color scheme for Matlab by Alex Meyer (https://github.com/reyemxela)
+# Apply this theme using the tinted_import function, available at 
+# https://github.com/tinted-theming/tinted-matlab 
+
+ColorsText, 0xd5d5d5
+ColorsBackground, 0x1d2021
+Colors_M_Keywords, 0xbe4264
+Colors_M_Comments, 0x6f7579
+Colors_M_Strings, 0x88b92d
+Colors_M_UnterminatedStrings, 0xc85e0d
+Colors_M_SystemCommands, 0x1ba595
+Colors_M_Errors, 0xd72638
+Colors_HTML_HTMLLinks, 0x1e8bac
+Colors_M_Warnings, 0xf19d1a
+ColorsMLintAutoFixBackground, 0x53585b
+Editor.VariableHighlighting.Color, 0x53585b
+Editor.NonlocalVariableHighlighting.TextColor, 0xeb8413
+Editorhighlight-lines, 0x6f7579
+Editorhighlight-caret-row-boolean-color, 0x53585b
+EditorRightTextLimitLineColor, 0x53585b
+# MuPAD
+Editor.Language.MuPAD.Color.operator, 0xeb8413
+Editor.Language.MuPAD.Color.function, 0x1e8bac
+Editor.Language.MuPAD.Color.constant, 0x88b92d
+# TLC
+Editor.Language.TLC.Color.Colors_M_Keywords, 0xbe4264
+# C/C++
+Editor.Language.C.Color.preprocessor, 0xeb8413
+Editor.Language.C.Color.char-literal, 0x1ba595
+# Java
+Editor.Language.Java.Color.char-literal, 0x1ba595
+# VHDL
+Editor.Language.VHDL.Color.operator, 0xeb8413
+# Verilog
+Editor.Language.Verilog.Color.operator, 0xeb8413
+# XML
+Editor.Language.XML.Color.tag, 0xd72638
+Editor.Language.XML.Color.attribute, 0xeb8413
+Editor.Language.XML.Color.operator, 0x88b92d
+Editor.Language.XML.Color.value, 0x1ba595
+Editor.Language.XML.Color.doctype, 0x1e8bac
+Editor.Language.XML.Color.ref, 0xbe4264
+Editor.Language.XML.Color.pi-content, 0xbe4264
+Editor.Language.XML.Color.cdata-section, 0xc85e0d
+

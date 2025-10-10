@@ -1,0 +1,45 @@
+# Front End Delight color scheme for Matlab by FredHappyface (https://github.com/fredHappyface)
+# Apply this theme using the tinted_import function, available at 
+# https://github.com/tinted-theming/tinted-matlab 
+
+ColorsText, 0x98ac9c
+ColorsBackground, 0x1b1b1d
+Colors_M_Keywords, 0xf02d4e
+Colors_M_Comments, 0x71ac7c
+Colors_M_Strings, 0x565746
+Colors_M_UnterminatedStrings, 0x7c280d
+Colors_M_SystemCommands, 0x3ba0a5
+Colors_M_Errors, 0xf8501a
+Colors_HTML_HTMLLinks, 0x2c70b7
+Colors_M_Warnings, 0x3393c9
+ColorsMLintAutoFixBackground, 0x5eac6c
+Editor.VariableHighlighting.Color, 0x5eac6c
+Editor.NonlocalVariableHighlighting.TextColor, 0xf9761d
+Editorhighlight-lines, 0x71ac7c
+Editorhighlight-caret-row-boolean-color, 0x5eac6c
+EditorRightTextLimitLineColor, 0x5eac6c
+# MuPAD
+Editor.Language.MuPAD.Color.operator, 0xf9761d
+Editor.Language.MuPAD.Color.function, 0x2c70b7
+Editor.Language.MuPAD.Color.constant, 0x565746
+# TLC
+Editor.Language.TLC.Color.Colors_M_Keywords, 0xf02d4e
+# C/C++
+Editor.Language.C.Color.preprocessor, 0xf9761d
+Editor.Language.C.Color.char-literal, 0x3ba0a5
+# Java
+Editor.Language.Java.Color.char-literal, 0x3ba0a5
+# VHDL
+Editor.Language.VHDL.Color.operator, 0xf9761d
+# Verilog
+Editor.Language.Verilog.Color.operator, 0xf9761d
+# XML
+Editor.Language.XML.Color.tag, 0xf8501a
+Editor.Language.XML.Color.attribute, 0xf9761d
+Editor.Language.XML.Color.operator, 0x565746
+Editor.Language.XML.Color.value, 0x3ba0a5
+Editor.Language.XML.Color.doctype, 0x2c70b7
+Editor.Language.XML.Color.ref, 0xf02d4e
+Editor.Language.XML.Color.pi-content, 0xf02d4e
+Editor.Language.XML.Color.cdata-section, 0x7c280d
+

@@ -1,0 +1,45 @@
+# Jackie Brown color scheme for Matlab by FredHappyface (https://github.com/fredHappyface)
+# Apply this theme using the tinted_import function, available at 
+# https://github.com/tinted-theming/tinted-matlab 
+
+ColorsText, 0xa8a8a8
+ColorsBackground, 0x2c1c15
+Colors_M_Keywords, 0xcf5ec0
+Colors_M_Comments, 0x7c7c7c
+Colors_M_Strings, 0x2baf2b
+Colors_M_UnterminatedStrings, 0x772b1a
+Colors_M_SystemCommands, 0x00acee
+Colors_M_Errors, 0xef5734
+Colors_HTML_HTMLLinks, 0x246db2
+Colors_M_Warnings, 0x0000ff
+ColorsMLintAutoFixBackground, 0x666666
+Editor.VariableHighlighting.Color, 0x666666
+Editor.NonlocalVariableHighlighting.TextColor, 0xbdbe00
+Editorhighlight-lines, 0x7c7c7c
+Editorhighlight-caret-row-boolean-color, 0x666666
+EditorRightTextLimitLineColor, 0x666666
+# MuPAD
+Editor.Language.MuPAD.Color.operator, 0xbdbe00
+Editor.Language.MuPAD.Color.function, 0x246db2
+Editor.Language.MuPAD.Color.constant, 0x2baf2b
+# TLC
+Editor.Language.TLC.Color.Colors_M_Keywords, 0xcf5ec0
+# C/C++
+Editor.Language.C.Color.preprocessor, 0xbdbe00
+Editor.Language.C.Color.char-literal, 0x00acee
+# Java
+Editor.Language.Java.Color.char-literal, 0x00acee
+# VHDL
+Editor.Language.VHDL.Color.operator, 0xbdbe00
+# Verilog
+Editor.Language.Verilog.Color.operator, 0xbdbe00
+# XML
+Editor.Language.XML.Color.tag, 0xef5734
+Editor.Language.XML.Color.attribute, 0xbdbe00
+Editor.Language.XML.Color.operator, 0x2baf2b
+Editor.Language.XML.Color.value, 0x00acee
+Editor.Language.XML.Color.doctype, 0x246db2
+Editor.Language.XML.Color.ref, 0xcf5ec0
+Editor.Language.XML.Color.pi-content, 0xcf5ec0
+Editor.Language.XML.Color.cdata-section, 0x772b1a
+

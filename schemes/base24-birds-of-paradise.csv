@@ -1,0 +1,45 @@
+# Birds Of Paradise color scheme for Matlab by FredHappyface (https://github.com/fredHappyface)
+# Apply this theme using the tinted_import function, available at 
+# https://github.com/tinted-theming/tinted-matlab 
+
+ColorsText, 0xcdbe9b
+ColorsBackground, 0x2a1e1d
+Colors_M_Keywords, 0xab80a6
+Colors_M_Comments, 0xab8664
+Colors_M_Strings, 0x6ba08a
+Colors_M_UnterminatedStrings, 0x5f1613
+Colors_M_SystemCommands, 0x74a5ac
+Colors_M_Errors, 0xbe2d26
+Colors_HTML_HTMLLinks, 0x5a86ac
+Colors_M_Warnings, 0xb8d3ed
+ColorsMLintAutoFixBackground, 0x9a6b49
+Editor.VariableHighlighting.Color, 0x9a6b49
+Editor.NonlocalVariableHighlighting.TextColor, 0xe99c29
+Editorhighlight-lines, 0xab8664
+Editorhighlight-caret-row-boolean-color, 0x9a6b49
+EditorRightTextLimitLineColor, 0x9a6b49
+# MuPAD
+Editor.Language.MuPAD.Color.operator, 0xe99c29
+Editor.Language.MuPAD.Color.function, 0x5a86ac
+Editor.Language.MuPAD.Color.constant, 0x6ba08a
+# TLC
+Editor.Language.TLC.Color.Colors_M_Keywords, 0xab80a6
+# C/C++
+Editor.Language.C.Color.preprocessor, 0xe99c29
+Editor.Language.C.Color.char-literal, 0x74a5ac
+# Java
+Editor.Language.Java.Color.char-literal, 0x74a5ac
+# VHDL
+Editor.Language.VHDL.Color.operator, 0xe99c29
+# Verilog
+Editor.Language.Verilog.Color.operator, 0xe99c29
+# XML
+Editor.Language.XML.Color.tag, 0xbe2d26
+Editor.Language.XML.Color.attribute, 0xe99c29
+Editor.Language.XML.Color.operator, 0x6ba08a
+Editor.Language.XML.Color.value, 0x74a5ac
+Editor.Language.XML.Color.doctype, 0x5a86ac
+Editor.Language.XML.Color.ref, 0xab80a6
+Editor.Language.XML.Color.pi-content, 0xab80a6
+Editor.Language.XML.Color.cdata-section, 0x5f1613
+

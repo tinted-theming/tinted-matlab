@@ -1,0 +1,45 @@
+# Adventure Time color scheme for Matlab by FredHappyface (https://github.com/fredHappyface)
+# Apply this theme using the tinted_import function, available at 
+# https://github.com/tinted-theming/tinted-matlab 
+
+ColorsText, 0xcdc3bf
+ColorsBackground, 0x1e1c44
+Colors_M_Keywords, 0x665992
+Colors_M_Comments, 0x7893bf
+Colors_M_Strings, 0x49b117
+Colors_M_UnterminatedStrings, 0x5e0009
+Colors_M_SystemCommands, 0x6fa497
+Colors_M_Errors, 0xbc0013
+Colors_HTML_HTMLLinks, 0x0f49c6
+Colors_M_Warnings, 0x1896c6
+ColorsMLintAutoFixBackground, 0x4e7bbf
+Editor.VariableHighlighting.Color, 0x4e7bbf
+Editor.NonlocalVariableHighlighting.TextColor, 0xe6741d
+Editorhighlight-lines, 0x7893bf
+Editorhighlight-caret-row-boolean-color, 0x4e7bbf
+EditorRightTextLimitLineColor, 0x4e7bbf
+# MuPAD
+Editor.Language.MuPAD.Color.operator, 0xe6741d
+Editor.Language.MuPAD.Color.function, 0x0f49c6
+Editor.Language.MuPAD.Color.constant, 0x49b117
+# TLC
+Editor.Language.TLC.Color.Colors_M_Keywords, 0x665992
+# C/C++
+Editor.Language.C.Color.preprocessor, 0xe6741d
+Editor.Language.C.Color.char-literal, 0x6fa497
+# Java
+Editor.Language.Java.Color.char-literal, 0x6fa497
+# VHDL
+Editor.Language.VHDL.Color.operator, 0xe6741d
+# Verilog
+Editor.Language.Verilog.Color.operator, 0xe6741d
+# XML
+Editor.Language.XML.Color.tag, 0xbc0013
+Editor.Language.XML.Color.attribute, 0xe6741d
+Editor.Language.XML.Color.operator, 0x49b117
+Editor.Language.XML.Color.value, 0x6fa497
+Editor.Language.XML.Color.doctype, 0x0f49c6
+Editor.Language.XML.Color.ref, 0x665992
+Editor.Language.XML.Color.pi-content, 0x665992
+Editor.Language.XML.Color.cdata-section, 0x5e0009
+

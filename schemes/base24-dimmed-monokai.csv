@@ -1,0 +1,45 @@
+# Dimmed Monokai color scheme for Matlab by FredHappyface (https://github.com/fredHappyface)
+# Apply this theme using the tinted_import function, available at 
+# https://github.com/tinted-theming/tinted-matlab 
+
+ColorsText, 0xacafac
+ColorsBackground, 0x1e1e1e
+Colors_M_Keywords, 0x855b8d
+Colors_M_Comments, 0x949593
+Colors_M_Strings, 0x869a3a
+Colors_M_UnterminatedStrings, 0x5f1f24
+Colors_M_SystemCommands, 0x568ea3
+Colors_M_Errors, 0xbe3e48
+Colors_HTML_HTMLLinks, 0x4e76a1
+Colors_M_Warnings, 0x176ce3
+ColorsMLintAutoFixBackground, 0x888987
+Editor.VariableHighlighting.Color, 0x888987
+Editor.NonlocalVariableHighlighting.TextColor, 0xc4a535
+Editorhighlight-lines, 0x949593
+Editorhighlight-caret-row-boolean-color, 0x888987
+EditorRightTextLimitLineColor, 0x888987
+# MuPAD
+Editor.Language.MuPAD.Color.operator, 0xc4a535
+Editor.Language.MuPAD.Color.function, 0x4e76a1
+Editor.Language.MuPAD.Color.constant, 0x869a3a
+# TLC
+Editor.Language.TLC.Color.Colors_M_Keywords, 0x855b8d
+# C/C++
+Editor.Language.C.Color.preprocessor, 0xc4a535
+Editor.Language.C.Color.char-literal, 0x568ea3
+# Java
+Editor.Language.Java.Color.char-literal, 0x568ea3
+# VHDL
+Editor.Language.VHDL.Color.operator, 0xc4a535
+# Verilog
+Editor.Language.Verilog.Color.operator, 0xc4a535
+# XML
+Editor.Language.XML.Color.tag, 0xbe3e48
+Editor.Language.XML.Color.attribute, 0xc4a535
+Editor.Language.XML.Color.operator, 0x869a3a
+Editor.Language.XML.Color.value, 0x568ea3
+Editor.Language.XML.Color.doctype, 0x4e76a1
+Editor.Language.XML.Color.ref, 0x855b8d
+Editor.Language.XML.Color.pi-content, 0x855b8d
+Editor.Language.XML.Color.cdata-section, 0x5f1f24
+

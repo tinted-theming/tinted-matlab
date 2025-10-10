@@ -1,0 +1,45 @@
+# Bluloco Light color scheme for Matlab by FredHappyface (https://github.com/fredHappyface)
+# Apply this theme using the tinted_import function, available at 
+# https://github.com/tinted-theming/tinted-matlab 
+
+ColorsText, 0x38383a
+ColorsBackground, 0xf7f7f7
+Colors_M_Keywords, 0x6d1bed
+Colors_M_Comments, 0xa6a7ae
+Colors_M_Strings, 0x208839
+Colors_M_UnterminatedStrings, 0x640620
+Colors_M_SystemCommands, 0x1e4d7a
+Colors_M_Errors, 0xc80d41
+Colors_HTML_HTMLLinks, 0x1d44dd
+Colors_M_Warnings, 0x1085d9
+ColorsMLintAutoFixBackground, 0xdddee8
+Editor.VariableHighlighting.Color, 0xdddee8
+Editor.NonlocalVariableHighlighting.TextColor, 0xd44d16
+Editorhighlight-lines, 0xa6a7ae
+Editorhighlight-caret-row-boolean-color, 0xdddee8
+EditorRightTextLimitLineColor, 0xdddee8
+# MuPAD
+Editor.Language.MuPAD.Color.operator, 0xd44d16
+Editor.Language.MuPAD.Color.function, 0x1d44dd
+Editor.Language.MuPAD.Color.constant, 0x208839
+# TLC
+Editor.Language.TLC.Color.Colors_M_Keywords, 0x6d1bed
+# C/C++
+Editor.Language.C.Color.preprocessor, 0xd44d16
+Editor.Language.C.Color.char-literal, 0x1e4d7a
+# Java
+Editor.Language.Java.Color.char-literal, 0x1e4d7a
+# VHDL
+Editor.Language.VHDL.Color.operator, 0xd44d16
+# Verilog
+Editor.Language.Verilog.Color.operator, 0xd44d16
+# XML
+Editor.Language.XML.Color.tag, 0xc80d41
+Editor.Language.XML.Color.attribute, 0xd44d16
+Editor.Language.XML.Color.operator, 0x208839
+Editor.Language.XML.Color.value, 0x1e4d7a
+Editor.Language.XML.Color.doctype, 0x1d44dd
+Editor.Language.XML.Color.ref, 0x6d1bed
+Editor.Language.XML.Color.pi-content, 0x6d1bed
+Editor.Language.XML.Color.cdata-section, 0x640620
+

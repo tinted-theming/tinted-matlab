@@ -1,0 +1,45 @@
+# Gotham color scheme for Matlab by Andrea Leopardi (arranged by Brett Jones)
+# Apply this theme using the tinted_import function, available at 
+# https://github.com/tinted-theming/tinted-matlab 
+
+ColorsText, 0x599cab
+ColorsBackground, 0x0c1014
+Colors_M_Keywords, 0x888ca6
+Colors_M_Comments, 0x0a3749
+Colors_M_Strings, 0x33859e
+Colors_M_UnterminatedStrings, 0x4e5166
+Colors_M_SystemCommands, 0x2aa889
+Colors_M_Errors, 0xc23127
+Colors_HTML_HTMLLinks, 0x195466
+Colors_M_Warnings, 0xedb443
+ColorsMLintAutoFixBackground, 0x091f2e
+Editor.VariableHighlighting.Color, 0x091f2e
+Editor.NonlocalVariableHighlighting.TextColor, 0xd26937
+Editorhighlight-lines, 0x0a3749
+Editorhighlight-caret-row-boolean-color, 0x091f2e
+EditorRightTextLimitLineColor, 0x091f2e
+# MuPAD
+Editor.Language.MuPAD.Color.operator, 0xd26937
+Editor.Language.MuPAD.Color.function, 0x195466
+Editor.Language.MuPAD.Color.constant, 0x33859e
+# TLC
+Editor.Language.TLC.Color.Colors_M_Keywords, 0x888ca6
+# C/C++
+Editor.Language.C.Color.preprocessor, 0xd26937
+Editor.Language.C.Color.char-literal, 0x2aa889
+# Java
+Editor.Language.Java.Color.char-literal, 0x2aa889
+# VHDL
+Editor.Language.VHDL.Color.operator, 0xd26937
+# Verilog
+Editor.Language.Verilog.Color.operator, 0xd26937
+# XML
+Editor.Language.XML.Color.tag, 0xc23127
+Editor.Language.XML.Color.attribute, 0xd26937
+Editor.Language.XML.Color.operator, 0x33859e
+Editor.Language.XML.Color.value, 0x2aa889
+Editor.Language.XML.Color.doctype, 0x195466
+Editor.Language.XML.Color.ref, 0x888ca6
+Editor.Language.XML.Color.pi-content, 0x888ca6
+Editor.Language.XML.Color.cdata-section, 0x4e5166
+

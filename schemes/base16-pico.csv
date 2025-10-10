@@ -1,0 +1,45 @@
+# Pico color scheme for Matlab by PICO-8 (http://www.lexaloffle.com/pico-8.php)
+# Apply this theme using the tinted_import function, available at 
+# https://github.com/tinted-theming/tinted-matlab 
+
+ColorsText, 0x5f574f
+ColorsBackground, 0x000000
+Colors_M_Keywords, 0xff77a8
+Colors_M_Comments, 0x008751
+Colors_M_Strings, 0x00e756
+Colors_M_UnterminatedStrings, 0xffccaa
+Colors_M_SystemCommands, 0x29adff
+Colors_M_Errors, 0xff004d
+Colors_HTML_HTMLLinks, 0x83769c
+Colors_M_Warnings, 0xfff024
+ColorsMLintAutoFixBackground, 0x7e2553
+Editor.VariableHighlighting.Color, 0x7e2553
+Editor.NonlocalVariableHighlighting.TextColor, 0xffa300
+Editorhighlight-lines, 0x008751
+Editorhighlight-caret-row-boolean-color, 0x7e2553
+EditorRightTextLimitLineColor, 0x7e2553
+# MuPAD
+Editor.Language.MuPAD.Color.operator, 0xffa300
+Editor.Language.MuPAD.Color.function, 0x83769c
+Editor.Language.MuPAD.Color.constant, 0x00e756
+# TLC
+Editor.Language.TLC.Color.Colors_M_Keywords, 0xff77a8
+# C/C++
+Editor.Language.C.Color.preprocessor, 0xffa300
+Editor.Language.C.Color.char-literal, 0x29adff
+# Java
+Editor.Language.Java.Color.char-literal, 0x29adff
+# VHDL
+Editor.Language.VHDL.Color.operator, 0xffa300
+# Verilog
+Editor.Language.Verilog.Color.operator, 0xffa300
+# XML
+Editor.Language.XML.Color.tag, 0xff004d
+Editor.Language.XML.Color.attribute, 0xffa300
+Editor.Language.XML.Color.operator, 0x00e756
+Editor.Language.XML.Color.value, 0x29adff
+Editor.Language.XML.Color.doctype, 0x83769c
+Editor.Language.XML.Color.ref, 0xff77a8
+Editor.Language.XML.Color.pi-content, 0xff77a8
+Editor.Language.XML.Color.cdata-section, 0xffccaa
+

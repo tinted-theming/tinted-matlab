@@ -1,0 +1,45 @@
+# Rippedcasts color scheme for Matlab by FredHappyface (https://github.com/fredHappyface)
+# Apply this theme using the tinted_import function, available at 
+# https://github.com/tinted-theming/tinted-matlab 
+
+ColorsText, 0xa8a8a8
+ColorsBackground, 0x2b2b2b
+Colors_M_Keywords, 0xff73fd
+Colors_M_Comments, 0x7c7c7c
+Colors_M_Strings, 0xa7ff60
+Colors_M_UnterminatedStrings, 0x66574a
+Colors_M_SystemCommands, 0x59647e
+Colors_M_Errors, 0xcdaf95
+Colors_HTML_HTMLLinks, 0x75a5b0
+Colors_M_Warnings, 0x86bdc9
+ColorsMLintAutoFixBackground, 0x666666
+Editor.VariableHighlighting.Color, 0x666666
+Editor.NonlocalVariableHighlighting.TextColor, 0xbfbb1f
+Editorhighlight-lines, 0x7c7c7c
+Editorhighlight-caret-row-boolean-color, 0x666666
+EditorRightTextLimitLineColor, 0x666666
+# MuPAD
+Editor.Language.MuPAD.Color.operator, 0xbfbb1f
+Editor.Language.MuPAD.Color.function, 0x75a5b0
+Editor.Language.MuPAD.Color.constant, 0xa7ff60
+# TLC
+Editor.Language.TLC.Color.Colors_M_Keywords, 0xff73fd
+# C/C++
+Editor.Language.C.Color.preprocessor, 0xbfbb1f
+Editor.Language.C.Color.char-literal, 0x59647e
+# Java
+Editor.Language.Java.Color.char-literal, 0x59647e
+# VHDL
+Editor.Language.VHDL.Color.operator, 0xbfbb1f
+# Verilog
+Editor.Language.Verilog.Color.operator, 0xbfbb1f
+# XML
+Editor.Language.XML.Color.tag, 0xcdaf95
+Editor.Language.XML.Color.attribute, 0xbfbb1f
+Editor.Language.XML.Color.operator, 0xa7ff60
+Editor.Language.XML.Color.value, 0x59647e
+Editor.Language.XML.Color.doctype, 0x75a5b0
+Editor.Language.XML.Color.ref, 0xff73fd
+Editor.Language.XML.Color.pi-content, 0xff73fd
+Editor.Language.XML.Color.cdata-section, 0x66574a
+

@@ -1,0 +1,45 @@
+# Mission Brogue color scheme for Matlab by Thomas Leon Highbaugh
+# Apply this theme using the tinted_import function, available at 
+# https://github.com/tinted-theming/tinted-matlab 
+
+ColorsText, 0x93a5b4
+ColorsBackground, 0x283139
+Colors_M_Keywords, 0xccb7db
+Colors_M_Comments, 0x60778a
+Colors_M_Strings, 0x8cd4b0
+Colors_M_UnterminatedStrings, 0x8e9ecb
+Colors_M_SystemCommands, 0x93dfec
+Colors_M_Errors, 0xefa9a9
+Colors_HTML_HTMLLinks, 0xa2c5fd
+Colors_M_Warnings, 0xe0b88a
+ColorsMLintAutoFixBackground, 0x4d606f
+Editor.VariableHighlighting.Color, 0x4d606f
+Editor.NonlocalVariableHighlighting.TextColor, 0xf2db78
+Editorhighlight-lines, 0x60778a
+Editorhighlight-caret-row-boolean-color, 0x4d606f
+EditorRightTextLimitLineColor, 0x4d606f
+# MuPAD
+Editor.Language.MuPAD.Color.operator, 0xf2db78
+Editor.Language.MuPAD.Color.function, 0xa2c5fd
+Editor.Language.MuPAD.Color.constant, 0x8cd4b0
+# TLC
+Editor.Language.TLC.Color.Colors_M_Keywords, 0xccb7db
+# C/C++
+Editor.Language.C.Color.preprocessor, 0xf2db78
+Editor.Language.C.Color.char-literal, 0x93dfec
+# Java
+Editor.Language.Java.Color.char-literal, 0x93dfec
+# VHDL
+Editor.Language.VHDL.Color.operator, 0xf2db78
+# Verilog
+Editor.Language.Verilog.Color.operator, 0xf2db78
+# XML
+Editor.Language.XML.Color.tag, 0xefa9a9
+Editor.Language.XML.Color.attribute, 0xf2db78
+Editor.Language.XML.Color.operator, 0x8cd4b0
+Editor.Language.XML.Color.value, 0x93dfec
+Editor.Language.XML.Color.doctype, 0xa2c5fd
+Editor.Language.XML.Color.ref, 0xccb7db
+Editor.Language.XML.Color.pi-content, 0xccb7db
+Editor.Language.XML.Color.cdata-section, 0x8e9ecb
+

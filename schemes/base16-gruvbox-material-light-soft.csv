@@ -1,0 +1,45 @@
+# Gruvbox Material Light, Soft color scheme for Matlab by Mayush Kumar (https://github.com/MayushKumar), sainnhe (https://github.com/sainnhe/gruvbox-material-vscode)
+# Apply this theme using the tinted_import function, available at 
+# https://github.com/tinted-theming/tinted-matlab 
+
+ColorsText, 0x654735
+ColorsBackground, 0xf2e5bc
+Colors_M_Keywords, 0x945e80
+Colors_M_Comments, 0xa89984
+Colors_M_Strings, 0x6c782e
+Colors_M_UnterminatedStrings, 0xe78a4e
+Colors_M_SystemCommands, 0x4c7a5d
+Colors_M_Errors, 0xc14a4a
+Colors_HTML_HTMLLinks, 0x45707a
+Colors_M_Warnings, 0xb47109
+ColorsMLintAutoFixBackground, 0xc9b99a
+Editor.VariableHighlighting.Color, 0xc9b99a
+Editor.NonlocalVariableHighlighting.TextColor, 0xc35e0a
+Editorhighlight-lines, 0xa89984
+Editorhighlight-caret-row-boolean-color, 0xc9b99a
+EditorRightTextLimitLineColor, 0xc9b99a
+# MuPAD
+Editor.Language.MuPAD.Color.operator, 0xc35e0a
+Editor.Language.MuPAD.Color.function, 0x45707a
+Editor.Language.MuPAD.Color.constant, 0x6c782e
+# TLC
+Editor.Language.TLC.Color.Colors_M_Keywords, 0x945e80
+# C/C++
+Editor.Language.C.Color.preprocessor, 0xc35e0a
+Editor.Language.C.Color.char-literal, 0x4c7a5d
+# Java
+Editor.Language.Java.Color.char-literal, 0x4c7a5d
+# VHDL
+Editor.Language.VHDL.Color.operator, 0xc35e0a
+# Verilog
+Editor.Language.Verilog.Color.operator, 0xc35e0a
+# XML
+Editor.Language.XML.Color.tag, 0xc14a4a
+Editor.Language.XML.Color.attribute, 0xc35e0a
+Editor.Language.XML.Color.operator, 0x6c782e
+Editor.Language.XML.Color.value, 0x4c7a5d
+Editor.Language.XML.Color.doctype, 0x45707a
+Editor.Language.XML.Color.ref, 0x945e80
+Editor.Language.XML.Color.pi-content, 0x945e80
+Editor.Language.XML.Color.cdata-section, 0xe78a4e
+

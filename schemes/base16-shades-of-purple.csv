@@ -1,0 +1,45 @@
+# Shades of Purple color scheme for Matlab by Iolar Demartini Junior (http://github.com/demartini), based on Shades of Purple Theme (https://github.com/ahmadawais/shades-of-purple-vscode)
+# Apply this theme using the tinted_import function, available at 
+# https://github.com/tinted-theming/tinted-matlab 
+
+ColorsText, 0xc7c7c7
+ColorsBackground, 0x1e1e3f
+Colors_M_Keywords, 0xff2c70
+Colors_M_Comments, 0x808080
+Colors_M_Strings, 0x3ad900
+Colors_M_UnterminatedStrings, 0x79e8fb
+Colors_M_SystemCommands, 0x00c5c7
+Colors_M_Errors, 0xd90429
+Colors_HTML_HTMLLinks, 0x6943ff
+Colors_M_Warnings, 0xffe700
+ColorsMLintAutoFixBackground, 0xf1d000
+Editor.VariableHighlighting.Color, 0xf1d000
+Editor.NonlocalVariableHighlighting.TextColor, 0xf92a1c
+Editorhighlight-lines, 0x808080
+Editorhighlight-caret-row-boolean-color, 0xf1d000
+EditorRightTextLimitLineColor, 0xf1d000
+# MuPAD
+Editor.Language.MuPAD.Color.operator, 0xf92a1c
+Editor.Language.MuPAD.Color.function, 0x6943ff
+Editor.Language.MuPAD.Color.constant, 0x3ad900
+# TLC
+Editor.Language.TLC.Color.Colors_M_Keywords, 0xff2c70
+# C/C++
+Editor.Language.C.Color.preprocessor, 0xf92a1c
+Editor.Language.C.Color.char-literal, 0x00c5c7
+# Java
+Editor.Language.Java.Color.char-literal, 0x00c5c7
+# VHDL
+Editor.Language.VHDL.Color.operator, 0xf92a1c
+# Verilog
+Editor.Language.Verilog.Color.operator, 0xf92a1c
+# XML
+Editor.Language.XML.Color.tag, 0xd90429
+Editor.Language.XML.Color.attribute, 0xf92a1c
+Editor.Language.XML.Color.operator, 0x3ad900
+Editor.Language.XML.Color.value, 0x00c5c7
+Editor.Language.XML.Color.doctype, 0x6943ff
+Editor.Language.XML.Color.ref, 0xff2c70
+Editor.Language.XML.Color.pi-content, 0xff2c70
+Editor.Language.XML.Color.cdata-section, 0x79e8fb
+

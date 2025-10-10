@@ -1,0 +1,45 @@
+# 3024 color scheme for Matlab by Jan T. Sott (http://github.com/idleberg)
+# Apply this theme using the tinted_import function, available at 
+# https://github.com/tinted-theming/tinted-matlab 
+
+ColorsText, 0xa5a2a2
+ColorsBackground, 0x090300
+Colors_M_Keywords, 0xa16a94
+Colors_M_Comments, 0x5c5855
+Colors_M_Strings, 0x01a252
+Colors_M_UnterminatedStrings, 0xcdab53
+Colors_M_SystemCommands, 0xb5e4f4
+Colors_M_Errors, 0xdb2d20
+Colors_HTML_HTMLLinks, 0x01a0e4
+Colors_M_Warnings, 0xfded02
+ColorsMLintAutoFixBackground, 0x4a4543
+Editor.VariableHighlighting.Color, 0x4a4543
+Editor.NonlocalVariableHighlighting.TextColor, 0xe8bbd0
+Editorhighlight-lines, 0x5c5855
+Editorhighlight-caret-row-boolean-color, 0x4a4543
+EditorRightTextLimitLineColor, 0x4a4543
+# MuPAD
+Editor.Language.MuPAD.Color.operator, 0xe8bbd0
+Editor.Language.MuPAD.Color.function, 0x01a0e4
+Editor.Language.MuPAD.Color.constant, 0x01a252
+# TLC
+Editor.Language.TLC.Color.Colors_M_Keywords, 0xa16a94
+# C/C++
+Editor.Language.C.Color.preprocessor, 0xe8bbd0
+Editor.Language.C.Color.char-literal, 0xb5e4f4
+# Java
+Editor.Language.Java.Color.char-literal, 0xb5e4f4
+# VHDL
+Editor.Language.VHDL.Color.operator, 0xe8bbd0
+# Verilog
+Editor.Language.Verilog.Color.operator, 0xe8bbd0
+# XML
+Editor.Language.XML.Color.tag, 0xdb2d20
+Editor.Language.XML.Color.attribute, 0xe8bbd0
+Editor.Language.XML.Color.operator, 0x01a252
+Editor.Language.XML.Color.value, 0xb5e4f4
+Editor.Language.XML.Color.doctype, 0x01a0e4
+Editor.Language.XML.Color.ref, 0xa16a94
+Editor.Language.XML.Color.pi-content, 0xa16a94
+Editor.Language.XML.Color.cdata-section, 0xcdab53
+

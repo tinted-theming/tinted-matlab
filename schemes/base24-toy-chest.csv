@@ -1,0 +1,45 @@
+# Toy Chest color scheme for Matlab by FredHappyface (https://github.com/fredHappyface)
+# Apply this theme using the tinted_import function, available at 
+# https://github.com/tinted-theming/tinted-matlab 
+
+ColorsText, 0x27b684
+ColorsBackground, 0x23364a
+Colors_M_Keywords, 0x8a5ddb
+Colors_M_Comments, 0x2f8288
+Colors_M_Strings, 0x199171
+Colors_M_UnterminatedStrings, 0x5f1613
+Colors_M_SystemCommands, 0x35a08f
+Colors_M_Errors, 0xbe2d26
+Colors_HTML_HTMLLinks, 0x325d96
+Colors_M_Warnings, 0x33a5d9
+ColorsMLintAutoFixBackground, 0x326889
+Editor.VariableHighlighting.Color, 0x326889
+Editor.NonlocalVariableHighlighting.TextColor, 0xda8e26
+Editorhighlight-lines, 0x2f8288
+Editorhighlight-caret-row-boolean-color, 0x326889
+EditorRightTextLimitLineColor, 0x326889
+# MuPAD
+Editor.Language.MuPAD.Color.operator, 0xda8e26
+Editor.Language.MuPAD.Color.function, 0x325d96
+Editor.Language.MuPAD.Color.constant, 0x199171
+# TLC
+Editor.Language.TLC.Color.Colors_M_Keywords, 0x8a5ddb
+# C/C++
+Editor.Language.C.Color.preprocessor, 0xda8e26
+Editor.Language.C.Color.char-literal, 0x35a08f
+# Java
+Editor.Language.Java.Color.char-literal, 0x35a08f
+# VHDL
+Editor.Language.VHDL.Color.operator, 0xda8e26
+# Verilog
+Editor.Language.Verilog.Color.operator, 0xda8e26
+# XML
+Editor.Language.XML.Color.tag, 0xbe2d26
+Editor.Language.XML.Color.attribute, 0xda8e26
+Editor.Language.XML.Color.operator, 0x199171
+Editor.Language.XML.Color.value, 0x35a08f
+Editor.Language.XML.Color.doctype, 0x325d96
+Editor.Language.XML.Color.ref, 0x8a5ddb
+Editor.Language.XML.Color.pi-content, 0x8a5ddb
+Editor.Language.XML.Color.cdata-section, 0x5f1613
+

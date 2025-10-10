@@ -1,0 +1,45 @@
+# Nord color scheme for Matlab by arcticicestudio
+# Apply this theme using the tinted_import function, available at 
+# https://github.com/tinted-theming/tinted-matlab 
+
+ColorsText, 0xe5e9f0
+ColorsBackground, 0x2e3440
+Colors_M_Keywords, 0xb48ead
+Colors_M_Comments, 0x4c566a
+Colors_M_Strings, 0xa3be8c
+Colors_M_UnterminatedStrings, 0x5e81ac
+Colors_M_SystemCommands, 0x88c0d0
+Colors_M_Errors, 0xbf616a
+Colors_HTML_HTMLLinks, 0x81a1c1
+Colors_M_Warnings, 0xebcb8b
+ColorsMLintAutoFixBackground, 0x434c5e
+Editor.VariableHighlighting.Color, 0x434c5e
+Editor.NonlocalVariableHighlighting.TextColor, 0xd08770
+Editorhighlight-lines, 0x4c566a
+Editorhighlight-caret-row-boolean-color, 0x434c5e
+EditorRightTextLimitLineColor, 0x434c5e
+# MuPAD
+Editor.Language.MuPAD.Color.operator, 0xd08770
+Editor.Language.MuPAD.Color.function, 0x81a1c1
+Editor.Language.MuPAD.Color.constant, 0xa3be8c
+# TLC
+Editor.Language.TLC.Color.Colors_M_Keywords, 0xb48ead
+# C/C++
+Editor.Language.C.Color.preprocessor, 0xd08770
+Editor.Language.C.Color.char-literal, 0x88c0d0
+# Java
+Editor.Language.Java.Color.char-literal, 0x88c0d0
+# VHDL
+Editor.Language.VHDL.Color.operator, 0xd08770
+# Verilog
+Editor.Language.Verilog.Color.operator, 0xd08770
+# XML
+Editor.Language.XML.Color.tag, 0xbf616a
+Editor.Language.XML.Color.attribute, 0xd08770
+Editor.Language.XML.Color.operator, 0xa3be8c
+Editor.Language.XML.Color.value, 0x88c0d0
+Editor.Language.XML.Color.doctype, 0x81a1c1
+Editor.Language.XML.Color.ref, 0xb48ead
+Editor.Language.XML.Color.pi-content, 0xb48ead
+Editor.Language.XML.Color.cdata-section, 0x5e81ac
+

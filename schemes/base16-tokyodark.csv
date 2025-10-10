@@ -1,0 +1,45 @@
+# Tokyodark color scheme for Matlab by Jamy Golden (https://github.com/JamyGolden), Based on Tokyodark.nvim (https://github.com/tiagovla/tokyodark.nvim)
+# Apply this theme using the tinted_import function, available at 
+# https://github.com/tinted-theming/tinted-matlab 
+
+ColorsText, 0xa0a8cd
+ColorsBackground, 0x11121d
+Colors_M_Keywords, 0xa485dd
+Colors_M_Comments, 0x353945
+Colors_M_Strings, 0x95c561
+Colors_M_UnterminatedStrings, 0x773440
+Colors_M_SystemCommands, 0x9fbbf3
+Colors_M_Errors, 0xee6d85
+Colors_HTML_HTMLLinks, 0x7199ee
+Colors_M_Warnings, 0xd7a65f
+ColorsMLintAutoFixBackground, 0x212234
+Editor.VariableHighlighting.Color, 0x212234
+Editor.NonlocalVariableHighlighting.TextColor, 0xf6955b
+Editorhighlight-lines, 0x353945
+Editorhighlight-caret-row-boolean-color, 0x212234
+EditorRightTextLimitLineColor, 0x212234
+# MuPAD
+Editor.Language.MuPAD.Color.operator, 0xf6955b
+Editor.Language.MuPAD.Color.function, 0x7199ee
+Editor.Language.MuPAD.Color.constant, 0x95c561
+# TLC
+Editor.Language.TLC.Color.Colors_M_Keywords, 0xa485dd
+# C/C++
+Editor.Language.C.Color.preprocessor, 0xf6955b
+Editor.Language.C.Color.char-literal, 0x9fbbf3
+# Java
+Editor.Language.Java.Color.char-literal, 0x9fbbf3
+# VHDL
+Editor.Language.VHDL.Color.operator, 0xf6955b
+# Verilog
+Editor.Language.Verilog.Color.operator, 0xf6955b
+# XML
+Editor.Language.XML.Color.tag, 0xee6d85
+Editor.Language.XML.Color.attribute, 0xf6955b
+Editor.Language.XML.Color.operator, 0x95c561
+Editor.Language.XML.Color.value, 0x9fbbf3
+Editor.Language.XML.Color.doctype, 0x7199ee
+Editor.Language.XML.Color.ref, 0xa485dd
+Editor.Language.XML.Color.pi-content, 0xa485dd
+Editor.Language.XML.Color.cdata-section, 0x773440
+

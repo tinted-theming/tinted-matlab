@@ -1,0 +1,45 @@
+# Espresso color scheme for Matlab by Unknown. Maintained by Alex Mirrington (https://github.com/alexmirrington)
+# Apply this theme using the tinted_import function, available at 
+# https://github.com/tinted-theming/tinted-matlab 
+
+ColorsText, 0xcccccc
+ColorsBackground, 0x2d2d2d
+Colors_M_Keywords, 0xd197d9
+Colors_M_Comments, 0x777777
+Colors_M_Strings, 0xa5c261
+Colors_M_UnterminatedStrings, 0xf97394
+Colors_M_SystemCommands, 0xbed6ff
+Colors_M_Errors, 0xd25252
+Colors_HTML_HTMLLinks, 0x6c99bb
+Colors_M_Warnings, 0xffc66d
+ColorsMLintAutoFixBackground, 0x515151
+Editor.VariableHighlighting.Color, 0x515151
+Editor.NonlocalVariableHighlighting.TextColor, 0xf9a959
+Editorhighlight-lines, 0x777777
+Editorhighlight-caret-row-boolean-color, 0x515151
+EditorRightTextLimitLineColor, 0x515151
+# MuPAD
+Editor.Language.MuPAD.Color.operator, 0xf9a959
+Editor.Language.MuPAD.Color.function, 0x6c99bb
+Editor.Language.MuPAD.Color.constant, 0xa5c261
+# TLC
+Editor.Language.TLC.Color.Colors_M_Keywords, 0xd197d9
+# C/C++
+Editor.Language.C.Color.preprocessor, 0xf9a959
+Editor.Language.C.Color.char-literal, 0xbed6ff
+# Java
+Editor.Language.Java.Color.char-literal, 0xbed6ff
+# VHDL
+Editor.Language.VHDL.Color.operator, 0xf9a959
+# Verilog
+Editor.Language.Verilog.Color.operator, 0xf9a959
+# XML
+Editor.Language.XML.Color.tag, 0xd25252
+Editor.Language.XML.Color.attribute, 0xf9a959
+Editor.Language.XML.Color.operator, 0xa5c261
+Editor.Language.XML.Color.value, 0xbed6ff
+Editor.Language.XML.Color.doctype, 0x6c99bb
+Editor.Language.XML.Color.ref, 0xd197d9
+Editor.Language.XML.Color.pi-content, 0xd197d9
+Editor.Language.XML.Color.cdata-section, 0xf97394
+

@@ -1,0 +1,45 @@
+# Sleepy Hollow color scheme for Matlab by FredHappyface (https://github.com/fredHappyface)
+# Apply this theme using the tinted_import function, available at 
+# https://github.com/tinted-theming/tinted-matlab 
+
+ColorsText, 0x968684
+ColorsBackground, 0x121213
+Colors_M_Keywords, 0xa07c7b
+Colors_M_Comments, 0x665e6c
+Colors_M_Strings, 0x90773e
+Colors_M_UnterminatedStrings, 0x5c1c1a
+Colors_M_SystemCommands, 0x8eaea9
+Colors_M_Errors, 0xb93934
+Colors_HTML_HTMLLinks, 0x5e62b4
+Colors_M_Warnings, 0x8085ef
+ColorsMLintAutoFixBackground, 0x4e4b60
+Editor.VariableHighlighting.Color, 0x4e4b60
+Editor.NonlocalVariableHighlighting.TextColor, 0xb45600
+Editorhighlight-lines, 0x665e6c
+Editorhighlight-caret-row-boolean-color, 0x4e4b60
+EditorRightTextLimitLineColor, 0x4e4b60
+# MuPAD
+Editor.Language.MuPAD.Color.operator, 0xb45600
+Editor.Language.MuPAD.Color.function, 0x5e62b4
+Editor.Language.MuPAD.Color.constant, 0x90773e
+# TLC
+Editor.Language.TLC.Color.Colors_M_Keywords, 0xa07c7b
+# C/C++
+Editor.Language.C.Color.preprocessor, 0xb45600
+Editor.Language.C.Color.char-literal, 0x8eaea9
+# Java
+Editor.Language.Java.Color.char-literal, 0x8eaea9
+# VHDL
+Editor.Language.VHDL.Color.operator, 0xb45600
+# Verilog
+Editor.Language.Verilog.Color.operator, 0xb45600
+# XML
+Editor.Language.XML.Color.tag, 0xb93934
+Editor.Language.XML.Color.attribute, 0xb45600
+Editor.Language.XML.Color.operator, 0x90773e
+Editor.Language.XML.Color.value, 0x8eaea9
+Editor.Language.XML.Color.doctype, 0x5e62b4
+Editor.Language.XML.Color.ref, 0xa07c7b
+Editor.Language.XML.Color.pi-content, 0xa07c7b
+Editor.Language.XML.Color.cdata-section, 0x5c1c1a
+

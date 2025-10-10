@@ -1,0 +1,45 @@
+# Circus color scheme for Matlab by Stephan Boyer (https://github.com/stepchowfun) and Esther Wang (https://github.com/ewang12)
+# Apply this theme using the tinted_import function, available at 
+# https://github.com/tinted-theming/tinted-matlab 
+
+ColorsText, 0xa7a7a7
+ColorsBackground, 0x191919
+Colors_M_Keywords, 0xb888e2
+Colors_M_Comments, 0x5f5a60
+Colors_M_Strings, 0x84b97c
+Colors_M_UnterminatedStrings, 0xb888e2
+Colors_M_SystemCommands, 0x4bb1a7
+Colors_M_Errors, 0xdc657d
+Colors_HTML_HTMLLinks, 0x639ee4
+Colors_M_Warnings, 0xc3ba63
+ColorsMLintAutoFixBackground, 0x303030
+Editor.VariableHighlighting.Color, 0x303030
+Editor.NonlocalVariableHighlighting.TextColor, 0x4bb1a7
+Editorhighlight-lines, 0x5f5a60
+Editorhighlight-caret-row-boolean-color, 0x303030
+EditorRightTextLimitLineColor, 0x303030
+# MuPAD
+Editor.Language.MuPAD.Color.operator, 0x4bb1a7
+Editor.Language.MuPAD.Color.function, 0x639ee4
+Editor.Language.MuPAD.Color.constant, 0x84b97c
+# TLC
+Editor.Language.TLC.Color.Colors_M_Keywords, 0xb888e2
+# C/C++
+Editor.Language.C.Color.preprocessor, 0x4bb1a7
+Editor.Language.C.Color.char-literal, 0x4bb1a7
+# Java
+Editor.Language.Java.Color.char-literal, 0x4bb1a7
+# VHDL
+Editor.Language.VHDL.Color.operator, 0x4bb1a7
+# Verilog
+Editor.Language.Verilog.Color.operator, 0x4bb1a7
+# XML
+Editor.Language.XML.Color.tag, 0xdc657d
+Editor.Language.XML.Color.attribute, 0x4bb1a7
+Editor.Language.XML.Color.operator, 0x84b97c
+Editor.Language.XML.Color.value, 0x4bb1a7
+Editor.Language.XML.Color.doctype, 0x639ee4
+Editor.Language.XML.Color.ref, 0xb888e2
+Editor.Language.XML.Color.pi-content, 0xb888e2
+Editor.Language.XML.Color.cdata-section, 0xb888e2
+

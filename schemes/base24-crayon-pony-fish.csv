@@ -1,0 +1,45 @@
+# Crayon Pony Fish color scheme for Matlab by FredHappyface (https://github.com/fredHappyface)
+# Apply this theme using the tinted_import function, available at 
+# https://github.com/tinted-theming/tinted-matlab 
+
+ColorsText, 0x5d484e
+ColorsBackground, 0x140607
+Colors_M_Keywords, 0x682e50
+Colors_M_Comments, 0x473438
+Colors_M_Strings, 0x579523
+Colors_M_UnterminatedStrings, 0x480015
+Colors_M_SystemCommands, 0xe8a766
+Colors_M_Errors, 0x90002a
+Colors_HTML_HTMLLinks, 0x8b87af
+Colors_M_Warnings, 0xcfc9ff
+ColorsMLintAutoFixBackground, 0x3c2a2e
+Editor.VariableHighlighting.Color, 0x3c2a2e
+Editor.NonlocalVariableHighlighting.TextColor, 0xaa301b
+Editorhighlight-lines, 0x473438
+Editorhighlight-caret-row-boolean-color, 0x3c2a2e
+EditorRightTextLimitLineColor, 0x3c2a2e
+# MuPAD
+Editor.Language.MuPAD.Color.operator, 0xaa301b
+Editor.Language.MuPAD.Color.function, 0x8b87af
+Editor.Language.MuPAD.Color.constant, 0x579523
+# TLC
+Editor.Language.TLC.Color.Colors_M_Keywords, 0x682e50
+# C/C++
+Editor.Language.C.Color.preprocessor, 0xaa301b
+Editor.Language.C.Color.char-literal, 0xe8a766
+# Java
+Editor.Language.Java.Color.char-literal, 0xe8a766
+# VHDL
+Editor.Language.VHDL.Color.operator, 0xaa301b
+# Verilog
+Editor.Language.Verilog.Color.operator, 0xaa301b
+# XML
+Editor.Language.XML.Color.tag, 0x90002a
+Editor.Language.XML.Color.attribute, 0xaa301b
+Editor.Language.XML.Color.operator, 0x579523
+Editor.Language.XML.Color.value, 0xe8a766
+Editor.Language.XML.Color.doctype, 0x8b87af
+Editor.Language.XML.Color.ref, 0x682e50
+Editor.Language.XML.Color.pi-content, 0x682e50
+Editor.Language.XML.Color.cdata-section, 0x480015
+

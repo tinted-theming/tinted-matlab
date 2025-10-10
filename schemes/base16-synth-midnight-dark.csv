@@ -1,0 +1,45 @@
+# Synth Midnight Terminal Dark color scheme for Matlab by Michaël Ball (http://github.com/michael-ball/)
+# Apply this theme using the tinted_import function, available at 
+# https://github.com/tinted-theming/tinted-matlab 
+
+ColorsText, 0xc1c3c4
+ColorsBackground, 0x050608
+Colors_M_Keywords, 0xea5ce2
+Colors_M_Comments, 0x474849
+Colors_M_Strings, 0x06ea61
+Colors_M_UnterminatedStrings, 0xcd6320
+Colors_M_SystemCommands, 0x42fff9
+Colors_M_Errors, 0xb53b50
+Colors_HTML_HTMLLinks, 0x03aeff
+Colors_M_Warnings, 0xc9d364
+ColorsMLintAutoFixBackground, 0x28292a
+Editor.VariableHighlighting.Color, 0x28292a
+Editor.NonlocalVariableHighlighting.TextColor, 0xea770d
+Editorhighlight-lines, 0x474849
+Editorhighlight-caret-row-boolean-color, 0x28292a
+EditorRightTextLimitLineColor, 0x28292a
+# MuPAD
+Editor.Language.MuPAD.Color.operator, 0xea770d
+Editor.Language.MuPAD.Color.function, 0x03aeff
+Editor.Language.MuPAD.Color.constant, 0x06ea61
+# TLC
+Editor.Language.TLC.Color.Colors_M_Keywords, 0xea5ce2
+# C/C++
+Editor.Language.C.Color.preprocessor, 0xea770d
+Editor.Language.C.Color.char-literal, 0x42fff9
+# Java
+Editor.Language.Java.Color.char-literal, 0x42fff9
+# VHDL
+Editor.Language.VHDL.Color.operator, 0xea770d
+# Verilog
+Editor.Language.Verilog.Color.operator, 0xea770d
+# XML
+Editor.Language.XML.Color.tag, 0xb53b50
+Editor.Language.XML.Color.attribute, 0xea770d
+Editor.Language.XML.Color.operator, 0x06ea61
+Editor.Language.XML.Color.value, 0x42fff9
+Editor.Language.XML.Color.doctype, 0x03aeff
+Editor.Language.XML.Color.ref, 0xea5ce2
+Editor.Language.XML.Color.pi-content, 0xea5ce2
+Editor.Language.XML.Color.cdata-section, 0xcd6320
+

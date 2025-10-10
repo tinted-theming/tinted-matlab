@@ -1,0 +1,45 @@
+# Rosé Pine Dawn color scheme for Matlab by Emilia Dunfelt &lt;edun@dunfelt.se&gt;
+# Apply this theme using the tinted_import function, available at 
+# https://github.com/tinted-theming/tinted-matlab 
+
+ColorsText, 0x575279
+ColorsBackground, 0xfaf4ed
+Colors_M_Keywords, 0xea9d34
+Colors_M_Comments, 0x9893a5
+Colors_M_Strings, 0x286983
+Colors_M_UnterminatedStrings, 0xcecacd
+Colors_M_SystemCommands, 0x56949f
+Colors_M_Errors, 0xb4637a
+Colors_HTML_HTMLLinks, 0x907aa9
+Colors_M_Warnings, 0xd7827e
+ColorsMLintAutoFixBackground, 0xf2e9de
+Editor.VariableHighlighting.Color, 0xf2e9de
+Editor.NonlocalVariableHighlighting.TextColor, 0xea9d34
+Editorhighlight-lines, 0x9893a5
+Editorhighlight-caret-row-boolean-color, 0xf2e9de
+EditorRightTextLimitLineColor, 0xf2e9de
+# MuPAD
+Editor.Language.MuPAD.Color.operator, 0xea9d34
+Editor.Language.MuPAD.Color.function, 0x907aa9
+Editor.Language.MuPAD.Color.constant, 0x286983
+# TLC
+Editor.Language.TLC.Color.Colors_M_Keywords, 0xea9d34
+# C/C++
+Editor.Language.C.Color.preprocessor, 0xea9d34
+Editor.Language.C.Color.char-literal, 0x56949f
+# Java
+Editor.Language.Java.Color.char-literal, 0x56949f
+# VHDL
+Editor.Language.VHDL.Color.operator, 0xea9d34
+# Verilog
+Editor.Language.Verilog.Color.operator, 0xea9d34
+# XML
+Editor.Language.XML.Color.tag, 0xb4637a
+Editor.Language.XML.Color.attribute, 0xea9d34
+Editor.Language.XML.Color.operator, 0x286983
+Editor.Language.XML.Color.value, 0x56949f
+Editor.Language.XML.Color.doctype, 0x907aa9
+Editor.Language.XML.Color.ref, 0xea9d34
+Editor.Language.XML.Color.pi-content, 0xea9d34
+Editor.Language.XML.Color.cdata-section, 0xcecacd
+

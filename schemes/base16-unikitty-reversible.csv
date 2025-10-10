@@ -1,0 +1,45 @@
+# Unikitty Reversible color scheme for Matlab by Josh W Lewis (@joshwlewis)
+# Apply this theme using the tinted_import function, available at 
+# https://github.com/tinted-theming/tinted-matlab 
+
+ColorsText, 0xc3c2c4
+ColorsBackground, 0x2e2a31
+Colors_M_Keywords, 0xb33ce8
+Colors_M_Comments, 0x878589
+Colors_M_Strings, 0x17ad98
+Colors_M_UnterminatedStrings, 0xd41acd
+Colors_M_SystemCommands, 0x149bda
+Colors_M_Errors, 0xd8137f
+Colors_HTML_HTMLLinks, 0x7864fa
+Colors_M_Warnings, 0xdc8a0e
+ColorsMLintAutoFixBackground, 0x69666b
+Editor.VariableHighlighting.Color, 0x69666b
+Editor.NonlocalVariableHighlighting.TextColor, 0xd65407
+Editorhighlight-lines, 0x878589
+Editorhighlight-caret-row-boolean-color, 0x69666b
+EditorRightTextLimitLineColor, 0x69666b
+# MuPAD
+Editor.Language.MuPAD.Color.operator, 0xd65407
+Editor.Language.MuPAD.Color.function, 0x7864fa
+Editor.Language.MuPAD.Color.constant, 0x17ad98
+# TLC
+Editor.Language.TLC.Color.Colors_M_Keywords, 0xb33ce8
+# C/C++
+Editor.Language.C.Color.preprocessor, 0xd65407
+Editor.Language.C.Color.char-literal, 0x149bda
+# Java
+Editor.Language.Java.Color.char-literal, 0x149bda
+# VHDL
+Editor.Language.VHDL.Color.operator, 0xd65407
+# Verilog
+Editor.Language.Verilog.Color.operator, 0xd65407
+# XML
+Editor.Language.XML.Color.tag, 0xd8137f
+Editor.Language.XML.Color.attribute, 0xd65407
+Editor.Language.XML.Color.operator, 0x17ad98
+Editor.Language.XML.Color.value, 0x149bda
+Editor.Language.XML.Color.doctype, 0x7864fa
+Editor.Language.XML.Color.ref, 0xb33ce8
+Editor.Language.XML.Color.pi-content, 0xb33ce8
+Editor.Language.XML.Color.cdata-section, 0xd41acd
+

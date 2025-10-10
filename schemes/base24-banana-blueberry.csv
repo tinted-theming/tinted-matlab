@@ -1,0 +1,45 @@
+# Banana Blueberry color scheme for Matlab by FredHappyface (https://github.com/fredHappyface)
+# Apply this theme using the tinted_import function, available at 
+# https://github.com/tinted-theming/tinted-matlab 
+
+ColorsText, 0xc6c9cd
+ColorsBackground, 0x191322
+Colors_M_Keywords, 0xdc3969
+Colors_M_Comments, 0x727985
+Colors_M_Strings, 0x00bc9b
+Colors_M_UnterminatedStrings, 0x7f353f
+Colors_M_SystemCommands, 0x55b6c1
+Colors_M_Errors, 0xff6a7e
+Colors_HTML_HTMLLinks, 0x22e8df
+Colors_M_Warnings, 0x91fff3
+ColorsMLintAutoFixBackground, 0x485161
+Editor.VariableHighlighting.Color, 0x485161
+Editor.NonlocalVariableHighlighting.TextColor, 0xe5c62f
+Editorhighlight-lines, 0x727985
+Editorhighlight-caret-row-boolean-color, 0x485161
+EditorRightTextLimitLineColor, 0x485161
+# MuPAD
+Editor.Language.MuPAD.Color.operator, 0xe5c62f
+Editor.Language.MuPAD.Color.function, 0x22e8df
+Editor.Language.MuPAD.Color.constant, 0x00bc9b
+# TLC
+Editor.Language.TLC.Color.Colors_M_Keywords, 0xdc3969
+# C/C++
+Editor.Language.C.Color.preprocessor, 0xe5c62f
+Editor.Language.C.Color.char-literal, 0x55b6c1
+# Java
+Editor.Language.Java.Color.char-literal, 0x55b6c1
+# VHDL
+Editor.Language.VHDL.Color.operator, 0xe5c62f
+# Verilog
+Editor.Language.Verilog.Color.operator, 0xe5c62f
+# XML
+Editor.Language.XML.Color.tag, 0xff6a7e
+Editor.Language.XML.Color.attribute, 0xe5c62f
+Editor.Language.XML.Color.operator, 0x00bc9b
+Editor.Language.XML.Color.value, 0x55b6c1
+Editor.Language.XML.Color.doctype, 0x22e8df
+Editor.Language.XML.Color.ref, 0xdc3969
+Editor.Language.XML.Color.pi-content, 0xdc3969
+Editor.Language.XML.Color.cdata-section, 0x7f353f
+

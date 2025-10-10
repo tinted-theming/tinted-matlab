@@ -1,0 +1,45 @@
+# Nocturnal Winter color scheme for Matlab by FredHappyface (https://github.com/fredHappyface)
+# Apply this theme using the tinted_import function, available at 
+# https://github.com/tinted-theming/tinted-matlab 
+
+ColorsText, 0xdcdcdc
+ColorsBackground, 0x0d0d17
+Colors_M_Keywords, 0xfe2a6c
+Colors_M_Comments, 0x9e9e9e
+Colors_M_Strings, 0x08cd7d
+Colors_M_UnterminatedStrings, 0x781629
+Colors_M_SystemCommands, 0x09c87a
+Colors_M_Errors, 0xf12d52
+Colors_HTML_HTMLLinks, 0x3081df
+Colors_M_Warnings, 0x6095fe
+ColorsMLintAutoFixBackground, 0x7f7f7f
+Editor.VariableHighlighting.Color, 0x7f7f7f
+Editor.NonlocalVariableHighlighting.TextColor, 0xf5f079
+Editorhighlight-lines, 0x9e9e9e
+Editorhighlight-caret-row-boolean-color, 0x7f7f7f
+EditorRightTextLimitLineColor, 0x7f7f7f
+# MuPAD
+Editor.Language.MuPAD.Color.operator, 0xf5f079
+Editor.Language.MuPAD.Color.function, 0x3081df
+Editor.Language.MuPAD.Color.constant, 0x08cd7d
+# TLC
+Editor.Language.TLC.Color.Colors_M_Keywords, 0xfe2a6c
+# C/C++
+Editor.Language.C.Color.preprocessor, 0xf5f079
+Editor.Language.C.Color.char-literal, 0x09c87a
+# Java
+Editor.Language.Java.Color.char-literal, 0x09c87a
+# VHDL
+Editor.Language.VHDL.Color.operator, 0xf5f079
+# Verilog
+Editor.Language.Verilog.Color.operator, 0xf5f079
+# XML
+Editor.Language.XML.Color.tag, 0xf12d52
+Editor.Language.XML.Color.attribute, 0xf5f079
+Editor.Language.XML.Color.operator, 0x08cd7d
+Editor.Language.XML.Color.value, 0x09c87a
+Editor.Language.XML.Color.doctype, 0x3081df
+Editor.Language.XML.Color.ref, 0xfe2a6c
+Editor.Language.XML.Color.pi-content, 0xfe2a6c
+Editor.Language.XML.Color.cdata-section, 0x781629
+

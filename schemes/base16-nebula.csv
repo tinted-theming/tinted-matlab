@@ -1,0 +1,45 @@
+# Nebula color scheme for Matlab by Gabriel Fontes (https://github.com/Misterio77)
+# Apply this theme using the tinted_import function, available at 
+# https://github.com/tinted-theming/tinted-matlab 
+
+ColorsText, 0xa4a6a9
+ColorsBackground, 0x22273b
+Colors_M_Keywords, 0x716cae
+Colors_M_Comments, 0x6e6f72
+Colors_M_Strings, 0x6562a8
+Colors_M_UnterminatedStrings, 0x8c70a7
+Colors_M_SystemCommands, 0x226f68
+Colors_M_Errors, 0x777abc
+Colors_HTML_HTMLLinks, 0x4d6bb6
+Colors_M_Warnings, 0x4f9062
+ColorsMLintAutoFixBackground, 0x5a8380
+Editor.VariableHighlighting.Color, 0x5a8380
+Editor.NonlocalVariableHighlighting.TextColor, 0x94929e
+Editorhighlight-lines, 0x6e6f72
+Editorhighlight-caret-row-boolean-color, 0x5a8380
+EditorRightTextLimitLineColor, 0x5a8380
+# MuPAD
+Editor.Language.MuPAD.Color.operator, 0x94929e
+Editor.Language.MuPAD.Color.function, 0x4d6bb6
+Editor.Language.MuPAD.Color.constant, 0x6562a8
+# TLC
+Editor.Language.TLC.Color.Colors_M_Keywords, 0x716cae
+# C/C++
+Editor.Language.C.Color.preprocessor, 0x94929e
+Editor.Language.C.Color.char-literal, 0x226f68
+# Java
+Editor.Language.Java.Color.char-literal, 0x226f68
+# VHDL
+Editor.Language.VHDL.Color.operator, 0x94929e
+# Verilog
+Editor.Language.Verilog.Color.operator, 0x94929e
+# XML
+Editor.Language.XML.Color.tag, 0x777abc
+Editor.Language.XML.Color.attribute, 0x94929e
+Editor.Language.XML.Color.operator, 0x6562a8
+Editor.Language.XML.Color.value, 0x226f68
+Editor.Language.XML.Color.doctype, 0x4d6bb6
+Editor.Language.XML.Color.ref, 0x716cae
+Editor.Language.XML.Color.pi-content, 0x716cae
+Editor.Language.XML.Color.cdata-section, 0x8c70a7
+

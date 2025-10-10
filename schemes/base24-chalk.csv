@@ -1,0 +1,45 @@
+# Chalk color scheme for Matlab by FredHappyface (https://github.com/fredHappyface)
+# Apply this theme using the tinted_import function, available at 
+# https://github.com/tinted-theming/tinted-matlab 
+
+ColorsText, 0xd0d0d0
+ColorsBackground, 0x151515
+Colors_M_Keywords, 0xdb8fea
+Colors_M_Comments, 0x505050
+Colors_M_Strings, 0xa1bb54
+Colors_M_UnterminatedStrings, 0xdeaf8f
+Colors_M_SystemCommands, 0x10bcad
+Colors_M_Errors, 0xfa859c
+Colors_HTML_HTMLLinks, 0x5ab9ed
+Colors_M_Warnings, 0xddb26f
+ColorsMLintAutoFixBackground, 0x303030
+Editor.VariableHighlighting.Color, 0x303030
+Editor.NonlocalVariableHighlighting.TextColor, 0xea9971
+Editorhighlight-lines, 0x505050
+Editorhighlight-caret-row-boolean-color, 0x303030
+EditorRightTextLimitLineColor, 0x303030
+# MuPAD
+Editor.Language.MuPAD.Color.operator, 0xea9971
+Editor.Language.MuPAD.Color.function, 0x5ab9ed
+Editor.Language.MuPAD.Color.constant, 0xa1bb54
+# TLC
+Editor.Language.TLC.Color.Colors_M_Keywords, 0xdb8fea
+# C/C++
+Editor.Language.C.Color.preprocessor, 0xea9971
+Editor.Language.C.Color.char-literal, 0x10bcad
+# Java
+Editor.Language.Java.Color.char-literal, 0x10bcad
+# VHDL
+Editor.Language.VHDL.Color.operator, 0xea9971
+# Verilog
+Editor.Language.Verilog.Color.operator, 0xea9971
+# XML
+Editor.Language.XML.Color.tag, 0xfa859c
+Editor.Language.XML.Color.attribute, 0xea9971
+Editor.Language.XML.Color.operator, 0xa1bb54
+Editor.Language.XML.Color.value, 0x10bcad
+Editor.Language.XML.Color.doctype, 0x5ab9ed
+Editor.Language.XML.Color.ref, 0xdb8fea
+Editor.Language.XML.Color.pi-content, 0xdb8fea
+Editor.Language.XML.Color.cdata-section, 0xdeaf8f
+

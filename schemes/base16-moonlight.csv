@@ -1,0 +1,45 @@
+# Moonlight color scheme for Matlab by Jeremy Swinarton (https://github.com/jswinarton)
+# Apply this theme using the tinted_import function, available at 
+# https://github.com/tinted-theming/tinted-matlab 
+
+ColorsText, 0xa3ace1
+ColorsBackground, 0x212337
+Colors_M_Keywords, 0xb994f1
+Colors_M_Comments, 0x748cd6
+Colors_M_Strings, 0x2df4c0
+Colors_M_UnterminatedStrings, 0xecb2f0
+Colors_M_SystemCommands, 0x04d1f9
+Colors_M_Errors, 0xff5370
+Colors_HTML_HTMLLinks, 0x40ffff
+Colors_M_Warnings, 0xffc777
+ColorsMLintAutoFixBackground, 0x596399
+Editor.VariableHighlighting.Color, 0x596399
+Editor.NonlocalVariableHighlighting.TextColor, 0xf67f81
+Editorhighlight-lines, 0x748cd6
+Editorhighlight-caret-row-boolean-color, 0x596399
+EditorRightTextLimitLineColor, 0x596399
+# MuPAD
+Editor.Language.MuPAD.Color.operator, 0xf67f81
+Editor.Language.MuPAD.Color.function, 0x40ffff
+Editor.Language.MuPAD.Color.constant, 0x2df4c0
+# TLC
+Editor.Language.TLC.Color.Colors_M_Keywords, 0xb994f1
+# C/C++
+Editor.Language.C.Color.preprocessor, 0xf67f81
+Editor.Language.C.Color.char-literal, 0x04d1f9
+# Java
+Editor.Language.Java.Color.char-literal, 0x04d1f9
+# VHDL
+Editor.Language.VHDL.Color.operator, 0xf67f81
+# Verilog
+Editor.Language.Verilog.Color.operator, 0xf67f81
+# XML
+Editor.Language.XML.Color.tag, 0xff5370
+Editor.Language.XML.Color.attribute, 0xf67f81
+Editor.Language.XML.Color.operator, 0x2df4c0
+Editor.Language.XML.Color.value, 0x04d1f9
+Editor.Language.XML.Color.doctype, 0x40ffff
+Editor.Language.XML.Color.ref, 0xb994f1
+Editor.Language.XML.Color.pi-content, 0xb994f1
+Editor.Language.XML.Color.cdata-section, 0xecb2f0
+

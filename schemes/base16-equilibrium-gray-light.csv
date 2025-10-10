@@ -1,0 +1,45 @@
+# Equilibrium Gray Light color scheme for Matlab by Carlo Abelli
+# Apply this theme using the tinted_import function, available at 
+# https://github.com/tinted-theming/tinted-matlab 
+
+ColorsText, 0x474747
+ColorsBackground, 0xf1f1f1
+Colors_M_Keywords, 0x4e66b6
+Colors_M_Comments, 0x777777
+Colors_M_Strings, 0x637200
+Colors_M_UnterminatedStrings, 0xc42775
+Colors_M_SystemCommands, 0x007a72
+Colors_M_Errors, 0xd02023
+Colors_HTML_HTMLLinks, 0x0073b5
+Colors_M_Warnings, 0x9d6f00
+ColorsMLintAutoFixBackground, 0xd4d4d4
+Editor.VariableHighlighting.Color, 0xd4d4d4
+Editor.NonlocalVariableHighlighting.TextColor, 0xbf3e05
+Editorhighlight-lines, 0x777777
+Editorhighlight-caret-row-boolean-color, 0xd4d4d4
+EditorRightTextLimitLineColor, 0xd4d4d4
+# MuPAD
+Editor.Language.MuPAD.Color.operator, 0xbf3e05
+Editor.Language.MuPAD.Color.function, 0x0073b5
+Editor.Language.MuPAD.Color.constant, 0x637200
+# TLC
+Editor.Language.TLC.Color.Colors_M_Keywords, 0x4e66b6
+# C/C++
+Editor.Language.C.Color.preprocessor, 0xbf3e05
+Editor.Language.C.Color.char-literal, 0x007a72
+# Java
+Editor.Language.Java.Color.char-literal, 0x007a72
+# VHDL
+Editor.Language.VHDL.Color.operator, 0xbf3e05
+# Verilog
+Editor.Language.Verilog.Color.operator, 0xbf3e05
+# XML
+Editor.Language.XML.Color.tag, 0xd02023
+Editor.Language.XML.Color.attribute, 0xbf3e05
+Editor.Language.XML.Color.operator, 0x637200
+Editor.Language.XML.Color.value, 0x007a72
+Editor.Language.XML.Color.doctype, 0x0073b5
+Editor.Language.XML.Color.ref, 0x4e66b6
+Editor.Language.XML.Color.pi-content, 0x4e66b6
+Editor.Language.XML.Color.cdata-section, 0xc42775
+

@@ -1,0 +1,45 @@
+# Primer Dark Dimmed color scheme for Matlab by Jimmy Lin
+# Apply this theme using the tinted_import function, available at 
+# https://github.com/tinted-theming/tinted-matlab 
+
+ColorsText, 0x909dab
+ColorsBackground, 0x1c2128
+Colors_M_Keywords, 0xe275ad
+Colors_M_Comments, 0x545d68
+Colors_M_Strings, 0x57ab5a
+Colors_M_UnterminatedStrings, 0xae5622
+Colors_M_SystemCommands, 0x96d0ff
+Colors_M_Errors, 0xf47067
+Colors_HTML_HTMLLinks, 0x539bf5
+Colors_M_Warnings, 0xc69026
+ColorsMLintAutoFixBackground, 0x444c56
+Editor.VariableHighlighting.Color, 0x444c56
+Editor.NonlocalVariableHighlighting.TextColor, 0xe0823d
+Editorhighlight-lines, 0x545d68
+Editorhighlight-caret-row-boolean-color, 0x444c56
+EditorRightTextLimitLineColor, 0x444c56
+# MuPAD
+Editor.Language.MuPAD.Color.operator, 0xe0823d
+Editor.Language.MuPAD.Color.function, 0x539bf5
+Editor.Language.MuPAD.Color.constant, 0x57ab5a
+# TLC
+Editor.Language.TLC.Color.Colors_M_Keywords, 0xe275ad
+# C/C++
+Editor.Language.C.Color.preprocessor, 0xe0823d
+Editor.Language.C.Color.char-literal, 0x96d0ff
+# Java
+Editor.Language.Java.Color.char-literal, 0x96d0ff
+# VHDL
+Editor.Language.VHDL.Color.operator, 0xe0823d
+# Verilog
+Editor.Language.Verilog.Color.operator, 0xe0823d
+# XML
+Editor.Language.XML.Color.tag, 0xf47067
+Editor.Language.XML.Color.attribute, 0xe0823d
+Editor.Language.XML.Color.operator, 0x57ab5a
+Editor.Language.XML.Color.value, 0x96d0ff
+Editor.Language.XML.Color.doctype, 0x539bf5
+Editor.Language.XML.Color.ref, 0xe275ad
+Editor.Language.XML.Color.pi-content, 0xe275ad
+Editor.Language.XML.Color.cdata-section, 0xae5622
+

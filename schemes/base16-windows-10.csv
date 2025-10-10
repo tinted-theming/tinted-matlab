@@ -1,0 +1,45 @@
+# Windows 10 color scheme for Matlab by Fergus Collins (https://github.com/ferguscollins)
+# Apply this theme using the tinted_import function, available at 
+# https://github.com/tinted-theming/tinted-matlab 
+
+ColorsText, 0xcccccc
+ColorsBackground, 0x0c0c0c
+Colors_M_Keywords, 0xb4009e
+Colors_M_Comments, 0x767676
+Colors_M_Strings, 0x16c60c
+Colors_M_UnterminatedStrings, 0x13a10e
+Colors_M_SystemCommands, 0x61d6d6
+Colors_M_Errors, 0xe74856
+Colors_HTML_HTMLLinks, 0x3b78ff
+Colors_M_Warnings, 0xf9f1a5
+ColorsMLintAutoFixBackground, 0x535353
+Editor.VariableHighlighting.Color, 0x535353
+Editor.NonlocalVariableHighlighting.TextColor, 0xc19c00
+Editorhighlight-lines, 0x767676
+Editorhighlight-caret-row-boolean-color, 0x535353
+EditorRightTextLimitLineColor, 0x535353
+# MuPAD
+Editor.Language.MuPAD.Color.operator, 0xc19c00
+Editor.Language.MuPAD.Color.function, 0x3b78ff
+Editor.Language.MuPAD.Color.constant, 0x16c60c
+# TLC
+Editor.Language.TLC.Color.Colors_M_Keywords, 0xb4009e
+# C/C++
+Editor.Language.C.Color.preprocessor, 0xc19c00
+Editor.Language.C.Color.char-literal, 0x61d6d6
+# Java
+Editor.Language.Java.Color.char-literal, 0x61d6d6
+# VHDL
+Editor.Language.VHDL.Color.operator, 0xc19c00
+# Verilog
+Editor.Language.Verilog.Color.operator, 0xc19c00
+# XML
+Editor.Language.XML.Color.tag, 0xe74856
+Editor.Language.XML.Color.attribute, 0xc19c00
+Editor.Language.XML.Color.operator, 0x16c60c
+Editor.Language.XML.Color.value, 0x61d6d6
+Editor.Language.XML.Color.doctype, 0x3b78ff
+Editor.Language.XML.Color.ref, 0xb4009e
+Editor.Language.XML.Color.pi-content, 0xb4009e
+Editor.Language.XML.Color.cdata-section, 0x13a10e
+

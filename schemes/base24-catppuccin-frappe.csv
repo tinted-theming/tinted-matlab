@@ -1,0 +1,45 @@
+# Catppuccin Frappe color scheme for Matlab by https://github.com/catppuccin/catppuccin
+# Apply this theme using the tinted_import function, available at 
+# https://github.com/tinted-theming/tinted-matlab 
+
+ColorsText, 0xc6d0f5
+ColorsBackground, 0x303446
+Colors_M_Keywords, 0xca9ee6
+Colors_M_Comments, 0x51576d
+Colors_M_Strings, 0xa6d189
+Colors_M_UnterminatedStrings, 0xeebebe
+Colors_M_SystemCommands, 0x81c8be
+Colors_M_Errors, 0xe78284
+Colors_HTML_HTMLLinks, 0x8caaee
+Colors_M_Warnings, 0xe5c890
+ColorsMLintAutoFixBackground, 0x414559
+Editor.VariableHighlighting.Color, 0x414559
+Editor.NonlocalVariableHighlighting.TextColor, 0xef9f76
+Editorhighlight-lines, 0x51576d
+Editorhighlight-caret-row-boolean-color, 0x414559
+EditorRightTextLimitLineColor, 0x414559
+# MuPAD
+Editor.Language.MuPAD.Color.operator, 0xef9f76
+Editor.Language.MuPAD.Color.function, 0x8caaee
+Editor.Language.MuPAD.Color.constant, 0xa6d189
+# TLC
+Editor.Language.TLC.Color.Colors_M_Keywords, 0xca9ee6
+# C/C++
+Editor.Language.C.Color.preprocessor, 0xef9f76
+Editor.Language.C.Color.char-literal, 0x81c8be
+# Java
+Editor.Language.Java.Color.char-literal, 0x81c8be
+# VHDL
+Editor.Language.VHDL.Color.operator, 0xef9f76
+# Verilog
+Editor.Language.Verilog.Color.operator, 0xef9f76
+# XML
+Editor.Language.XML.Color.tag, 0xe78284
+Editor.Language.XML.Color.attribute, 0xef9f76
+Editor.Language.XML.Color.operator, 0xa6d189
+Editor.Language.XML.Color.value, 0x81c8be
+Editor.Language.XML.Color.doctype, 0x8caaee
+Editor.Language.XML.Color.ref, 0xca9ee6
+Editor.Language.XML.Color.pi-content, 0xca9ee6
+Editor.Language.XML.Color.cdata-section, 0xeebebe
+

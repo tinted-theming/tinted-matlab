@@ -1,0 +1,45 @@
+# Precious Light Warm color scheme for Matlab by 4lex4 &lt;4lex49@zoho.com&gt;
+# Apply this theme using the tinted_import function, available at 
+# https://github.com/tinted-theming/tinted-matlab 
+
+ColorsText, 0x4e5359
+ColorsBackground, 0xfff5e5
+Colors_M_Keywords, 0x7a50c6
+Colors_M_Comments, 0x7f8080
+Colors_M_Strings, 0x557300
+Colors_M_UnterminatedStrings, 0xa83f92
+Colors_M_SystemCommands, 0x0e7767
+Colors_M_Errors, 0xb14745
+Colors_HTML_HTMLLinks, 0x246da5
+Colors_M_Warnings, 0x876500
+ColorsMLintAutoFixBackground, 0xd9d3c8
+Editor.VariableHighlighting.Color, 0xd9d3c8
+Editor.NonlocalVariableHighlighting.TextColor, 0xa25600
+Editorhighlight-lines, 0x7f8080
+Editorhighlight-caret-row-boolean-color, 0xd9d3c8
+EditorRightTextLimitLineColor, 0xd9d3c8
+# MuPAD
+Editor.Language.MuPAD.Color.operator, 0xa25600
+Editor.Language.MuPAD.Color.function, 0x246da5
+Editor.Language.MuPAD.Color.constant, 0x557300
+# TLC
+Editor.Language.TLC.Color.Colors_M_Keywords, 0x7a50c6
+# C/C++
+Editor.Language.C.Color.preprocessor, 0xa25600
+Editor.Language.C.Color.char-literal, 0x0e7767
+# Java
+Editor.Language.Java.Color.char-literal, 0x0e7767
+# VHDL
+Editor.Language.VHDL.Color.operator, 0xa25600
+# Verilog
+Editor.Language.Verilog.Color.operator, 0xa25600
+# XML
+Editor.Language.XML.Color.tag, 0xb14745
+Editor.Language.XML.Color.attribute, 0xa25600
+Editor.Language.XML.Color.operator, 0x557300
+Editor.Language.XML.Color.value, 0x0e7767
+Editor.Language.XML.Color.doctype, 0x246da5
+Editor.Language.XML.Color.ref, 0x7a50c6
+Editor.Language.XML.Color.pi-content, 0x7a50c6
+Editor.Language.XML.Color.cdata-section, 0xa83f92
+

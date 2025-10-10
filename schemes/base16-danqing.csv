@@ -1,0 +1,45 @@
+# DanQing color scheme for Matlab by Wenhan Zhu (Cosmos) (zhuwenhan950913@gmail.com)
+# Apply this theme using the tinted_import function, available at 
+# https://github.com/tinted-theming/tinted-matlab 
+
+ColorsText, 0xe0f0ef
+ColorsBackground, 0x2d302f
+Colors_M_Keywords, 0xcca4e3
+Colors_M_Comments, 0x9da8a3
+Colors_M_Strings, 0x8ab361
+Colors_M_UnterminatedStrings, 0xca6924
+Colors_M_SystemCommands, 0x30dff3
+Colors_M_Errors, 0xf9906f
+Colors_HTML_HTMLLinks, 0xb0a4e3
+Colors_M_Warnings, 0xf0c239
+ColorsMLintAutoFixBackground, 0x5a605d
+Editor.VariableHighlighting.Color, 0x5a605d
+Editor.NonlocalVariableHighlighting.TextColor, 0xb38a61
+Editorhighlight-lines, 0x9da8a3
+Editorhighlight-caret-row-boolean-color, 0x5a605d
+EditorRightTextLimitLineColor, 0x5a605d
+# MuPAD
+Editor.Language.MuPAD.Color.operator, 0xb38a61
+Editor.Language.MuPAD.Color.function, 0xb0a4e3
+Editor.Language.MuPAD.Color.constant, 0x8ab361
+# TLC
+Editor.Language.TLC.Color.Colors_M_Keywords, 0xcca4e3
+# C/C++
+Editor.Language.C.Color.preprocessor, 0xb38a61
+Editor.Language.C.Color.char-literal, 0x30dff3
+# Java
+Editor.Language.Java.Color.char-literal, 0x30dff3
+# VHDL
+Editor.Language.VHDL.Color.operator, 0xb38a61
+# Verilog
+Editor.Language.Verilog.Color.operator, 0xb38a61
+# XML
+Editor.Language.XML.Color.tag, 0xf9906f
+Editor.Language.XML.Color.attribute, 0xb38a61
+Editor.Language.XML.Color.operator, 0x8ab361
+Editor.Language.XML.Color.value, 0x30dff3
+Editor.Language.XML.Color.doctype, 0xb0a4e3
+Editor.Language.XML.Color.ref, 0xcca4e3
+Editor.Language.XML.Color.pi-content, 0xcca4e3
+Editor.Language.XML.Color.cdata-section, 0xca6924
+

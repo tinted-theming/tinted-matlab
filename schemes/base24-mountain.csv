@@ -1,0 +1,45 @@
+# Mountain color scheme for Matlab by Stefan Weigl-Bosker (https://github.com/sweiglbosker), based on Mountain Theme (https://github.com/mountain-theme/Mountain)
+# Apply this theme using the tinted_import function, available at 
+# https://github.com/tinted-theming/tinted-matlab 
+
+ColorsText, 0xcacaca
+ColorsBackground, 0x0f0f0f
+Colors_M_Keywords, 0xac8aac
+Colors_M_Comments, 0x393939
+Colors_M_Strings, 0x8aac8b
+Colors_M_UnterminatedStrings, 0xac8a8c
+Colors_M_SystemCommands, 0x8aabac
+Colors_M_Errors, 0xac8a8c
+Colors_HTML_HTMLLinks, 0x8f8aac
+Colors_M_Warnings, 0xaca98a
+ColorsMLintAutoFixBackground, 0x262626
+Editor.VariableHighlighting.Color, 0x262626
+Editor.NonlocalVariableHighlighting.TextColor, 0xc6a679
+Editorhighlight-lines, 0x393939
+Editorhighlight-caret-row-boolean-color, 0x262626
+EditorRightTextLimitLineColor, 0x262626
+# MuPAD
+Editor.Language.MuPAD.Color.operator, 0xc6a679
+Editor.Language.MuPAD.Color.function, 0x8f8aac
+Editor.Language.MuPAD.Color.constant, 0x8aac8b
+# TLC
+Editor.Language.TLC.Color.Colors_M_Keywords, 0xac8aac
+# C/C++
+Editor.Language.C.Color.preprocessor, 0xc6a679
+Editor.Language.C.Color.char-literal, 0x8aabac
+# Java
+Editor.Language.Java.Color.char-literal, 0x8aabac
+# VHDL
+Editor.Language.VHDL.Color.operator, 0xc6a679
+# Verilog
+Editor.Language.Verilog.Color.operator, 0xc6a679
+# XML
+Editor.Language.XML.Color.tag, 0xac8a8c
+Editor.Language.XML.Color.attribute, 0xc6a679
+Editor.Language.XML.Color.operator, 0x8aac8b
+Editor.Language.XML.Color.value, 0x8aabac
+Editor.Language.XML.Color.doctype, 0x8f8aac
+Editor.Language.XML.Color.ref, 0xac8aac
+Editor.Language.XML.Color.pi-content, 0xac8aac
+Editor.Language.XML.Color.cdata-section, 0xac8a8c
+

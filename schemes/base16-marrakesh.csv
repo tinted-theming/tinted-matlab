@@ -1,0 +1,45 @@
+# Marrakesh color scheme for Matlab by Alexandre Gavioli (http://github.com/Alexx2/)
+# Apply this theme using the tinted_import function, available at 
+# https://github.com/tinted-theming/tinted-matlab 
+
+ColorsText, 0x948e48
+ColorsBackground, 0x201602
+Colors_M_Keywords, 0x8868b3
+Colors_M_Comments, 0x6c6823
+Colors_M_Strings, 0x18974e
+Colors_M_UnterminatedStrings, 0xb3588e
+Colors_M_SystemCommands, 0x75a738
+Colors_M_Errors, 0xc35359
+Colors_HTML_HTMLLinks, 0x477ca1
+Colors_M_Warnings, 0xa88339
+ColorsMLintAutoFixBackground, 0x5f5b17
+Editor.VariableHighlighting.Color, 0x5f5b17
+Editor.NonlocalVariableHighlighting.TextColor, 0xb36144
+Editorhighlight-lines, 0x6c6823
+Editorhighlight-caret-row-boolean-color, 0x5f5b17
+EditorRightTextLimitLineColor, 0x5f5b17
+# MuPAD
+Editor.Language.MuPAD.Color.operator, 0xb36144
+Editor.Language.MuPAD.Color.function, 0x477ca1
+Editor.Language.MuPAD.Color.constant, 0x18974e
+# TLC
+Editor.Language.TLC.Color.Colors_M_Keywords, 0x8868b3
+# C/C++
+Editor.Language.C.Color.preprocessor, 0xb36144
+Editor.Language.C.Color.char-literal, 0x75a738
+# Java
+Editor.Language.Java.Color.char-literal, 0x75a738
+# VHDL
+Editor.Language.VHDL.Color.operator, 0xb36144
+# Verilog
+Editor.Language.Verilog.Color.operator, 0xb36144
+# XML
+Editor.Language.XML.Color.tag, 0xc35359
+Editor.Language.XML.Color.attribute, 0xb36144
+Editor.Language.XML.Color.operator, 0x18974e
+Editor.Language.XML.Color.value, 0x75a738
+Editor.Language.XML.Color.doctype, 0x477ca1
+Editor.Language.XML.Color.ref, 0x8868b3
+Editor.Language.XML.Color.pi-content, 0x8868b3
+Editor.Language.XML.Color.cdata-section, 0xb3588e
+

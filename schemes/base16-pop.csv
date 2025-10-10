@@ -1,0 +1,45 @@
+# Pop color scheme for Matlab by Chris Kempson (http://chriskempson.com)
+# Apply this theme using the tinted_import function, available at 
+# https://github.com/tinted-theming/tinted-matlab 
+
+ColorsText, 0xd0d0d0
+ColorsBackground, 0x000000
+Colors_M_Keywords, 0xb31e8d
+Colors_M_Comments, 0x505050
+Colors_M_Strings, 0x37b349
+Colors_M_UnterminatedStrings, 0x7a2d00
+Colors_M_SystemCommands, 0x00aabb
+Colors_M_Errors, 0xeb008a
+Colors_HTML_HTMLLinks, 0x0e5a94
+Colors_M_Warnings, 0xf8ca12
+ColorsMLintAutoFixBackground, 0x303030
+Editor.VariableHighlighting.Color, 0x303030
+Editor.NonlocalVariableHighlighting.TextColor, 0xf29333
+Editorhighlight-lines, 0x505050
+Editorhighlight-caret-row-boolean-color, 0x303030
+EditorRightTextLimitLineColor, 0x303030
+# MuPAD
+Editor.Language.MuPAD.Color.operator, 0xf29333
+Editor.Language.MuPAD.Color.function, 0x0e5a94
+Editor.Language.MuPAD.Color.constant, 0x37b349
+# TLC
+Editor.Language.TLC.Color.Colors_M_Keywords, 0xb31e8d
+# C/C++
+Editor.Language.C.Color.preprocessor, 0xf29333
+Editor.Language.C.Color.char-literal, 0x00aabb
+# Java
+Editor.Language.Java.Color.char-literal, 0x00aabb
+# VHDL
+Editor.Language.VHDL.Color.operator, 0xf29333
+# Verilog
+Editor.Language.Verilog.Color.operator, 0xf29333
+# XML
+Editor.Language.XML.Color.tag, 0xeb008a
+Editor.Language.XML.Color.attribute, 0xf29333
+Editor.Language.XML.Color.operator, 0x37b349
+Editor.Language.XML.Color.value, 0x00aabb
+Editor.Language.XML.Color.doctype, 0x0e5a94
+Editor.Language.XML.Color.ref, 0xb31e8d
+Editor.Language.XML.Color.pi-content, 0xb31e8d
+Editor.Language.XML.Color.cdata-section, 0x7a2d00
+

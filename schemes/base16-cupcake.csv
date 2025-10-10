@@ -1,0 +1,45 @@
+# Cupcake color scheme for Matlab by Chris Kempson (http://chriskempson.com)
+# Apply this theme using the tinted_import function, available at 
+# https://github.com/tinted-theming/tinted-matlab 
+
+ColorsText, 0x8b8198
+ColorsBackground, 0xfbf1f2
+Colors_M_Keywords, 0xbb99b4
+Colors_M_Comments, 0xbfb9c6
+Colors_M_Strings, 0xa3b367
+Colors_M_UnterminatedStrings, 0xbaa58c
+Colors_M_SystemCommands, 0x69a9a7
+Colors_M_Errors, 0xd57e85
+Colors_HTML_HTMLLinks, 0x7297b9
+Colors_M_Warnings, 0xdcb16c
+ColorsMLintAutoFixBackground, 0xd8d5dd
+Editor.VariableHighlighting.Color, 0xd8d5dd
+Editor.NonlocalVariableHighlighting.TextColor, 0xebb790
+Editorhighlight-lines, 0xbfb9c6
+Editorhighlight-caret-row-boolean-color, 0xd8d5dd
+EditorRightTextLimitLineColor, 0xd8d5dd
+# MuPAD
+Editor.Language.MuPAD.Color.operator, 0xebb790
+Editor.Language.MuPAD.Color.function, 0x7297b9
+Editor.Language.MuPAD.Color.constant, 0xa3b367
+# TLC
+Editor.Language.TLC.Color.Colors_M_Keywords, 0xbb99b4
+# C/C++
+Editor.Language.C.Color.preprocessor, 0xebb790
+Editor.Language.C.Color.char-literal, 0x69a9a7
+# Java
+Editor.Language.Java.Color.char-literal, 0x69a9a7
+# VHDL
+Editor.Language.VHDL.Color.operator, 0xebb790
+# Verilog
+Editor.Language.Verilog.Color.operator, 0xebb790
+# XML
+Editor.Language.XML.Color.tag, 0xd57e85
+Editor.Language.XML.Color.attribute, 0xebb790
+Editor.Language.XML.Color.operator, 0xa3b367
+Editor.Language.XML.Color.value, 0x69a9a7
+Editor.Language.XML.Color.doctype, 0x7297b9
+Editor.Language.XML.Color.ref, 0xbb99b4
+Editor.Language.XML.Color.pi-content, 0xbb99b4
+Editor.Language.XML.Color.cdata-section, 0xbaa58c
+

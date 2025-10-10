@@ -1,0 +1,45 @@
+# Vibrant Ink color scheme for Matlab by FredHappyface (https://github.com/fredHappyface)
+# Apply this theme using the tinted_import function, available at 
+# https://github.com/tinted-theming/tinted-matlab 
+
+ColorsText, 0xcdcdcd
+ColorsBackground, 0x000000
+Colors_M_Keywords, 0x9933cc
+Colors_M_Comments, 0x7d7d7d
+Colors_M_Strings, 0xccff04
+Colors_M_UnterminatedStrings, 0x7f3300
+Colors_M_SystemCommands, 0x44b3cc
+Colors_M_Errors, 0xff6600
+Colors_HTML_HTMLLinks, 0x44b3cc
+Colors_M_Warnings, 0x0000ff
+ColorsMLintAutoFixBackground, 0x555555
+Editor.VariableHighlighting.Color, 0x555555
+Editor.NonlocalVariableHighlighting.TextColor, 0xffcc00
+Editorhighlight-lines, 0x7d7d7d
+Editorhighlight-caret-row-boolean-color, 0x555555
+EditorRightTextLimitLineColor, 0x555555
+# MuPAD
+Editor.Language.MuPAD.Color.operator, 0xffcc00
+Editor.Language.MuPAD.Color.function, 0x44b3cc
+Editor.Language.MuPAD.Color.constant, 0xccff04
+# TLC
+Editor.Language.TLC.Color.Colors_M_Keywords, 0x9933cc
+# C/C++
+Editor.Language.C.Color.preprocessor, 0xffcc00
+Editor.Language.C.Color.char-literal, 0x44b3cc
+# Java
+Editor.Language.Java.Color.char-literal, 0x44b3cc
+# VHDL
+Editor.Language.VHDL.Color.operator, 0xffcc00
+# Verilog
+Editor.Language.Verilog.Color.operator, 0xffcc00
+# XML
+Editor.Language.XML.Color.tag, 0xff6600
+Editor.Language.XML.Color.attribute, 0xffcc00
+Editor.Language.XML.Color.operator, 0xccff04
+Editor.Language.XML.Color.value, 0x44b3cc
+Editor.Language.XML.Color.doctype, 0x44b3cc
+Editor.Language.XML.Color.ref, 0x9933cc
+Editor.Language.XML.Color.pi-content, 0x9933cc
+Editor.Language.XML.Color.cdata-section, 0x7f3300
+

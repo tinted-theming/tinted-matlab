@@ -1,0 +1,45 @@
+# Apathy color scheme for Matlab by Jannik Siebert (https://github.com/janniks)
+# Apply this theme using the tinted_import function, available at 
+# https://github.com/tinted-theming/tinted-matlab 
+
+ColorsText, 0x81b5ac
+ColorsBackground, 0x031a16
+Colors_M_Keywords, 0x4c963e
+Colors_M_Comments, 0x2b685e
+Colors_M_Strings, 0x883e96
+Colors_M_UnterminatedStrings, 0x3e965b
+Colors_M_SystemCommands, 0x963e4c
+Colors_M_Errors, 0x3e9688
+Colors_HTML_HTMLLinks, 0x96883e
+Colors_M_Warnings, 0x3e4c96
+ColorsMLintAutoFixBackground, 0x184e45
+Editor.VariableHighlighting.Color, 0x184e45
+Editor.NonlocalVariableHighlighting.TextColor, 0x3e7996
+Editorhighlight-lines, 0x2b685e
+Editorhighlight-caret-row-boolean-color, 0x184e45
+EditorRightTextLimitLineColor, 0x184e45
+# MuPAD
+Editor.Language.MuPAD.Color.operator, 0x3e7996
+Editor.Language.MuPAD.Color.function, 0x96883e
+Editor.Language.MuPAD.Color.constant, 0x883e96
+# TLC
+Editor.Language.TLC.Color.Colors_M_Keywords, 0x4c963e
+# C/C++
+Editor.Language.C.Color.preprocessor, 0x3e7996
+Editor.Language.C.Color.char-literal, 0x963e4c
+# Java
+Editor.Language.Java.Color.char-literal, 0x963e4c
+# VHDL
+Editor.Language.VHDL.Color.operator, 0x3e7996
+# Verilog
+Editor.Language.Verilog.Color.operator, 0x3e7996
+# XML
+Editor.Language.XML.Color.tag, 0x3e9688
+Editor.Language.XML.Color.attribute, 0x3e7996
+Editor.Language.XML.Color.operator, 0x883e96
+Editor.Language.XML.Color.value, 0x963e4c
+Editor.Language.XML.Color.doctype, 0x96883e
+Editor.Language.XML.Color.ref, 0x4c963e
+Editor.Language.XML.Color.pi-content, 0x4c963e
+Editor.Language.XML.Color.cdata-section, 0x3e965b
+

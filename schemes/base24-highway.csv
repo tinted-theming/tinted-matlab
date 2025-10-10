@@ -1,0 +1,45 @@
+# Highway color scheme for Matlab by FredHappyface (https://github.com/fredHappyface)
+# Apply this theme using the tinted_import function, available at 
+# https://github.com/tinted-theming/tinted-matlab 
+
+ColorsText, 0xc8c5c4
+ColorsBackground, 0x212224
+Colors_M_Keywords, 0x6a2674
+Colors_M_Comments, 0x807672
+Colors_M_Strings, 0x128033
+Colors_M_UnterminatedStrings, 0x67060b
+Colors_M_SystemCommands, 0x384563
+Colors_M_Errors, 0xcf0d17
+Colors_HTML_HTMLLinks, 0x006ab3
+Colors_M_Warnings, 0x4fc2fd
+ColorsMLintAutoFixBackground, 0x5c4f49
+Editor.VariableHighlighting.Color, 0x5c4f49
+Editor.NonlocalVariableHighlighting.TextColor, 0xffca3d
+Editorhighlight-lines, 0x807672
+Editorhighlight-caret-row-boolean-color, 0x5c4f49
+EditorRightTextLimitLineColor, 0x5c4f49
+# MuPAD
+Editor.Language.MuPAD.Color.operator, 0xffca3d
+Editor.Language.MuPAD.Color.function, 0x006ab3
+Editor.Language.MuPAD.Color.constant, 0x128033
+# TLC
+Editor.Language.TLC.Color.Colors_M_Keywords, 0x6a2674
+# C/C++
+Editor.Language.C.Color.preprocessor, 0xffca3d
+Editor.Language.C.Color.char-literal, 0x384563
+# Java
+Editor.Language.Java.Color.char-literal, 0x384563
+# VHDL
+Editor.Language.VHDL.Color.operator, 0xffca3d
+# Verilog
+Editor.Language.Verilog.Color.operator, 0xffca3d
+# XML
+Editor.Language.XML.Color.tag, 0xcf0d17
+Editor.Language.XML.Color.attribute, 0xffca3d
+Editor.Language.XML.Color.operator, 0x128033
+Editor.Language.XML.Color.value, 0x384563
+Editor.Language.XML.Color.doctype, 0x006ab3
+Editor.Language.XML.Color.ref, 0x6a2674
+Editor.Language.XML.Color.pi-content, 0x6a2674
+Editor.Language.XML.Color.cdata-section, 0x67060b
+

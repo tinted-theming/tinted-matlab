@@ -1,0 +1,45 @@
+# Brogrammer color scheme for Matlab by Vik Ramanujam (http://github.com/piggyslasher)
+# Apply this theme using the tinted_import function, available at 
+# https://github.com/tinted-theming/tinted-matlab 
+
+ColorsText, 0x4e5ab7
+ColorsBackground, 0x1f1f1f
+Colors_M_Keywords, 0x0f7ddb
+Colors_M_Comments, 0xecba0f
+Colors_M_Strings, 0xf3bd09
+Colors_M_UnterminatedStrings, 0xffffff
+Colors_M_SystemCommands, 0x1081d6
+Colors_M_Errors, 0xd6dbe5
+Colors_HTML_HTMLLinks, 0x5350b9
+Colors_M_Warnings, 0x1dd361
+ColorsMLintAutoFixBackground, 0x2dc55e
+Editor.VariableHighlighting.Color, 0x2dc55e
+Editor.NonlocalVariableHighlighting.TextColor, 0xde352e
+Editorhighlight-lines, 0xecba0f
+Editorhighlight-caret-row-boolean-color, 0x2dc55e
+EditorRightTextLimitLineColor, 0x2dc55e
+# MuPAD
+Editor.Language.MuPAD.Color.operator, 0xde352e
+Editor.Language.MuPAD.Color.function, 0x5350b9
+Editor.Language.MuPAD.Color.constant, 0xf3bd09
+# TLC
+Editor.Language.TLC.Color.Colors_M_Keywords, 0x0f7ddb
+# C/C++
+Editor.Language.C.Color.preprocessor, 0xde352e
+Editor.Language.C.Color.char-literal, 0x1081d6
+# Java
+Editor.Language.Java.Color.char-literal, 0x1081d6
+# VHDL
+Editor.Language.VHDL.Color.operator, 0xde352e
+# Verilog
+Editor.Language.Verilog.Color.operator, 0xde352e
+# XML
+Editor.Language.XML.Color.tag, 0xd6dbe5
+Editor.Language.XML.Color.attribute, 0xde352e
+Editor.Language.XML.Color.operator, 0xf3bd09
+Editor.Language.XML.Color.value, 0x1081d6
+Editor.Language.XML.Color.doctype, 0x5350b9
+Editor.Language.XML.Color.ref, 0x0f7ddb
+Editor.Language.XML.Color.pi-content, 0x0f7ddb
+Editor.Language.XML.Color.cdata-section, 0xffffff
+

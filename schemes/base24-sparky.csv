@@ -1,0 +1,45 @@
+# Sparky color scheme for Matlab by Leila Sother (https://github.com/mixcoac)
+# Apply this theme using the tinted_import function, available at 
+# https://github.com/tinted-theming/tinted-matlab 
+
+ColorsText, 0xf4f5f0
+ColorsBackground, 0x072b31
+Colors_M_Keywords, 0xd59ed7
+Colors_M_Comments, 0x003b49
+Colors_M_Strings, 0x78d64b
+Colors_M_UnterminatedStrings, 0x9b704d
+Colors_M_SystemCommands, 0x2dccd3
+Colors_M_Errors, 0xff585d
+Colors_HTML_HTMLLinks, 0x4698cb
+Colors_M_Warnings, 0xfbdd40
+ColorsMLintAutoFixBackground, 0x003c46
+Editor.VariableHighlighting.Color, 0x003c46
+Editor.NonlocalVariableHighlighting.TextColor, 0xff8f1c
+Editorhighlight-lines, 0x003b49
+Editorhighlight-caret-row-boolean-color, 0x003c46
+EditorRightTextLimitLineColor, 0x003c46
+# MuPAD
+Editor.Language.MuPAD.Color.operator, 0xff8f1c
+Editor.Language.MuPAD.Color.function, 0x4698cb
+Editor.Language.MuPAD.Color.constant, 0x78d64b
+# TLC
+Editor.Language.TLC.Color.Colors_M_Keywords, 0xd59ed7
+# C/C++
+Editor.Language.C.Color.preprocessor, 0xff8f1c
+Editor.Language.C.Color.char-literal, 0x2dccd3
+# Java
+Editor.Language.Java.Color.char-literal, 0x2dccd3
+# VHDL
+Editor.Language.VHDL.Color.operator, 0xff8f1c
+# Verilog
+Editor.Language.Verilog.Color.operator, 0xff8f1c
+# XML
+Editor.Language.XML.Color.tag, 0xff585d
+Editor.Language.XML.Color.attribute, 0xff8f1c
+Editor.Language.XML.Color.operator, 0x78d64b
+Editor.Language.XML.Color.value, 0x2dccd3
+Editor.Language.XML.Color.doctype, 0x4698cb
+Editor.Language.XML.Color.ref, 0xd59ed7
+Editor.Language.XML.Color.pi-content, 0xd59ed7
+Editor.Language.XML.Color.cdata-section, 0x9b704d
+

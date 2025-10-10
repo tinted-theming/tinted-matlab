@@ -1,0 +1,45 @@
+# Gruvbox dark, pale color scheme for Matlab by Dawid Kurek (dawikur@gmail.com), morhetz (https://github.com/morhetz/gruvbox)
+# Apply this theme using the tinted_import function, available at 
+# https://github.com/tinted-theming/tinted-matlab 
+
+ColorsText, 0xdab997
+ColorsBackground, 0x262626
+Colors_M_Keywords, 0xd485ad
+Colors_M_Comments, 0x8a8a8a
+Colors_M_Strings, 0xafaf00
+Colors_M_UnterminatedStrings, 0xd65d0e
+Colors_M_SystemCommands, 0x85ad85
+Colors_M_Errors, 0xd75f5f
+Colors_HTML_HTMLLinks, 0x83adad
+Colors_M_Warnings, 0xffaf00
+ColorsMLintAutoFixBackground, 0x4e4e4e
+Editor.VariableHighlighting.Color, 0x4e4e4e
+Editor.NonlocalVariableHighlighting.TextColor, 0xff8700
+Editorhighlight-lines, 0x8a8a8a
+Editorhighlight-caret-row-boolean-color, 0x4e4e4e
+EditorRightTextLimitLineColor, 0x4e4e4e
+# MuPAD
+Editor.Language.MuPAD.Color.operator, 0xff8700
+Editor.Language.MuPAD.Color.function, 0x83adad
+Editor.Language.MuPAD.Color.constant, 0xafaf00
+# TLC
+Editor.Language.TLC.Color.Colors_M_Keywords, 0xd485ad
+# C/C++
+Editor.Language.C.Color.preprocessor, 0xff8700
+Editor.Language.C.Color.char-literal, 0x85ad85
+# Java
+Editor.Language.Java.Color.char-literal, 0x85ad85
+# VHDL
+Editor.Language.VHDL.Color.operator, 0xff8700
+# Verilog
+Editor.Language.Verilog.Color.operator, 0xff8700
+# XML
+Editor.Language.XML.Color.tag, 0xd75f5f
+Editor.Language.XML.Color.attribute, 0xff8700
+Editor.Language.XML.Color.operator, 0xafaf00
+Editor.Language.XML.Color.value, 0x85ad85
+Editor.Language.XML.Color.doctype, 0x83adad
+Editor.Language.XML.Color.ref, 0xd485ad
+Editor.Language.XML.Color.pi-content, 0xd485ad
+Editor.Language.XML.Color.cdata-section, 0xd65d0e
+

@@ -1,0 +1,45 @@
+# Material Darker color scheme for Matlab by Nate Peterson
+# Apply this theme using the tinted_import function, available at 
+# https://github.com/tinted-theming/tinted-matlab 
+
+ColorsText, 0xeeffff
+ColorsBackground, 0x212121
+Colors_M_Keywords, 0xc792ea
+Colors_M_Comments, 0x4a4a4a
+Colors_M_Strings, 0xc3e88d
+Colors_M_UnterminatedStrings, 0xff5370
+Colors_M_SystemCommands, 0x89ddff
+Colors_M_Errors, 0xf07178
+Colors_HTML_HTMLLinks, 0x82aaff
+Colors_M_Warnings, 0xffcb6b
+ColorsMLintAutoFixBackground, 0x353535
+Editor.VariableHighlighting.Color, 0x353535
+Editor.NonlocalVariableHighlighting.TextColor, 0xf78c6c
+Editorhighlight-lines, 0x4a4a4a
+Editorhighlight-caret-row-boolean-color, 0x353535
+EditorRightTextLimitLineColor, 0x353535
+# MuPAD
+Editor.Language.MuPAD.Color.operator, 0xf78c6c
+Editor.Language.MuPAD.Color.function, 0x82aaff
+Editor.Language.MuPAD.Color.constant, 0xc3e88d
+# TLC
+Editor.Language.TLC.Color.Colors_M_Keywords, 0xc792ea
+# C/C++
+Editor.Language.C.Color.preprocessor, 0xf78c6c
+Editor.Language.C.Color.char-literal, 0x89ddff
+# Java
+Editor.Language.Java.Color.char-literal, 0x89ddff
+# VHDL
+Editor.Language.VHDL.Color.operator, 0xf78c6c
+# Verilog
+Editor.Language.Verilog.Color.operator, 0xf78c6c
+# XML
+Editor.Language.XML.Color.tag, 0xf07178
+Editor.Language.XML.Color.attribute, 0xf78c6c
+Editor.Language.XML.Color.operator, 0xc3e88d
+Editor.Language.XML.Color.value, 0x89ddff
+Editor.Language.XML.Color.doctype, 0x82aaff
+Editor.Language.XML.Color.ref, 0xc792ea
+Editor.Language.XML.Color.pi-content, 0xc792ea
+Editor.Language.XML.Color.cdata-section, 0xff5370
+

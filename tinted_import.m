@@ -118,7 +118,7 @@ if nargin<1
 end
 
 % Input switching
-if nargin>=1 && ~ischar(fname) && ~isempty(fname)
+if nargin>=1 && ~(ischar(fname) || isstring(fname)) && ~isempty(fname)
     if ~islogical(fname) && ~isnumeric(fname)
         error('Invalid input argument 1');
     end
@@ -130,7 +130,7 @@ filefilt = ...
     '*'          ,  'All Files'                        };
 
 if ~isempty(fname)
-    if ~exist(fname, 'file')
+    if ~isfile(fname)
         error('Specified file does not exist');
     end
 else

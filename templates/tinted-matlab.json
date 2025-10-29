@@ -1,0 +1,65 @@
+{
+  "ColorSchemeName": "{{ scheme-name }}",
+  "ColorSchemeAuthor": "{{ scheme-author }}",
+  "Note": "Apply this theme in Matlab using the tinted_import function, available at https://github.com/tinted-theming/tinted-matlab",
+  "matlab": {
+    "colors": {
+      "ForeroundColor": "0x{{base05-hex}}",
+      "BackgroundColor": "0x{{base00-hex}}",
+      "KeywordColor": "0x{{base0E-hex}}",
+      "CommentColor": "0x{{base03-hex}}",
+      "StringColor": "0x{{base0B-hex}}",
+      "UnterminatedStringColor": "0x{{base0F-hex}}",
+      "SystemCommandColor": "0x{{base0C-hex}}",
+      "SyntaxErrorColor": "0x{{base08-hex}}",
+      "UseSystemColor": false,
+      "commandwindow": {
+        "HyperlinkColor": "0x{{base0D-hex}}",
+        "ErrorColor": "0x{{base08-hex}}",
+        "WarningColor": "0x{{base0A-hex}}"
+      },
+      "programmingtools": {
+        "CodeAnalyzerWarningColor": "0x{{base0A-hex}}",
+        "AutofixHighlightColor": "0x{{base02-hex}}",
+        "VariableHighlightColor": "0x{{base02-hex}}",
+        "VariablesWithSharedScopeColor": "0x{{base09-hex}}"
+      }
+    },
+    "editor": {
+      "displaysettings": {
+        "HighlightCurrentLineColor": "0x{{base03-hex}}",
+        "linelimit": {
+          "LineColor": "0x{{base02-hex}}"
+        }
+      },
+      "languages": {
+        "cpp": {
+          "Editor.Language.C.Color.preprocessor": "0x{{base09-hex}}",
+          "Editor.Language.C.Color.char-literal": "0x{{base0C-hex}}"
+        },
+        "html": {
+          "Editor.Language.XML.Color.tag": "0x{{base08-hex}}",
+          "Editor.Language.XML.Color.attribute": "0x{{base09-hex}}",
+          "Editor.Language.XML.Color.operator": "0x{{base0B-hex}}",
+          "Editor.Language.XML.Color.value": "0x{{base0C-hex}}",
+          "Editor.Language.XML.Color.doctype": "0x{{base0D-hex}}",
+          "Editor.Language.XML.Color.ref": "0x{{base0E-hex}}",
+          "Editor.Language.XML.Color.pi-content": "0x{{base0E-hex}}",
+          "Editor.Language.XML.Color.cdata-section": "0x{{base0F-hex}}"
+        },
+        "java": {
+          "Editor.Language.Java.Color.char-literal": "0x{{base0C-hex}}"
+        },
+        "tlc": {
+          "Editor.Language.TLC.Color.Colors_M_Keywords": "0x{{base0E-hex}}"
+        },
+        "verilog": {
+          "Editor.Language.Verilog.Color.operator": "0x{{base09-hex}}"
+        },
+        "vhdl": {
+          "Editor.Language.VHDL.Color.operator": "0x{{base09-hex}}"
+        }
+      }
+    }
+  }
+}

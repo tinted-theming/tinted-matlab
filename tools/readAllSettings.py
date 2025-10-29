@@ -51,16 +51,20 @@ def parse_args():
     return parser.parse_args()
 
 
+def output_pretty_settings(group: dict, indent: str):
+    print(f"{indent}(Path: {group['path']})")
+    for setting in group["settings"]:
+        print(f"{indent}{setting['name']}: {setting['value']}")
+
+
 def output_pretty(settings_tree: dict, indent_level: int = 0):
+    assert isinstance(settings_tree, dict)
     indent = "  " * indent_level
     for key, value in settings_tree.items():
-        print(f"{indent}[{key}]")
-        if "settings" in value and "attributes" in value:
-            # This is a SettingsGroup node that contains some Settings
-            for setting in value["settings"]:
-                print(f"{indent * 2}{setting['name']}: {setting['value']}")
-
-        if key not in ["settings", "attributes", "path"]:
+        if isinstance(value, dict) and key not in ["attributes", "settings"]:
+            print(f"\n{indent}[{key}]")
+            if "settings" in value:
+                output_pretty_settings(value, indent + "  ")
             output_pretty(value, indent_level + 1)
 
 

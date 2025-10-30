@@ -30,6 +30,12 @@ end
 root = settings;
 root.matlab.colors.UseSystemColor.PersonalValue = false;
 applySettingsStruct(root.matlab, data.matlab, "matlab");
+
+fprintf("Color scheme %s by %s applied.\n", data.ColorSchemeName, data.ColorSchemeAuthor);
+if isMATLABReleaseOlderThan("R2025a")
+    preferences("Colors")
+    fprintf("Matlab < R2025a detected: Click 'OK' in the preferences window to finish applying the theme.\n");
+end
 end
 
 function applySettingsStruct(currentGroup, jsonStruct, fullPath)
@@ -67,4 +73,3 @@ for i = 1:numel(fields)
     end
 end
 end
-

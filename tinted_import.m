@@ -1,225 +1,70 @@
-%TINTED_IMPORT Import a MATLAB color scheme
-%   tinted_import() with no input will prompt the user to locate the
-%   color theme source file via the GUI.
+function tinted_import(jsonFile)
+% TINTED_IMPORT
+% Reads a JSON file containing a partial MATLAB settings tree (like the
+% Base16 color scheme) and applies the specified RGB settings using the
+% `settings` function.
 %
-%   tinted_import(FILENAME) imports the color scheme options given in
-%   the file FILENAME.
-%
-%   The MATLAB preference options which will be overwritten by
-%   TINTED_IMPORT are:
-%   - All settings in the Color pane of Preferencs
-%   - All colour settings in the Color > Programming Tools pane, but no
-%     checkboxes
-%   - From Editor/Debugger > Language, the syntax highlighting colours for
-%     each language.
-%
-%   This code is based on the work of Scott C. Lowe on matlab-schemer. The
-%   original copyright notice and license is reproduced below.
-%
-% Copyright (c) 2013-2016,  Scott C. Lowe <scott.code.lowe@gmail.com>
-% Copyright (c) 2025,  Francis Thérien <frtherien@gmail.com>
-% All rights reserved.
-%
-% Redistribution and use in source and binary forms, with or without
-% modification, are permitted provided that the following conditions are
-% met:
-%     * Redistributions of source code must retain the above copyright
-%       notice, this list of conditions and the following disclaimer.
-%     * Redistributions in binary form must reproduce the above copyright
-%       notice, this list of conditions and the following disclaimer in
-%       the documentation and/or other materials provided with the distribution
-%
-% THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
-% AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
-% IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
-% ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE
-% LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR
-% CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF
-% SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS
-% INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN
-% CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)
-% ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
-% POSSIBILITY OF SUCH DAMAGE.
+% Example:
+%   applyMatlabSettingsFromJson('base16-atelier-dune.json')
+%   applyMatlabSettingsFromJson()    % -- opens a file picker
 
-% Known issues:
-%
-% 1. Text colour of automatically highlighted variables does not change
-%    colour immediately. This is an issue with matlab; if you change the main
-%    text colour in the preferences pane, highlighted variables will still
-%    have the old text colour until matlab is restarted.
-%
-% 2. Java exception is thrown when first trying to update the setting
-%    Editor.VariableHighlighting.Color. This only happens the first
-%    time TINTED_IMPORT is run, so the current fix is to catch the error
-%    and then try again. However, it might be possible for other Java
-%    exceptions get thrown under other mysterious circumstances, which could
-%    cause the function to fail.
-
-function varargout = tinted_import(fname)
-
-% ------------------------ Input handling ---------------------------------
-% ------------------------ Default inputs ---------------------------------
-if nargin<1
-    fname = []; % Ask user to select file
-end
-
-% Input switching
-if nargin>=1 && ~(ischar(fname) || isstring(fname)) && ~isempty(fname)
-    if ~islogical(fname) && ~isnumeric(fname)
-        error('Invalid input argument 1');
-    end
-end
-
-% ------------------------ Check for file ---------------------------------
-filefilt = ...
-    {'*.csv'      , 'Comma-separated values (*.prf)'   ; ...
-    '*'          ,  'All Files'                        };
-
-if ~isempty(fname)
-    if ~isfile(fname)
-        error('Specified file does not exist');
-    end
-else
-    % Dialog asking for input filename
-    % Need to make this dialogue include .txt by default, at least
-    [filename, pathname] = uigetfile(filefilt);
-    % End if user cancels
-    if isequal(filename, 0)
-        if nargout>0; varargout{1} = 0; end
+% If no file provided, open file picker
+if nargin < 1 || isempty(jsonFile)
+    [file, path] = uigetfile({'*.json', 'JSON files (*.json)'; '*.*', 'All files'}, ...
+        'Select a JSON settings file');
+    if isequal(file, 0)
+        fprintf('Operation cancelled by user.\n');
         return;
     end
-    fname = fullfile(pathname, filename);
+    jsonFile = fullfile(path, file);
 end
 
-% ------------------------ Catch block ------------------------------------
-% Somewhat inexplicably, a Java exception is thrown the first time we try
-% to set 'Editor.VariableHighlighting.Color'.
-% But if we try again immediately, it can be set without any problems.
-% The issue is very consistent.
-% The solution is to try to set this colour along with all the others,
-% catch the exception when it occurs, and then attempt to set all the
-% preferences again.
-try
-    [varargout{1:nargout}] = main(fname);
-catch ME
-    if ~strcmp(ME.identifier, 'MATLAB:Java:GenericException')
-        rethrow(ME);
-    end
-    % disp('Threw and ignored a Java exception. Retrying.');
-    [varargout{1:nargout}] = main(fname);
+% Read and parse the JSON
+txt = fileread(jsonFile);
+data = jsondecode(txt);
+
+if ~isfield(data, "matlab")
+    error("'matlab' key not found at the top level of scheme file.");
 end
 
+root = settings;
+root.matlab.colors.UseSystemColor.PersonalValue = false;
+applySettingsStruct(root.matlab, data.matlab, "matlab");
 end
 
-% ======================== Main code ======================================
-function main(fname)
+function applySettingsStruct(currentGroup, jsonStruct, fullPath)
+% Recursively apply settings from JSON to MATLAB's settings tree.
 
-colors_table = read_scheme_file(fname);
+fields = fieldnames(jsonStruct);
+for i = 1:numel(fields)
+    name = fields{i};
+    val = jsonStruct.(name);
 
-valid_pref_names = [
-    "ColorsText";
-    "ColorsBackground";
-    "Colors_M_Keywords";
-    "Colors_M_Comments";
-    "Colors_M_Strings";
-    "Colors_M_UnterminatedStrings";
-    "Colors_M_SystemCommands";
-    "Colors_M_Errors";
-    "Colors_HTML_HTMLLinks";
-    "Colors_M_Warnings";
-    "ColorsMLintAutoFixBackground";
-    "Editor.VariableHighlighting.Color";
-    "Editor.NonlocalVariableHighlighting.TextColor";
-    "Editorhighlight-lines";
-    "Editorhighlight-caret-row-boolean-color";
-    "EditorRightTextLimitLineColor";
-    "Editor.Language.MuPAD.Color.operator";
-    "Editor.Language.MuPAD.Color.function";
-    "Editor.Language.MuPAD.Color.constant";
-    "Editor.Language.TLC.Color.Colors_M_Keywords";
-    "Editor.Language.C.Color.preprocessor";
-    "Editor.Language.C.Color.char-literal";
-    "Editor.Language.Java.Color.char-literal";
-    "Editor.Language.VHDL.Color.operator";
-    "Editor.Language.Verilog.Color.operator";
-    "Editor.Language.XML.Color.tag";
-    "Editor.Language.XML.Color.attribute";
-    "Editor.Language.XML.Color.operator";
-    "Editor.Language.XML.Color.value";
-    "Editor.Language.XML.Color.doctype";
-    "Editor.Language.XML.Color.ref";
-    "Editor.Language.XML.Color.pi-content";
-    "Editor.Language.XML.Color.cdata-section";
-    ];
+    if isstruct(val)
+        % Recurse into nested groups
+        if isprop(currentGroup, name)
+            subGroup = currentGroup.(name);
+            applySettingsStruct(subGroup, val, fullPath + "." + name);
+        else
+            fprintf('⚠️  Skipping unknown group: %s.%s\n', fullPath, name);
+        end
 
-needs_restart = false;
-
-for i_row = 1:size(colors_table, 1)
-    row = colors_table(i_row, :);
-
-    % Attempt to parse color values
-    if ismissing(row.pref)
-        % Skip potential empty lines
-        continue;
-    elseif ~ismember(row.pref, valid_pref_names)
-        warning('Unknown preference name %s', row.name);
-        continue;
-    elseif ismissing(row.value)
-        warning('Missing color value for %s', row.name, row.pref);
-        continue;
-    elseif row.value.startsWith('0x')
-        % Parse hex color value
-        rgb = hex2dec(row.value);
-    elseif regexp(row.value, "^-?\d+")
-        % Parse signed integer color value (legacy matlab-schemer format)
-        rgb = str2double(row.value);
+    elseif isnumeric(val) && numel(val) == 3
+        % Apply RGB setting
+        if isprop(currentGroup, name)
+            try
+                currentGroup.(name).PersonalValue = int32(val);
+                % fprintf('✅ Updated %s.%s = [%g %g %g]\n', ...
+                %     fullPath, name, val(1), val(2), val(3));
+            catch ME
+                warning('Failed to set %s.%s: %s\n', fullPath, name, ME.message);
+            end
+        else
+            warning('Unknown setting: %s.%s\n', fullPath, name);
+        end
     else
-        warning('Bad color value for %s: %s', row.pref, row.value);
-        continue;
+        fprintf('Skipping non-RGB value at %s.%s\n', fullPath, name);
     end
-
-    % Get the current setting for this parameter
-    previousVal = ...
-        com.mathworks.services.Prefs.getColorPref(row.pref);
-
-    % Set the colour to the target value
-    jc = java.awt.Color(rgb);
-    com.mathworks.services.Prefs.setColorPref(row.pref, jc);
-    com.mathworks.services.ColorPrefs.notifyColorListeners(row.pref);
-
-    % Set flag if any colour has changed
-    needs_restart = needs_restart || ~isequal(previousVal, jc);
+end
 end
 
-% ------------------------ Tidy up ----------------------------------------
-fprintf('Imported color scheme from\n%s\n', fname);
-if needs_restart
-    disp('Some changes require MATLAB to be restarted to be activated.');
-end
-
-end
-
-function color_values_table = read_scheme_file(fname)
-% Read color scheme for a csv-format file
-% Returns a Table object with two columns of type string: pref and value
-
-% Define import options for a two-column text file
-opts = delimitedTextImportOptions(...
-    'NumVariables', 2, ...
-    'Delimiter', ',', ...           % Change this if your delimiter is different (e.g., '\t')
-    'CommentStyle', '#');
-
-% Specify column names and types
-opts.VariableNames = {'pref', 'value'};
-opts.VariableTypes = {'string', 'string'};
-
-% Handle extra columns and empty lines gracefully
-opts.ExtraColumnsRule = 'ignore';
-opts.EmptyLineRule = 'skip';
-
-% Trim whitespace
-opts = setvaropts(opts, 'pref', 'WhitespaceRule', 'trim');
-opts = setvaropts(opts, 'pref', 'EmptyFieldRule', 'auto');
-
-color_values_table = readtable(fname, opts);
-end

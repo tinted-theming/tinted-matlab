@@ -1,0 +1,88 @@
+{
+  "ColorSchemeName": "Mountain",
+  "ColorSchemeAuthor": "Stefan Weigl-Bosker (https://github.com/sweiglbosker), based on Mountain Theme (https://github.com/mountain-theme/Mountain)",
+  "Note": "Apply this theme in Matlab using the tinted_import function, available at https://github.com/tinted-theming/tinted-matlab",
+
+  "matlab": {
+    "colors": {
+      "ForegroundColor": [202, 202, 202],
+      "BackgroundColor": [15, 15, 15],
+      "KeywordColor": [172, 138, 172],
+      "CommentColor": [57, 57, 57],
+      "StringColor": [138, 172, 139],
+      "UnterminatedStringColor": [172, 138, 140],
+      "SystemCommandColor": [138, 171, 172],
+      "SyntaxErrorColor": [172, 138, 140],
+      "commandwindow": {
+        "HyperlinkColor": [143, 138, 172],
+        "ErrorColor": [172, 138, 140],
+        "WarningColor": [172, 169, 138]
+      },
+      "programmingtools": {
+        "CodeAnalyzerWarningColor": [172, 169, 138],
+        "AutofixHighlightColor": [38, 38, 38],
+        "VariableHighlightColor": [38, 38, 38],
+        "VariablesWithSharedScopeColor": [198, 166, 121]
+      }
+    },
+    "editor": {
+      "displaysettings": {
+        "HighlightCurrentLineColor": [38, 38, 38],
+        "linelimit": {
+          "LineColor": [38, 38, 38]
+        }
+      },
+      "language": {
+        "cpp": {
+          "BadCharactersColor": [172, 138, 140],
+          "CharactersColor": [138, 171, 172],
+          "CommentColor": [57, 57, 57],
+          "KeywordColor": [172, 138, 172],
+          "PreprocessorColor": [198, 166, 121],
+          "StringsColor": [138, 172, 139]
+        },
+        "html": {
+          "AttributeNameColor": [198, 166, 121],
+          "AttributeValueColor": [198, 166, 121],
+          "CdataSectionColor": [143, 138, 172],
+          "CharacterColor": [138, 171, 172],
+          "CommentColor": [57, 57, 57],
+          "DoctypeDeclarationColor": [138, 172, 139],
+          "ErrorColor": [172, 138, 140],
+          "OperatorColor": [172, 138, 172],
+          "ProcessingInstructionColor": [138, 172, 139],
+          "TagColor": [172, 138, 140]
+        },
+        "java": {
+          "CharactersColor": [138, 171, 172],
+          "CommentColor": [57, 57, 57],
+          "KeywordColor": [172, 138, 172],
+          "StringsColor": [138, 172, 139]
+        },
+        "tlc": {
+          "CommentColor": [57, 57, 57],
+          "KeywordColor": [172, 138, 172],
+          "MacroColor": [198, 166, 121],
+          "StringsColor": [138, 172, 139]
+        },
+        "verilog": {
+          "CommentColor": [57, 57, 57],
+          "KeywordColor": [172, 138, 172],
+          "OperatorColor": [198, 166, 121],
+          "StringColor": [138, 172, 139]
+        },
+        "vhdl": {
+          "CommentColor": [57, 57, 57],
+          "KeywordColor": [172, 138, 172],
+          "OperatorColor": [198, 166, 121],
+          "StringColor": [138, 172, 139]
+        }
+      }
+    },
+    "appdesigner": {
+      "codeview": {
+        "ReadonlyBackgroundColor": [38, 38, 38]
+      }
+    }
+  }
+}

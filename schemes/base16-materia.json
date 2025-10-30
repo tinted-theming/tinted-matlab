@@ -1,0 +1,88 @@
+{
+  "ColorSchemeName": "Materia",
+  "ColorSchemeAuthor": "Defman21",
+  "Note": "Apply this theme in Matlab using the tinted_import function, available at https://github.com/tinted-theming/tinted-matlab",
+
+  "matlab": {
+    "colors": {
+      "ForegroundColor": [205, 211, 222],
+      "BackgroundColor": [38, 50, 56],
+      "KeywordColor": [130, 170, 255],
+      "CommentColor": [112, 120, 128],
+      "StringColor": [139, 214, 73],
+      "UnterminatedStringColor": [236, 95, 103],
+      "SystemCommandColor": [128, 203, 196],
+      "SyntaxErrorColor": [236, 95, 103],
+      "commandwindow": {
+        "HyperlinkColor": [137, 221, 255],
+        "ErrorColor": [236, 95, 103],
+        "WarningColor": [255, 204, 0]
+      },
+      "programmingtools": {
+        "CodeAnalyzerWarningColor": [255, 204, 0],
+        "AutofixHighlightColor": [55, 71, 79],
+        "VariableHighlightColor": [55, 71, 79],
+        "VariablesWithSharedScopeColor": [234, 149, 96]
+      }
+    },
+    "editor": {
+      "displaysettings": {
+        "HighlightCurrentLineColor": [55, 71, 79],
+        "linelimit": {
+          "LineColor": [55, 71, 79]
+        }
+      },
+      "language": {
+        "cpp": {
+          "BadCharactersColor": [236, 95, 103],
+          "CharactersColor": [128, 203, 196],
+          "CommentColor": [112, 120, 128],
+          "KeywordColor": [130, 170, 255],
+          "PreprocessorColor": [234, 149, 96],
+          "StringsColor": [139, 214, 73]
+        },
+        "html": {
+          "AttributeNameColor": [234, 149, 96],
+          "AttributeValueColor": [234, 149, 96],
+          "CdataSectionColor": [137, 221, 255],
+          "CharacterColor": [128, 203, 196],
+          "CommentColor": [112, 120, 128],
+          "DoctypeDeclarationColor": [139, 214, 73],
+          "ErrorColor": [236, 95, 103],
+          "OperatorColor": [130, 170, 255],
+          "ProcessingInstructionColor": [139, 214, 73],
+          "TagColor": [236, 95, 103]
+        },
+        "java": {
+          "CharactersColor": [128, 203, 196],
+          "CommentColor": [112, 120, 128],
+          "KeywordColor": [130, 170, 255],
+          "StringsColor": [139, 214, 73]
+        },
+        "tlc": {
+          "CommentColor": [112, 120, 128],
+          "KeywordColor": [130, 170, 255],
+          "MacroColor": [234, 149, 96],
+          "StringsColor": [139, 214, 73]
+        },
+        "verilog": {
+          "CommentColor": [112, 120, 128],
+          "KeywordColor": [130, 170, 255],
+          "OperatorColor": [234, 149, 96],
+          "StringColor": [139, 214, 73]
+        },
+        "vhdl": {
+          "CommentColor": [112, 120, 128],
+          "KeywordColor": [130, 170, 255],
+          "OperatorColor": [234, 149, 96],
+          "StringColor": [139, 214, 73]
+        }
+      }
+    },
+    "appdesigner": {
+      "codeview": {
+        "ReadonlyBackgroundColor": [55, 71, 79]
+      }
+    }
+  }
+}

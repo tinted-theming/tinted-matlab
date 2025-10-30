@@ -20,14 +20,14 @@
       },
       "programmingtools": {
         "CodeAnalyzerWarningColor": [243, 249, 157],
-        "AutofixHighlightColor": [67, 69, 79],
+        "AutofixHighlightColor": [178, 100, 60],
         "VariableHighlightColor": [67, 69, 79],
         "VariablesWithSharedScopeColor": [255, 159, 67]
       }
     },
     "editor": {
       "displaysettings": {
-        "HighlightCurrentLineColor": [67, 69, 79],
+        "HighlightCurrentLineColor": [52, 53, 62],
         "linelimit": {
           "LineColor": [67, 69, 79]
         }

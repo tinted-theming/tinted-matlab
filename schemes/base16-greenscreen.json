@@ -27,7 +27,7 @@
     },
     "editor": {
       "displaysettings": {
-        "HighlightCurrentLineColor": [0, 85, 0],
+        "HighlightCurrentLineColor": [0, 51, 0],
         "linelimit": {
           "LineColor": [0, 85, 0]
         }

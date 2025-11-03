@@ -1,12 +1,15 @@
 function tinted_import(jsonFile)
 % TINTED_IMPORT
-% Reads a JSON file containing a partial MATLAB settings tree (like the
-% Base16 color scheme) and applies the specified RGB settings using the
-% `settings` function.
+% Reads a JSON file containing a color scheme and applies the color-related
+% settings in Matlab using the `settings` function.
+%
+% The JSON file should contain a settings tree and the color values
+% must be specified as an 8-bit (0-255) RGB triplet array, for example
+% `[248, 248, 242]`.
 %
 % Example:
-%   applyMatlabSettingsFromJson('base16-atelier-dune.json')
-%   applyMatlabSettingsFromJson()    % -- opens a file picker
+%   tinted_import("schemes/base16-dracula.json")
+%   tinted_import    % -- opens a file picker
 
 % If no file provided, open file picker
 if nargin < 1 || isempty(jsonFile)

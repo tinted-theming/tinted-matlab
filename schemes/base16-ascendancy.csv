@@ -1,0 +1,45 @@
+# Ascendancy color scheme for Matlab by EmergentMind (https://github.com/emergentmind/ascendancy-scheme)
+# Apply this theme using the tinted_import function, available at 
+# https://github.com/tinted-theming/tinted-matlab 
+
+ColorsText, 0xd5c7a1
+ColorsBackground, 0x282828
+Colors_M_Keywords, 0xfabd2f
+Colors_M_Comments, 0x928374
+Colors_M_Strings, 0xb8bb26
+Colors_M_UnterminatedStrings, 0xb59b4d
+Colors_M_SystemCommands, 0x8f3f71
+Colors_M_Errors, 0xc03900
+Colors_HTML_HTMLLinks, 0x458588
+Colors_M_Warnings, 0xffcc1b
+ColorsMLintAutoFixBackground, 0x504945
+Editor.VariableHighlighting.Color, 0x504945
+Editor.NonlocalVariableHighlighting.TextColor, 0xfe8019
+Editorhighlight-lines, 0x928374
+Editorhighlight-caret-row-boolean-color, 0x504945
+EditorRightTextLimitLineColor, 0x504945
+# MuPAD
+Editor.Language.MuPAD.Color.operator, 0xfe8019
+Editor.Language.MuPAD.Color.function, 0x458588
+Editor.Language.MuPAD.Color.constant, 0xb8bb26
+# TLC
+Editor.Language.TLC.Color.Colors_M_Keywords, 0xfabd2f
+# C/C++
+Editor.Language.C.Color.preprocessor, 0xfe8019
+Editor.Language.C.Color.char-literal, 0x8f3f71
+# Java
+Editor.Language.Java.Color.char-literal, 0x8f3f71
+# VHDL
+Editor.Language.VHDL.Color.operator, 0xfe8019
+# Verilog
+Editor.Language.Verilog.Color.operator, 0xfe8019
+# XML
+Editor.Language.XML.Color.tag, 0xc03900
+Editor.Language.XML.Color.attribute, 0xfe8019
+Editor.Language.XML.Color.operator, 0xb8bb26
+Editor.Language.XML.Color.value, 0x8f3f71
+Editor.Language.XML.Color.doctype, 0x458588
+Editor.Language.XML.Color.ref, 0xfabd2f
+Editor.Language.XML.Color.pi-content, 0xfabd2f
+Editor.Language.XML.Color.cdata-section, 0xb59b4d
+

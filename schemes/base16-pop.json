@@ -20,8 +20,8 @@
       },
       "programmingtools": {
         "CodeAnalyzerWarningColor": [248, 202, 18],
-        "AutofixHighlightColor": [122, 45, 0],
-        "VariableHighlightColor": [48, 48, 48],
+        "AutofixHighlightColor": [248, 202, 18],
+        "VariableHighlightColor": [0, 170, 187],
         "VariablesWithSharedScopeColor": [242, 147, 51]
       }
     },

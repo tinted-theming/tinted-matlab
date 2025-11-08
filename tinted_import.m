@@ -11,6 +11,11 @@ function tinted_import(jsonFile)
 %   tinted_import("schemes/base16-dracula.json")
 %   tinted_import    % -- opens a file picker
 
+% Check if we are running in New Desktop in R2024 or R2023
+if isMATLABReleaseOlderThan("R2025a") && rendererinfo().GraphicsRenderer == "WebGL"
+    error("This function is not compatible with the New Desktop beta add-on in Matlab releases older than R2025a")
+end
+
 % If no file provided, open file picker
 if nargin < 1 || isempty(jsonFile)
     [file, path] = uigetfile({'*.json', 'JSON files (*.json)'; '*.*', 'All files'}, ...
@@ -32,6 +37,7 @@ end
 
 root = settings;
 root.matlab.colors.UseSystemColor.PersonalValue = false;
+data = mixBgHighlight(data);
 applySettingsStruct(root.matlab, data.matlab, "matlab");
 
 fprintf("Color scheme %s by %s applied.\n", data.ColorSchemeName, data.ColorSchemeAuthor);
@@ -39,6 +45,22 @@ if isMATLABReleaseOlderThan("R2025a")
     preferences("Colors")
     fprintf("Matlab < R2025a detected: Click 'OK' in the preferences window to finish applying the theme.\n");
 end
+end
+
+function newStruct = mixBgHighlight(jsonColorsStruct)
+% Mix highlight background colors with the base background color in order
+% to produce highlight color that produces a reasonable contrast with the
+% foreground (text) color.
+bgcolor = jsonColorsStruct.matlab.colors.BackgroundColor;
+autofixColor = jsonColorsStruct.matlab.colors.programmingtools.AutofixHighlightColor;
+variablehlColor = jsonColorsStruct.matlab.colors.programmingtools.VariableHighlightColor;
+
+alpha = 0.4;
+newStruct = jsonColorsStruct;
+newStruct.matlab.colors.programmingtools.AutofixHighlightColor = ...
+    (1 - alpha) * bgcolor + alpha * autofixColor;
+newStruct.matlab.colors.programmingtools.VariableHighlightColor = ...
+    (1 - alpha) * bgcolor + alpha * variablehlColor;
 end
 
 function applySettingsStruct(currentGroup, jsonStruct, fullPath)

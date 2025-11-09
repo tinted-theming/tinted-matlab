@@ -16,13 +16,13 @@
       "commandwindow": {
         "HyperlinkColor": [101, 135, 191],
         "ErrorColor": [219, 112, 112],
-        "WarningColor": [214, 152, 34]
+        "WarningColor": [235, 204, 26]
       },
       "programmingtools": {
-        "CodeAnalyzerWarningColor": [214, 152, 34],
-        "AutofixHighlightColor": [214, 152, 34],
+        "CodeAnalyzerWarningColor": [235, 204, 26],
+        "AutofixHighlightColor": [235, 204, 26],
         "VariableHighlightColor": [80, 156, 147],
-        "VariablesWithSharedScopeColor": [219, 112, 112]
+        "VariablesWithSharedScopeColor": [235, 163, 26]
       }
     },
     "editor": {
@@ -38,12 +38,12 @@
           "CharactersColor": [80, 156, 147],
           "CommentColor": [94, 100, 111],
           "KeywordColor": [184, 112, 206],
-          "PreprocessorColor": [219, 112, 112],
+          "PreprocessorColor": [235, 163, 26],
           "StringsColor": [124, 159, 75]
         },
         "html": {
-          "AttributeNameColor": [219, 112, 112],
-          "AttributeValueColor": [219, 112, 112],
+          "AttributeNameColor": [235, 163, 26],
+          "AttributeValueColor": [235, 163, 26],
           "CdataSectionColor": [101, 135, 191],
           "CharacterColor": [80, 156, 147],
           "CommentColor": [94, 100, 111],
@@ -62,19 +62,19 @@
         "tlc": {
           "CommentColor": [94, 100, 111],
           "KeywordColor": [184, 112, 206],
-          "MacroColor": [219, 112, 112],
+          "MacroColor": [235, 163, 26],
           "StringsColor": [124, 159, 75]
         },
         "verilog": {
           "CommentColor": [94, 100, 111],
           "KeywordColor": [184, 112, 206],
-          "OperatorColor": [219, 112, 112],
+          "OperatorColor": [235, 163, 26],
           "StringColor": [124, 159, 75]
         },
         "vhdl": {
           "CommentColor": [94, 100, 111],
           "KeywordColor": [184, 112, 206],
-          "OperatorColor": [219, 112, 112],
+          "OperatorColor": [235, 163, 26],
           "StringColor": [124, 159, 75]
         }
       }

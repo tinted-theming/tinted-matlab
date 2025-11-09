@@ -6,7 +6,7 @@
   "matlab": {
     "colors": {
       "ForegroundColor": [207, 208, 210],
-      "BackgroundColor": [250, 250, 250],
+      "BackgroundColor": [42, 43, 50],
       "KeywordColor": [166, 37, 164],
       "CommentColor": [121, 124, 132],
       "StringColor": [79, 161, 79],
@@ -16,11 +16,11 @@
       "commandwindow": {
         "HyperlinkColor": [0, 132, 188],
         "ErrorColor": [228, 86, 73],
-        "WarningColor": [97, 175, 239]
+        "WarningColor": [192, 170, 0]
       },
       "programmingtools": {
-        "CodeAnalyzerWarningColor": [97, 175, 239],
-        "AutofixHighlightColor": [97, 175, 239],
+        "CodeAnalyzerWarningColor": [192, 170, 0],
+        "AutofixHighlightColor": [192, 170, 0],
         "VariableHighlightColor": [9, 150, 179],
         "VariablesWithSharedScopeColor": [192, 132, 0]
       }

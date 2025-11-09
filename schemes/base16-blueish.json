@@ -16,11 +16,11 @@
       "commandwindow": {
         "HyperlinkColor": [130, 170, 255],
         "ErrorColor": [76, 229, 135],
-        "WarningColor": [130, 170, 255]
+        "WarningColor": [246, 205, 92]
       },
       "programmingtools": {
-        "CodeAnalyzerWarningColor": [130, 170, 255],
-        "AutofixHighlightColor": [130, 170, 255],
+        "CodeAnalyzerWarningColor": [246, 205, 92],
+        "AutofixHighlightColor": [246, 205, 92],
         "VariableHighlightColor": [95, 209, 255],
         "VariablesWithSharedScopeColor": [246, 168, 92]
       }

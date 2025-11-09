@@ -6,7 +6,7 @@
   "matlab": {
     "colors": {
       "ForegroundColor": [185, 177, 184],
-      "BackgroundColor": [255, 140, 217],
+      "BackgroundColor": [255, 122, 211],
       "KeywordColor": [255, 54, 162],
       "CommentColor": [105, 103, 105],
       "StringColor": [186, 252, 139],
@@ -16,13 +16,13 @@
       "commandwindow": {
         "HyperlinkColor": [20, 95, 205],
         "ErrorColor": [168, 15, 32],
-        "WarningColor": [0, 116, 234]
+        "WarningColor": [238, 223, 75]
       },
       "programmingtools": {
-        "CodeAnalyzerWarningColor": [0, 116, 234],
-        "AutofixHighlightColor": [0, 116, 234],
+        "CodeAnalyzerWarningColor": [238, 223, 75],
+        "AutofixHighlightColor": [238, 223, 75],
         "VariableHighlightColor": [107, 208, 188],
-        "VariablesWithSharedScopeColor": [238, 223, 75]
+        "VariablesWithSharedScopeColor": [238, 170, 75]
       }
     },
     "editor": {
@@ -38,12 +38,12 @@
           "CharactersColor": [107, 208, 188],
           "CommentColor": [105, 103, 105],
           "KeywordColor": [255, 54, 162],
-          "PreprocessorColor": [238, 223, 75],
+          "PreprocessorColor": [238, 170, 75],
           "StringsColor": [186, 252, 139]
         },
         "html": {
-          "AttributeNameColor": [238, 223, 75],
-          "AttributeValueColor": [238, 223, 75],
+          "AttributeNameColor": [238, 170, 75],
+          "AttributeValueColor": [238, 170, 75],
           "CdataSectionColor": [20, 95, 205],
           "CharacterColor": [107, 208, 188],
           "CommentColor": [105, 103, 105],
@@ -62,19 +62,19 @@
         "tlc": {
           "CommentColor": [105, 103, 105],
           "KeywordColor": [255, 54, 162],
-          "MacroColor": [238, 223, 75],
+          "MacroColor": [238, 170, 75],
           "StringsColor": [186, 252, 139]
         },
         "verilog": {
           "CommentColor": [105, 103, 105],
           "KeywordColor": [255, 54, 162],
-          "OperatorColor": [238, 223, 75],
+          "OperatorColor": [238, 170, 75],
           "StringColor": [186, 252, 139]
         },
         "vhdl": {
           "CommentColor": [105, 103, 105],
           "KeywordColor": [255, 54, 162],
-          "OperatorColor": [238, 223, 75],
+          "OperatorColor": [238, 170, 75],
           "StringColor": [186, 252, 139]
         }
       }

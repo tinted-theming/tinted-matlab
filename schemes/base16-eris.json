@@ -1,28 +1,28 @@
 {
   "ColorSchemeName": "eris",
-  "ColorSchemeAuthor": "ed (https://codeberg.org/ed)",
+  "ColorSchemeAuthor": "ed (https://codeberg.org/ed), Tinted Theming (https://github.com/tinted-theming)",
   "Note": "Apply this theme in Matlab using the tinted_import function, available at https://github.com/tinted-theming/tinted-matlab",
 
   "matlab": {
     "colors": {
       "ForegroundColor": [96, 107, 172],
       "BackgroundColor": [10, 9, 32],
-      "KeywordColor": [247, 104, 163],
+      "KeywordColor": [195, 104, 247],
       "CommentColor": [51, 55, 115],
-      "StringColor": [250, 174, 162],
-      "UnterminatedStringColor": [247, 104, 163],
-      "SystemCommandColor": [37, 143, 196],
+      "StringColor": [162, 250, 168],
+      "UnterminatedStringColor": [184, 86, 0],
+      "SystemCommandColor": [162, 250, 240],
       "SyntaxErrorColor": [247, 104, 163],
       "commandwindow": {
         "HyperlinkColor": [37, 143, 196],
         "ErrorColor": [247, 104, 163],
-        "WarningColor": [250, 174, 162]
+        "WarningColor": [247, 214, 104]
       },
       "programmingtools": {
-        "CodeAnalyzerWarningColor": [250, 174, 162],
-        "AutofixHighlightColor": [250, 174, 162],
-        "VariableHighlightColor": [37, 143, 196],
-        "VariablesWithSharedScopeColor": [247, 104, 163]
+        "CodeAnalyzerWarningColor": [247, 214, 104],
+        "AutofixHighlightColor": [247, 214, 104],
+        "VariableHighlightColor": [162, 250, 240],
+        "VariablesWithSharedScopeColor": [247, 137, 104]
       }
     },
     "editor": {
@@ -34,48 +34,48 @@
       },
       "language": {
         "cpp": {
-          "BadCharactersColor": [247, 104, 163],
-          "CharactersColor": [37, 143, 196],
+          "BadCharactersColor": [184, 86, 0],
+          "CharactersColor": [162, 250, 240],
           "CommentColor": [51, 55, 115],
-          "KeywordColor": [247, 104, 163],
-          "PreprocessorColor": [247, 104, 163],
-          "StringsColor": [250, 174, 162]
+          "KeywordColor": [195, 104, 247],
+          "PreprocessorColor": [247, 137, 104],
+          "StringsColor": [162, 250, 168]
         },
         "html": {
-          "AttributeNameColor": [247, 104, 163],
-          "AttributeValueColor": [247, 104, 163],
+          "AttributeNameColor": [247, 137, 104],
+          "AttributeValueColor": [247, 137, 104],
           "CdataSectionColor": [37, 143, 196],
-          "CharacterColor": [37, 143, 196],
+          "CharacterColor": [162, 250, 240],
           "CommentColor": [51, 55, 115],
-          "DoctypeDeclarationColor": [250, 174, 162],
-          "ErrorColor": [247, 104, 163],
-          "OperatorColor": [247, 104, 163],
-          "ProcessingInstructionColor": [250, 174, 162],
+          "DoctypeDeclarationColor": [162, 250, 168],
+          "ErrorColor": [184, 86, 0],
+          "OperatorColor": [195, 104, 247],
+          "ProcessingInstructionColor": [162, 250, 168],
           "TagColor": [247, 104, 163]
         },
         "java": {
-          "CharactersColor": [37, 143, 196],
+          "CharactersColor": [162, 250, 240],
           "CommentColor": [51, 55, 115],
-          "KeywordColor": [247, 104, 163],
-          "StringsColor": [250, 174, 162]
+          "KeywordColor": [195, 104, 247],
+          "StringsColor": [162, 250, 168]
         },
         "tlc": {
           "CommentColor": [51, 55, 115],
-          "KeywordColor": [247, 104, 163],
-          "MacroColor": [247, 104, 163],
-          "StringsColor": [250, 174, 162]
+          "KeywordColor": [195, 104, 247],
+          "MacroColor": [247, 137, 104],
+          "StringsColor": [162, 250, 168]
         },
         "verilog": {
           "CommentColor": [51, 55, 115],
-          "KeywordColor": [247, 104, 163],
-          "OperatorColor": [247, 104, 163],
-          "StringColor": [250, 174, 162]
+          "KeywordColor": [195, 104, 247],
+          "OperatorColor": [247, 137, 104],
+          "StringColor": [162, 250, 168]
         },
         "vhdl": {
           "CommentColor": [51, 55, 115],
-          "KeywordColor": [247, 104, 163],
-          "OperatorColor": [247, 104, 163],
-          "StringColor": [250, 174, 162]
+          "KeywordColor": [195, 104, 247],
+          "OperatorColor": [247, 137, 104],
+          "StringColor": [162, 250, 168]
         }
       }
     },

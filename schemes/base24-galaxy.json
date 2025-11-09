@@ -16,13 +16,13 @@
       "commandwindow": {
         "HyperlinkColor": [88, 156, 245],
         "ErrorColor": [249, 85, 95],
-        "WarningColor": [88, 156, 245]
+        "WarningColor": [253, 240, 41]
       },
       "programmingtools": {
-        "CodeAnalyzerWarningColor": [88, 156, 245],
-        "AutofixHighlightColor": [88, 156, 245],
+        "CodeAnalyzerWarningColor": [253, 240, 41],
+        "AutofixHighlightColor": [253, 240, 41],
         "VariableHighlightColor": [30, 158, 230],
-        "VariablesWithSharedScopeColor": [253, 240, 41]
+        "VariablesWithSharedScopeColor": [253, 186, 41]
       }
     },
     "editor": {
@@ -38,12 +38,12 @@
           "CharactersColor": [30, 158, 230],
           "CommentColor": [110, 110, 110],
           "KeywordColor": [147, 77, 149],
-          "PreprocessorColor": [253, 240, 41],
+          "PreprocessorColor": [253, 186, 41],
           "StringsColor": [32, 175, 137]
         },
         "html": {
-          "AttributeNameColor": [253, 240, 41],
-          "AttributeValueColor": [253, 240, 41],
+          "AttributeNameColor": [253, 186, 41],
+          "AttributeValueColor": [253, 186, 41],
           "CdataSectionColor": [88, 156, 245],
           "CharacterColor": [30, 158, 230],
           "CommentColor": [110, 110, 110],
@@ -62,19 +62,19 @@
         "tlc": {
           "CommentColor": [110, 110, 110],
           "KeywordColor": [147, 77, 149],
-          "MacroColor": [253, 240, 41],
+          "MacroColor": [253, 186, 41],
           "StringsColor": [32, 175, 137]
         },
         "verilog": {
           "CommentColor": [110, 110, 110],
           "KeywordColor": [147, 77, 149],
-          "OperatorColor": [253, 240, 41],
+          "OperatorColor": [253, 186, 41],
           "StringColor": [32, 175, 137]
         },
         "vhdl": {
           "CommentColor": [110, 110, 110],
           "KeywordColor": [147, 77, 149],
-          "OperatorColor": [253, 240, 41],
+          "OperatorColor": [253, 186, 41],
           "StringColor": [32, 175, 137]
         }
       }

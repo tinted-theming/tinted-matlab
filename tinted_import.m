@@ -160,7 +160,7 @@ function [exists, hexColor] = getStructPathColorHex(s, path)
 [exists, value] = getStructPath(s, path);
 
 if isnumeric(value) && numel(value) == 3
-    hexColor = rgb2hex(reshape(value, 1, 3) / 255);
+    hexColor = lower(rgb2hex(reshape(value, 1, 3) / 255));
 else
     % Value does not match a [R, G, B] color
     exists = false;
@@ -173,7 +173,7 @@ function applyColorSettingsR2025(root, json_struct)
 
 % Get currently active Matlab Desktop theme (light or dark)
 % We will apply the color settings to the currently active theme.
-theme = root.appearance.MATLABTheme.ActiveValue;
+theme = lower(root.appearance.MATLABTheme.ActiveValue);
 
 shl_colors = jsondecode(root.colors.SyntaxHighlightingColors.ActiveValue);
 dt_colors = jsondecode(root.colors.DesktopColors.ActiveValue);
@@ -209,12 +209,24 @@ for dst_field = dst_fields'
     end
 end
 
-dt_colors.(theme).ForegroundColor = getStructPathColorHex(...
-    json_struct, ".colors.ForegroundColor");
-dt_colors.(theme).BackgroundColor = getStructPathColorHex(...
-    json_struct, ".colors.BackgroundColor");
+desktopColorsDict = dictionary( ...
+    "ForegroundColor", ".colors.ForegroundColor", ...
+    "BackgroundColor", ".colors.BackgroundColor" ...
+);
 
-root.colors.SyntaxHighlightingColors.ActiveValue = jsonencode(shl_colors);
-root.colors.DesktopColors.ActiveValue = jsonencode(shl_colors);
+dst_fields = desktopColorsDict.keys;
+for dst_field = dst_fields'
+    src_path = desktopColorsDict(dst_field);
+    [src_exists, src_hexColor] = getStructPathColorHex(json_struct, src_path);
+    if src_exists
+        dt_colors.(theme).(dst_field) = src_hexColor;
+    else
+        warning("Color setting not found in scheme file: %s", src_path)
+    end
+end
+
+
+root.colors.SyntaxHighlightingColors.PersonalValue = jsonencode(shl_colors);
+root.colors.DesktopColors.PersonalValue = jsonencode(dt_colors);
 
 end

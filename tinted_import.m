@@ -37,13 +37,15 @@ end
 
 root = settings;
 root.matlab.colors.UseSystemColor.PersonalValue = false;
-data = mixBgHighlight(data);
-applySettingsStruct(root.matlab, data.matlab, "matlab");
+data = mixBgHighlight(data.matlab);
+applySettingsStruct(root.matlab, data, "matlab");
 
 fprintf("Color scheme %s by %s applied.\n", data.ColorSchemeName, data.ColorSchemeAuthor);
 if isMATLABReleaseOlderThan("R2025a")
     preferences("Colors")
     fprintf("Matlab < R2025a detected: Click 'OK' in the preferences window to finish applying the theme.\n");
+else
+    applyColorSettingsR2025(data.matlab);
 end
 end
 
@@ -51,15 +53,15 @@ function newStruct = mixBgHighlight(jsonColorsStruct)
 % Mix highlight background colors with the base background color in order
 % to produce highlight color that produces a reasonable contrast with the
 % foreground (text) color.
-bgcolor = jsonColorsStruct.matlab.colors.BackgroundColor;
-autofixColor = jsonColorsStruct.matlab.colors.programmingtools.AutofixHighlightColor;
-variablehlColor = jsonColorsStruct.matlab.colors.programmingtools.VariableHighlightColor;
+bgcolor = jsonColorsStruct.colors.BackgroundColor;
+autofixColor = jsonColorsStruct.colors.programmingtools.AutofixHighlightColor;
+variablehlColor = jsonColorsStruct.colors.programmingtools.VariableHighlightColor;
 
 alpha = 0.4;
 newStruct = jsonColorsStruct;
-newStruct.matlab.colors.programmingtools.AutofixHighlightColor = ...
+newStruct.colors.programmingtools.AutofixHighlightColor = ...
     (1 - alpha) * bgcolor + alpha * autofixColor;
-newStruct.matlab.colors.programmingtools.VariableHighlightColor = ...
+newStruct.colors.programmingtools.VariableHighlightColor = ...
     (1 - alpha) * bgcolor + alpha * variablehlColor;
 end
 
@@ -97,4 +99,121 @@ for i = 1:numel(fields)
         fprintf('Skipping non-RGB value at %s.%s\n', fullPath, name);
     end
 end
+end
+
+function [exists, value] = getStructPath(s, path)
+%GETSTRUCTPATH  Recursively resolve a dotted field path in a struct
+%
+%   [exists, value] = getStructPath(s, path)
+%
+%   s     : struct to search
+%   path  : string or char, e.g. ".colors.commandwindow.HyperlinkColor"
+%
+%   exists: logical true if the path exists
+%   value : value at the path if it exists, [] otherwise
+
+    arguments
+        s (1,1) struct
+        path {mustBeTextScalar}
+    end
+
+    % Normalize path: remove leading dot if present
+    path = char(path);
+    if startsWith(path, '.')
+        path = path(2:end);
+    end
+
+    % Split first field from remainder
+    parts = split(path, '.');
+    head  = parts{1};
+
+    % Base failure
+    if ~isfield(s, head)
+        exists = false;
+        value  = [];
+        return
+    end
+
+    % Base success
+    if numel(parts) == 1
+        exists = true;
+        value  = s.(head);
+        return
+    end
+
+    % Recursive descent
+    next = s.(head);
+    if ~isstruct(next)
+        exists = false;
+        value  = [];
+        return
+    end
+
+    tail = strjoin(parts(2:end), '.');
+    [exists, value] = getStructPath(next, tail);
+end
+
+function [exists, hexColor] = getStructPathColorHex(s, path)
+% Get value from struct path, check if it is a valid color, and convert to
+% hex color format.
+
+[exists, value] = getStructPath(s, path);
+
+if isnumeric(value) && numel(value) == 3
+    hexColor = rgb2hex(value / 255);
+else
+    % Value does not match a [R, G, B] color
+    exists = false;
+    hexColor = [];
+end
+end
+
+function applyColorSettingsR2025(json_struct)
+% Apply color settings for version R2025a+
+
+% Get currently active Matlab Desktop theme (light or dark)
+% We will apply the color settings to the currently active theme.
+theme = stngs.appearanceTheme.ActiveValue;
+
+shl_colors = jsondecode(settings().colors.SyntaxHighlightingColors.ActiveValue);
+dt_colors = jsondecode(settings().colors.DesktopColors.ActiveValue);
+
+syntaxColorsDict = dictionary( ...
+    "KeywordColor",                     ".colors.KeywordColor", ...
+    "CommentColor",                     ".colors.CommentColor", ...
+    "StringColor",                      ".colors.StringColor", ...
+    "UnterminatedStringColor",          ".colors.UnterminatedStringColor", ...
+    "SystemCommandColor",               ".colors.SystemCommandColor", ...
+    "SyntaxErrorColor",                 ".colors.SyntaxErrorColor", ...
+    "HyperlinkColor",                   ".colors.commandwindow.HyperlinkColor", ...
+    "ErrorColor",                       ".colors.commandwindow.ErrorColor", ...
+    "WarningColor",                     ".colors.commandwindow.WarningColor", ...
+    "CodeAnalyzerWarningColor",         ".colors.programmingtools.CodeAnalyzerWarningColor", ...
+    "AutofixHighlightColor",            ".colors.programmingtools.AutofixHighlightColor", ...
+    "VariableHighlightColor",           ".colors.programmingtools.VariableHighlightColor", ...
+    "VariablesWithSharedScopeColor",    ".colors.programmingtools.VariablesWithSharedScopeColor", ...
+    "HighlightCurrentLineColor",        ".editor.displaysettings.HighlightCurrentLineColor", ...
+    "LineColor",                        ".editor.displaysettings.linelimit.LineColor", ...
+    "CodeColor",                        ".colors.ForegroundColor", ...
+    "NormalColor",                      ".colors.ForegroundColor" ...
+);
+
+for dst_field = syntaxColorsDict.keys
+    src_path = syntaxColorsDict(dst_field);
+    [src_exists, src_hexColor] = getStructPathColorHex(json_struct, src_path);
+    if src_exists
+        shl_colors.(theme).(dst_field) = src_hexColor;
+    else
+        warning("Color setting not found in scheme file: %s", src_path)
+    end
+end
+
+dt_colors.(theme).ForegroundColor = getStructPathColorHex(...
+    json_struct, ".colors.ForegroundColor");
+dt_colors.(theme).BackgroundColor = getStructPathColorHex(...
+    json_struct, ".colors.BackgroundColor");
+
+settings().colors.SyntaxHighlightingColors.ActiveValue = jsonencode(shl_colors);
+settings().colors.DesktopColors.ActiveValue = jsonencode(shl_colors);
+
 end

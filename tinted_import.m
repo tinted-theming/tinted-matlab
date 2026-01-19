@@ -37,15 +37,15 @@ end
 
 root = settings;
 root.matlab.colors.UseSystemColor.PersonalValue = false;
-data = mixBgHighlight(data.matlab);
-applySettingsStruct(root.matlab, data, "matlab");
+data = mixBgHighlight(data);
+applySettingsStruct(root.matlab, data.matlab, "matlab");
 
 fprintf("Color scheme %s by %s applied.\n", data.ColorSchemeName, data.ColorSchemeAuthor);
 if isMATLABReleaseOlderThan("R2025a")
     preferences("Colors")
     fprintf("Matlab < R2025a detected: Click 'OK' in the preferences window to finish applying the theme.\n");
 else
-    applyColorSettingsR2025(data.matlab);
+    applyColorSettingsR2025(root.matlab, data.matlab);
 end
 end
 
@@ -53,15 +53,15 @@ function newStruct = mixBgHighlight(jsonColorsStruct)
 % Mix highlight background colors with the base background color in order
 % to produce highlight color that produces a reasonable contrast with the
 % foreground (text) color.
-bgcolor = jsonColorsStruct.colors.BackgroundColor;
-autofixColor = jsonColorsStruct.colors.programmingtools.AutofixHighlightColor;
-variablehlColor = jsonColorsStruct.colors.programmingtools.VariableHighlightColor;
+bgcolor = jsonColorsStruct.matlab.colors.BackgroundColor;
+autofixColor = jsonColorsStruct.matlab.colors.programmingtools.AutofixHighlightColor;
+variablehlColor = jsonColorsStruct.matlab.colors.programmingtools.VariableHighlightColor;
 
 alpha = 0.4;
 newStruct = jsonColorsStruct;
-newStruct.colors.programmingtools.AutofixHighlightColor = ...
+newStruct.matlab.colors.programmingtools.AutofixHighlightColor = ...
     (1 - alpha) * bgcolor + alpha * autofixColor;
-newStruct.colors.programmingtools.VariableHighlightColor = ...
+newStruct.matlab.colors.programmingtools.VariableHighlightColor = ...
     (1 - alpha) * bgcolor + alpha * variablehlColor;
 end
 
@@ -160,7 +160,7 @@ function [exists, hexColor] = getStructPathColorHex(s, path)
 [exists, value] = getStructPath(s, path);
 
 if isnumeric(value) && numel(value) == 3
-    hexColor = rgb2hex(value / 255);
+    hexColor = rgb2hex(reshape(value, 1, 3) / 255);
 else
     % Value does not match a [R, G, B] color
     exists = false;
@@ -168,15 +168,15 @@ else
 end
 end
 
-function applyColorSettingsR2025(json_struct)
+function applyColorSettingsR2025(root, json_struct)
 % Apply color settings for version R2025a+
 
 % Get currently active Matlab Desktop theme (light or dark)
 % We will apply the color settings to the currently active theme.
-theme = stngs.appearanceTheme.ActiveValue;
+theme = root.appearance.MATLABTheme.ActiveValue;
 
-shl_colors = jsondecode(settings().colors.SyntaxHighlightingColors.ActiveValue);
-dt_colors = jsondecode(settings().colors.DesktopColors.ActiveValue);
+shl_colors = jsondecode(root.colors.SyntaxHighlightingColors.ActiveValue);
+dt_colors = jsondecode(root.colors.DesktopColors.ActiveValue);
 
 syntaxColorsDict = dictionary( ...
     "KeywordColor",                     ".colors.KeywordColor", ...
@@ -198,7 +198,8 @@ syntaxColorsDict = dictionary( ...
     "NormalColor",                      ".colors.ForegroundColor" ...
 );
 
-for dst_field = syntaxColorsDict.keys
+dst_fields = syntaxColorsDict.keys;
+for dst_field = dst_fields'
     src_path = syntaxColorsDict(dst_field);
     [src_exists, src_hexColor] = getStructPathColorHex(json_struct, src_path);
     if src_exists
@@ -213,7 +214,7 @@ dt_colors.(theme).ForegroundColor = getStructPathColorHex(...
 dt_colors.(theme).BackgroundColor = getStructPathColorHex(...
     json_struct, ".colors.BackgroundColor");
 
-settings().colors.SyntaxHighlightingColors.ActiveValue = jsonencode(shl_colors);
-settings().colors.DesktopColors.ActiveValue = jsonencode(shl_colors);
+root.colors.SyntaxHighlightingColors.ActiveValue = jsonencode(shl_colors);
+root.colors.DesktopColors.ActiveValue = jsonencode(shl_colors);
 
 end

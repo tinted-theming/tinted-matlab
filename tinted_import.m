@@ -38,12 +38,14 @@ end
 root = settings;
 root.matlab.colors.UseSystemColor.PersonalValue = false;
 data = mixBgHighlight(data);
-applySettingsStruct(root.matlab, data.matlab, "matlab");
 
 fprintf("Color scheme %s by %s applied.\n", data.ColorSchemeName, data.ColorSchemeAuthor);
 if isMATLABReleaseOlderThan("R2025a")
+    applySettingsStruct(root.matlab, data.matlab, "matlab");
     preferences("Colors")
     fprintf("Matlab < R2025a detected: Click 'OK' in the preferences window to finish applying the theme.\n");
+else
+    applyColorSettingsR2025(root.matlab, data.matlab);
 end
 end
 
@@ -97,4 +99,207 @@ for i = 1:numel(fields)
         fprintf('Skipping non-RGB value at %s.%s\n', fullPath, name);
     end
 end
+end
+
+function [exists, value] = getStructPath(s, path)
+%GETSTRUCTPATH  Recursively resolve a dotted field path in a struct
+%
+%   [exists, value] = getStructPath(s, path)
+%
+%   s     : struct to search
+%   path  : string or char, e.g. ".colors.commandwindow.HyperlinkColor"
+%
+%   exists: logical true if the path exists
+%   value : value at the path if it exists, [] otherwise
+
+    arguments
+        s (1,1) struct
+        path {mustBeTextScalar}
+    end
+
+    % Normalize path: remove leading dot if present
+    path = char(path);
+    if startsWith(path, '.')
+        path = path(2:end);
+    end
+
+    % Split first field from remainder
+    parts = split(path, '.');
+    head  = parts{1};
+
+    % Base failure
+    if ~isfield(s, head)
+        exists = false;
+        value  = [];
+        return
+    end
+
+    % Base success
+    if isscalar(parts)
+        exists = true;
+        value  = s.(head);
+        return
+    end
+
+    % Recursive descent
+    next = s.(head);
+    if ~isstruct(next)
+        exists = false;
+        value  = [];
+        return
+    end
+
+    tail = strjoin(parts(2:end), '.');
+    [exists, value] = getStructPath(next, tail);
+end
+
+function [exists, hexColor] = getStructPathColorHex(s, path)
+% Get value from struct path, check if it is a valid color, and convert to
+% hex color format.
+
+[exists, value] = getStructPath(s, path);
+
+if isnumeric(value) && numel(value) == 3
+    hexColor = lower(rgb2hex(reshape(value, 1, 3) / 255));
+else
+    % Value does not match a [R, G, B] color
+    exists = false;
+    hexColor = [];
+end
+end
+
+function set_json_colors(setting_obj, matlab_theme, scheme, fieldsDict)
+% Set color values in a Setting object which takes a json string as value,
+% with each key in the json representing a color.
+
+if isempty(setting_obj.ActiveValue)
+    setting_struct = struct;
+else
+    setting_struct = jsondecode(setting_obj.ActiveValue);
+end
+
+if isfield(setting_struct, matlab_theme)
+    s = setting_struct.(matlab_theme);
+else
+    s = struct;
+end
+
+color_fields = fieldsDict.keys;
+for fieldName = color_fields'
+    scheme_path = fieldsDict(fieldName);
+    [exists, colorValue] = getStructPathColorHex(scheme, scheme_path);
+    if exists
+        s.(fieldName) = colorValue;
+    else
+        warning("Color setting not found in scheme file: %s", src_path)
+    end
+end
+
+setting_struct.(matlab_theme) = s;
+setting_obj.PersonalValue = jsonencode(setting_struct);
+
+end
+
+function applyColorSettingsR2025(root, scheme_struct)
+% Apply color settings for version R2025a+
+%
+% It appears that in Matlab R2025+, the color settings are not defined in
+% "flat" Settings objects like in previous versions (2018-2024), where the
+% values are single [R G B] arrays.
+%
+% Instead, many colors are "grouped" together in a single Settings object,
+% stored encoded as a JSON string, where the keys are the setting names and
+% the values are colors defined in lower-case hex format ("#ffffff"). These
+% JSON strings each store two color variants, for the dark and light desktop
+% theme.
+
+% Get currently active Matlab Desktop theme (light or dark)
+% We will apply the color settings to the currently active theme.
+theme = lower(root.appearance.MATLABTheme.ActiveValue);
+
+syntaxColorsDict = dictionary( ...
+    "KeywordColor",                     ".colors.KeywordColor", ...
+    "CommentColor",                     ".colors.CommentColor", ...
+    "StringColor",                      ".colors.StringColor", ...
+    "UnterminatedStringColor",          ".colors.UnterminatedStringColor", ...
+    "SystemCommandColor",               ".colors.SystemCommandColor", ...
+    "SyntaxErrorColor",                 ".colors.SyntaxErrorColor", ...
+    "HyperlinkColor",                   ".colors.commandwindow.HyperlinkColor", ...
+    "ErrorColor",                       ".colors.commandwindow.ErrorColor", ...
+    "WarningColor",                     ".colors.commandwindow.WarningColor", ...
+    "CodeAnalyzerWarningColor",         ".colors.programmingtools.CodeAnalyzerWarningColor", ...
+    "AutofixHighlightColor",            ".colors.programmingtools.AutofixHighlightColor", ...
+    "VariableHighlightColor",           ".colors.programmingtools.VariableHighlightColor", ...
+    "VariablesWithSharedScopeColor",    ".colors.programmingtools.VariablesWithSharedScopeColor", ...
+    "HighlightCurrentLineColor",        ".editor.displaysettings.HighlightCurrentLineColor", ...
+    "LineColor",                        ".editor.displaysettings.linelimit.LineColor", ...
+    "CodeColor",                        ".colors.ForegroundColor", ...
+    "NormalColor",                      ".colors.ForegroundColor" ...
+);
+
+desktopColorsDict = dictionary( ...
+    "ForegroundColor", ".colors.ForegroundColor", ...
+    "BackgroundColor", ".colors.BackgroundColor" ...
+);
+
+plangs_dictionaries = dictionary;
+
+plangs_dictionaries("cpp") = dictionary( ...
+    "CharactersColor"             , ".cpp.CharactersColor", ...
+    "CommentColor"                , ".cpp.CommentColor", ...
+    "KeywordColor"                , ".cpp.KeywordColor", ...
+    "PreprocessorColor"           , ".cpp.PreprocessorColor", ...
+    "StringsColor"                , ".cpp.StringsColor" ...
+);
+
+plangs_dictionaries("html") = dictionary( ...
+    "AttributeNameColor"          , ".html.AttributeNameColor", ...
+    "AttributeValueColor"         , ".html.AttributeValueColor", ...
+    "CdataSectionColor"           , ".html.CdataSectionColor", ...
+    "CharacterColor"              , ".html.CharacterColor", ...
+    "CommentColor"                , ".html.CommentColor", ...
+    "DoctypeDeclarationColor"     , ".html.DoctypeDeclarationColor", ...
+    "ErrorColor"                  , ".html.ErrorColor", ...
+    "ProcessingInstructionColor"  , ".html.ProcessingInstructionColor", ...
+    "TagColor"                    , ".html.TagColor" ...
+);
+
+plangs_dictionaries("java") = dictionary( ...
+    "CharactersColor"             , ".java.CharactersColor", ...
+    "CommentColor"                , ".java.CommentColor", ...
+    "KeywordColor"                , ".java.KeywordColor", ...
+    "StringsColor"                , ".java.StringsColor" ...
+);
+
+plangs_dictionaries("tlc") = dictionary( ...
+    "CommentColor"                , ".tlc.CommentColor", ...
+    "KeywordColor"                , ".tlc.KeywordColor", ...
+    "MacroColor"                  , ".tlc.MacroColor", ...
+    "StringsColor"                , ".tlc.StringsColor" ...
+);
+
+plangs_dictionaries("verilog") = dictionary( ...
+    "CommentColor"                , ".verilog.CommentColor", ...
+    "KeywordColor"                , ".verilog.KeywordColor", ...
+    "OperatorColor"               , ".verilog.OperatorColor", ...
+    "StringColor"                 , ".verilog.StringColor" ...
+);
+
+plangs_dictionaries("vhdl") = dictionary( ...
+    "CommentColor"                , ".vhdl.CommentColor", ...
+    "KeywordColor"                , ".vhdl.KeywordColor", ...
+    "OperatorColor"               , ".vhdl.OperatorColor", ...
+    "StringColor"                 , ".vhdl.StringColor" ...
+);
+
+set_json_colors(root.colors.SyntaxHighlightingColors, theme, scheme_struct, syntaxColorsDict)
+set_json_colors(root.colors.DesktopColors, theme, scheme_struct, desktopColorsDict)
+
+plang_names = keys(plangs_dictionaries);
+scheme_plangs = scheme_struct.editor.language;
+for lang = plang_names'
+    sObj = root.editor.language.(lang).SyntaxHighlightingColors;
+    set_json_colors(sObj, theme, scheme_plangs, plangs_dictionaries(lang));
+end
+
 end

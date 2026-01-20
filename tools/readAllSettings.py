@@ -71,16 +71,21 @@ def output_pretty(settings_tree: dict, indent_level: int = 0):
 def output_json(settings_tree: dict):
     print(json.dumps(settings_tree, indent=2, sort_keys=True))
 
-
-def main():
-    args = parse_args()
-
-    with zipfile.ZipFile(args.settings_file, "r") as z:
+def get_settings_tree(settings_file):
+    with zipfile.ZipFile(settings_file, "r") as z:
         root = zipfile.Path(z, "fsroot/settingstree/")
         if not (root.exists() and root.is_dir()):
             print("No settings tree found in the provided file.", file=sys.stderr)
             sys.exit(1)
         settings_tree = traverse_settings_tree(root)
+
+    return settings_tree
+
+
+def main():
+    args = parse_args()
+
+    settings_tree = get_settings_tree(args.settings_file)
 
     if args.json:
         output_json(settings_tree)

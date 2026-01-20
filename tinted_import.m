@@ -38,10 +38,10 @@ end
 root = settings;
 root.matlab.colors.UseSystemColor.PersonalValue = false;
 data = mixBgHighlight(data);
-applySettingsStruct(root.matlab, data.matlab, "matlab");
 
 fprintf("Color scheme %s by %s applied.\n", data.ColorSchemeName, data.ColorSchemeAuthor);
 if isMATLABReleaseOlderThan("R2025a")
+    applySettingsStruct(root.matlab, data.matlab, "matlab");
     preferences("Colors")
     fprintf("Matlab < R2025a detected: Click 'OK' in the preferences window to finish applying the theme.\n");
 else
@@ -168,15 +168,56 @@ else
 end
 end
 
-function applyColorSettingsR2025(root, json_struct)
+function new_dst = set_fields_colors(field_dict, src, dst)
+new_dst = dst;
+dst_fields = field_dict.keys;
+for dst_field = dst_fields'
+    src_path = field_dict(dst_field);
+    [src_exists, src_hexColor] = getStructPathColorHex(src, src_path);
+    if src_exists
+        new_dst.(dst_field) = src_hexColor;
+    else
+        warning("Color setting not found in scheme file: %s", src_path)
+    end
+end
+end
+
+function set_json_colors(setting_obj, matlab_theme, scheme, fieldsDict)
+
+if isempty(setting_obj.ActiveValue)
+    setting_struct = struct;
+else
+    setting_struct = jsondecode(setting_obj.ActiveValue);
+end
+
+if isfield(setting_struct, matlab_theme)
+    s = setting_struct.(matlab_theme);
+else
+    s = struct;
+end
+
+color_fields = fieldsDict.keys;
+for fieldName = color_fields'
+    scheme_path = fieldsDict(fieldName);
+    [exists, colorValue] = getStructPathColorHex(scheme, scheme_path);
+    if exists
+        s.(fieldName) = colorValue;
+    else
+        warning("Color setting not found in scheme file: %s", src_path)
+    end
+end
+
+setting_struct.(matlab_theme) = s;
+setting_obj.PersonalValue = jsonencode(setting_struct);
+
+end
+
+function applyColorSettingsR2025(root, scheme_struct)
 % Apply color settings for version R2025a+
 
 % Get currently active Matlab Desktop theme (light or dark)
 % We will apply the color settings to the currently active theme.
 theme = lower(root.appearance.MATLABTheme.ActiveValue);
-
-shl_colors = jsondecode(root.colors.SyntaxHighlightingColors.ActiveValue);
-dt_colors = jsondecode(root.colors.DesktopColors.ActiveValue);
 
 syntaxColorsDict = dictionary( ...
     "KeywordColor",                     ".colors.KeywordColor", ...
@@ -198,35 +239,43 @@ syntaxColorsDict = dictionary( ...
     "NormalColor",                      ".colors.ForegroundColor" ...
 );
 
-dst_fields = syntaxColorsDict.keys;
-for dst_field = dst_fields'
-    src_path = syntaxColorsDict(dst_field);
-    [src_exists, src_hexColor] = getStructPathColorHex(json_struct, src_path);
-    if src_exists
-        shl_colors.(theme).(dst_field) = src_hexColor;
-    else
-        warning("Color setting not found in scheme file: %s", src_path)
-    end
-end
-
 desktopColorsDict = dictionary( ...
     "ForegroundColor", ".colors.ForegroundColor", ...
     "BackgroundColor", ".colors.BackgroundColor" ...
 );
 
-dst_fields = desktopColorsDict.keys;
-for dst_field = dst_fields'
-    src_path = desktopColorsDict(dst_field);
-    [src_exists, src_hexColor] = getStructPathColorHex(json_struct, src_path);
-    if src_exists
-        dt_colors.(theme).(dst_field) = src_hexColor;
-    else
-        warning("Color setting not found in scheme file: %s", src_path)
-    end
-end
+set_json_colors(root.colors.SyntaxHighlightingColors, theme, scheme_struct, syntaxColorsDict)
+set_json_colors(root.colors.DesktopColors, theme, scheme_struct, desktopColorsDict)
 
-
-root.colors.SyntaxHighlightingColors.PersonalValue = jsonencode(shl_colors);
-root.colors.DesktopColors.PersonalValue = jsonencode(dt_colors);
+% % Other programming languages
+% all_pl_names = fields(json_struct.editor.language);
+% for pl_index = 1:numel(all_pl_names)
+%     plname = all_pl_names{pl_index};
+%     pl_scheme_struct = json_struct.editor.language.(plname);
+% 
+%     settingObj = root.editor.language.(plname).SyntaxHighlightingColors;
+%     if isempty(settingObj.ActiveValue)
+%         pl_color_settings = struct;
+%     else
+%         pl_color_settings = jsondecode( ...
+%             root.editor.language.(plname).SyntaxHighlightingColors.ActiveValue...
+%             );
+%     end
+% 
+%     % Build the dictionary settings key mapping by assuming a flat
+%     % structure in the scheme json file and a 1:1 mapping between setting
+%     % names
+%     all_settings_keys = fields(pl_scheme_struct);
+%     pl_colors_dict = dictionary(string(all_settings_keys), string(all_settings_keys));
+% 
+%     if ~(isfield(pl_color_settings, theme))
+%         pl_color_settings.(theme) = struct;
+%     end
+%     pl_color_settings.(theme) = set_fields_colors(...
+%         pl_colors_dict, pl_scheme_struct, pl_color_settings.(theme)...
+%         );
+%     root.editor.language.(plname).SyntaxHighlightingColors.PersonalValue = ...
+%         jsonencode(pl_color_settings);
+% end
 
 end

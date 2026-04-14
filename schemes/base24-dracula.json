@@ -1,6 +1,6 @@
 {
   "ColorSchemeName": "Dracula",
-  "ColorSchemeAuthor": "FredHappyface (https://github.com/fredHappyface)",
+  "ColorSchemeAuthor": "clach04 (https://github.com/clach04)",
   "Note": "Apply this theme in Matlab using the tinted_import function, available at https://github.com/tinted-theming/tinted-matlab",
 
   "matlab": {
@@ -10,11 +10,11 @@
       "KeywordColor": [255, 121, 198],
       "CommentColor": [98, 114, 164],
       "StringColor": [80, 250, 123],
-      "UnterminatedStringColor": [189, 147, 249],
+      "UnterminatedStringColor": [153, 51, 51],
       "SystemCommandColor": [139, 233, 253],
       "SyntaxErrorColor": [255, 85, 85],
       "commandwindow": {
-        "HyperlinkColor": [128, 191, 255],
+        "HyperlinkColor": [189, 147, 249],
         "ErrorColor": [255, 85, 85],
         "WarningColor": [241, 250, 140]
       },
@@ -27,14 +27,14 @@
     },
     "editor": {
       "displaysettings": {
-        "HighlightCurrentLineColor": [54, 52, 71],
+        "HighlightCurrentLineColor": [33, 34, 44],
         "linelimit": {
           "LineColor": [68, 71, 90]
         }
       },
       "language": {
         "cpp": {
-          "BadCharactersColor": [189, 147, 249],
+          "BadCharactersColor": [153, 51, 51],
           "CharactersColor": [139, 233, 253],
           "CommentColor": [98, 114, 164],
           "KeywordColor": [255, 121, 198],
@@ -44,11 +44,11 @@
         "html": {
           "AttributeNameColor": [255, 184, 108],
           "AttributeValueColor": [255, 184, 108],
-          "CdataSectionColor": [128, 191, 255],
+          "CdataSectionColor": [189, 147, 249],
           "CharacterColor": [139, 233, 253],
           "CommentColor": [98, 114, 164],
           "DoctypeDeclarationColor": [80, 250, 123],
-          "ErrorColor": [189, 147, 249],
+          "ErrorColor": [153, 51, 51],
           "OperatorColor": [255, 121, 198],
           "ProcessingInstructionColor": [80, 250, 123],
           "TagColor": [255, 85, 85]

@@ -1,5 +1,5 @@
 {
-  "ColorSchemeName": "Github Dark",
+  "ColorSchemeName": "Github Dark Colorblind",
   "ColorSchemeAuthor": "Tinted Theming (https://github.com/tinted-theming)",
   "Note": "Apply this theme in Matlab using the tinted_import function, available at https://github.com/tinted-theming/tinted-matlab",
 
@@ -7,21 +7,21 @@
     "colors": {
       "ForegroundColor": [201, 209, 217],
       "BackgroundColor": [13, 17, 23],
-      "KeywordColor": [255, 123, 114],
+      "KeywordColor": [236, 142, 44],
       "CommentColor": [110, 118, 129],
       "StringColor": [165, 214, 255],
-      "UnterminatedStringColor": [255, 161, 152],
-      "SystemCommandColor": [126, 231, 135],
-      "SyntaxErrorColor": [255, 166, 87],
+      "UnterminatedStringColor": [253, 172, 84],
+      "SystemCommandColor": [165, 214, 255],
+      "SyntaxErrorColor": [253, 172, 84],
       "commandwindow": {
         "HyperlinkColor": [210, 168, 255],
-        "ErrorColor": [255, 166, 87],
+        "ErrorColor": [253, 172, 84],
         "WarningColor": [187, 128, 9]
       },
       "programmingtools": {
         "CodeAnalyzerWarningColor": [187, 128, 9],
         "AutofixHighlightColor": [187, 128, 9],
-        "VariableHighlightColor": [126, 231, 135],
+        "VariableHighlightColor": [165, 214, 255],
         "VariablesWithSharedScopeColor": [121, 192, 255]
       }
     },
@@ -34,10 +34,10 @@
       },
       "language": {
         "cpp": {
-          "BadCharactersColor": [255, 161, 152],
-          "CharactersColor": [126, 231, 135],
+          "BadCharactersColor": [253, 172, 84],
+          "CharactersColor": [165, 214, 255],
           "CommentColor": [110, 118, 129],
-          "KeywordColor": [255, 123, 114],
+          "KeywordColor": [236, 142, 44],
           "PreprocessorColor": [121, 192, 255],
           "StringsColor": [165, 214, 255]
         },
@@ -45,35 +45,35 @@
           "AttributeNameColor": [121, 192, 255],
           "AttributeValueColor": [121, 192, 255],
           "CdataSectionColor": [210, 168, 255],
-          "CharacterColor": [126, 231, 135],
+          "CharacterColor": [165, 214, 255],
           "CommentColor": [110, 118, 129],
           "DoctypeDeclarationColor": [165, 214, 255],
-          "ErrorColor": [255, 161, 152],
-          "OperatorColor": [255, 123, 114],
+          "ErrorColor": [253, 172, 84],
+          "OperatorColor": [236, 142, 44],
           "ProcessingInstructionColor": [165, 214, 255],
-          "TagColor": [255, 166, 87]
+          "TagColor": [253, 172, 84]
         },
         "java": {
-          "CharactersColor": [126, 231, 135],
+          "CharactersColor": [165, 214, 255],
           "CommentColor": [110, 118, 129],
-          "KeywordColor": [255, 123, 114],
+          "KeywordColor": [236, 142, 44],
           "StringsColor": [165, 214, 255]
         },
         "tlc": {
           "CommentColor": [110, 118, 129],
-          "KeywordColor": [255, 123, 114],
+          "KeywordColor": [236, 142, 44],
           "MacroColor": [121, 192, 255],
           "StringsColor": [165, 214, 255]
         },
         "verilog": {
           "CommentColor": [110, 118, 129],
-          "KeywordColor": [255, 123, 114],
+          "KeywordColor": [236, 142, 44],
           "OperatorColor": [121, 192, 255],
           "StringColor": [165, 214, 255]
         },
         "vhdl": {
           "CommentColor": [110, 118, 129],
-          "KeywordColor": [255, 123, 114],
+          "KeywordColor": [236, 142, 44],
           "OperatorColor": [121, 192, 255],
           "StringColor": [165, 214, 255]
         }

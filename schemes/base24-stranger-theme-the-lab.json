@@ -7,14 +7,14 @@
     "colors": {
       "ForegroundColor": [224, 229, 236],
       "BackgroundColor": [26, 29, 38],
-      "KeywordColor": [127, 219, 255],
+      "KeywordColor": [177, 13, 201],
       "CommentColor": [115, 135, 156],
       "StringColor": [46, 204, 64],
       "UnterminatedStringColor": [215, 93, 0],
       "SystemCommandColor": [57, 204, 204],
       "SyntaxErrorColor": [255, 65, 54],
       "commandwindow": {
-        "HyperlinkColor": [177, 13, 201],
+        "HyperlinkColor": [127, 219, 255],
         "ErrorColor": [255, 65, 54],
         "WarningColor": [255, 220, 0]
       },
@@ -37,43 +37,43 @@
           "BadCharactersColor": [215, 93, 0],
           "CharactersColor": [57, 204, 204],
           "CommentColor": [115, 135, 156],
-          "KeywordColor": [127, 219, 255],
+          "KeywordColor": [177, 13, 201],
           "PreprocessorColor": [255, 133, 27],
           "StringsColor": [46, 204, 64]
         },
         "html": {
           "AttributeNameColor": [255, 133, 27],
           "AttributeValueColor": [255, 133, 27],
-          "CdataSectionColor": [177, 13, 201],
+          "CdataSectionColor": [127, 219, 255],
           "CharacterColor": [57, 204, 204],
           "CommentColor": [115, 135, 156],
           "DoctypeDeclarationColor": [46, 204, 64],
           "ErrorColor": [215, 93, 0],
-          "OperatorColor": [127, 219, 255],
+          "OperatorColor": [177, 13, 201],
           "ProcessingInstructionColor": [46, 204, 64],
           "TagColor": [255, 65, 54]
         },
         "java": {
           "CharactersColor": [57, 204, 204],
           "CommentColor": [115, 135, 156],
-          "KeywordColor": [127, 219, 255],
+          "KeywordColor": [177, 13, 201],
           "StringsColor": [46, 204, 64]
         },
         "tlc": {
           "CommentColor": [115, 135, 156],
-          "KeywordColor": [127, 219, 255],
+          "KeywordColor": [177, 13, 201],
           "MacroColor": [255, 133, 27],
           "StringsColor": [46, 204, 64]
         },
         "verilog": {
           "CommentColor": [115, 135, 156],
-          "KeywordColor": [127, 219, 255],
+          "KeywordColor": [177, 13, 201],
           "OperatorColor": [255, 133, 27],
           "StringColor": [46, 204, 64]
         },
         "vhdl": {
           "CommentColor": [115, 135, 156],
-          "KeywordColor": [127, 219, 255],
+          "KeywordColor": [177, 13, 201],
           "OperatorColor": [255, 133, 27],
           "StringColor": [46, 204, 64]
         }
